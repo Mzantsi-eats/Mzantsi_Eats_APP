@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "758078331442",
+    "project_id": "themzantsitable",
+    "storage_bucket": "themzantsitable.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:758078331442:android:f429f64eba4bc3d6aa7a2b",
+        "android_client_info": {
+          "package_name": "com.mzantsi.table"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBpJAh6WFzGUvzNzTUPhpoeUkr4vlZRMrE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,594 @@
+-- Merging decision tree log ---
+manifest
+ADDED from C:\Users\Lilitha\Desktop\Open Source\Second semester\MzantsiTable-Android(with gradle)\MzantsiTable-Android\app\src\main\AndroidManifest.xml:2:1-24:12
+INJECTED from C:\Users\Lilitha\Desktop\Open Source\Second semester\MzantsiTable-Android(with gradle)\MzantsiTable-Android\app\src\main\AndroidManifest.xml:2:1-24:12
+INJECTED from C:\Users\Lilitha\Desktop\Open Source\Second semester\MzantsiTable-Android(with gradle)\MzantsiTable-Android\app\src\main\AndroidManifest.xml:2:1-24:12
+INJECTED from C:\Users\Lilitha\Desktop\Open Source\Second semester\MzantsiTable-Android(with gradle)\MzantsiTable-Android\app\src\main\AndroidManifest.xml:2:1-24:12
+MERGED from [androidx.navigation:navigation-common:2.7.7] C:\Users\Lilitha\.gradle\caches\transforms-4\9217b931e59ef6dcdd11d35e0d82c433\transformed\navigation-common-2.7.7\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.navigation:navigation-runtime:2.7.7] C:\Users\Lilitha\.gradle\caches\transforms-4\3569b25480f19935e2b62505dacda753\transformed\navigation-runtime-2.7.7\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.navigation:navigation-common-ktx:2.7.7] C:\Users\Lilitha\.gradle\caches\transforms-4\0574d23e5a94f1af3cd4f9e9bac3e543\transformed\navigation-common-ktx-2.7.7\AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.navigation:navigation-runtime-ktx:2.7.7] C:\Users\Lilitha\.gradle\caches\transforms-4\0f3755719d2ea30131440bfbc034799c\transformed\navigation-runtime-ktx-2.7.7\AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.navigation:navigation-compose:2.7.7] C:\Users\Lilitha\.gradle\caches\transforms-4\1744f159322e55ac3ab603b80ca64673\transformed\navigation-compose-2.7.7\AndroidManifest.xml:2:1-7:12
+MERGED from [com.google.firebase:firebase-auth:24.2.0] C:\Users\Lilitha\.gradle\caches\transforms-4\c364ade8899b1b806092bb8d7ae263ca\transformed\firebase-auth-24.2.0\AndroidManifest.xml:17:1-75:12
+MERGED from [androidx.credentials:credentials:1.2.0-rc01] C:\Users\Lilitha\.gradle\caches\transforms-4\ab36b5f1e828bf2da83639f6b5659b1d\transformed\credentials-1.2.0-rc01\AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Users\Lilitha\.gradle\caches\transforms-4\ba57e1dbc9be916d4a2c6fdae8cd792b\transformed\credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:17:1-44:12
+MERGED from [com.google.android.gms:play-services-auth:20.7.0] C:\Users\Lilitha\.gradle\caches\transforms-4\0257693d4d946fed1015c9cfd836f1fd\transformed\play-services-auth-20.7.0\AndroidManifest.xml:17:1-40:12
+MERGED from [com.google.android.gms:play-services-auth-api-phone:18.0.2] C:\Users\Lilitha\.gradle\caches\transforms-4\abc47ab7c68d68fa1eeb52aa9710395f\transformed\play-services-auth-api-phone-18.0.2\AndroidManifest.xml:2:1-7:12
+MERGED from [com.google.android.recaptcha:recaptcha:18.6.1] C:\Users\Lilitha\.gradle\caches\transforms-4\12b8af616316f6a3121dd114b29d118d\transformed\recaptcha-18.6.1\AndroidManifest.xml:2:1-11:12
+MERGED from [com.google.android.play:integrity:1.3.0] C:\Users\Lilitha\.gradle\caches\transforms-4\64392b0933789c4014756e17bdedbecf\transformed\integrity-1.3.0\AndroidManifest.xml:2:1-7:12
+MERGED from [com.google.firebase:firebase-auth-interop:20.0.0] C:\Users\Lilitha\.gradle\caches\transforms-4\260dd64f51fada8d4c8ec343a24027ba\transformed\firebase-auth-interop-20.0.0\AndroidManifest.xml:2:1-10:12
+MERGED from [com.google.firebase:firebase-common:22.2.1] C:\Users\Lilitha\.gradle\caches\transforms-4\428eb08a55d26071ed6b8940b7e946cb\transformed\firebase-common-22.2.1\AndroidManifest.xml:15:1-41:12
+MERGED from [com.google.android.gms:play-services-fido:20.1.0] C:\Users\Lilitha\.gradle\caches\transforms-4\b6cf13a374961a16eddc216041b15523\transformed\play-services-fido-20.1.0\AndroidManifest.xml:2:1-10:12
+MERGED from [com.google.firebase:firebase-appcheck-interop:17.0.0] C:\Users\Lilitha\.gradle\caches\transforms-4\2991f2f60ed733df5fa45c831480ad9b\transformed\firebase-appcheck-interop-17.0.0\AndroidManifest.xml:15:1-25:12
+MERGED from [com.google.android.gms:play-services-auth-base:18.0.4] C:\Users\Lilitha\.gradle\caches\transforms-4\4c2bae3e044fa66a2ac0c845077e0052\transformed\play-services-auth-base-18.0.4\AndroidManifest.xml:2:1-7:12
+MERGED from [com.google.android.gms:play-services-base:18.0.1] C:\Users\Lilitha\.gradle\caches\transforms-4\4dfe9a3345fe5c323b1d3289d5af6fbe\transformed\play-services-base-18.0.1\AndroidManifest.xml:16:1-24:12
+MERGED from [androidx.compose.material3:material3-android:1.2.1] C:\Users\Lilitha\.gradle\caches\transforms-4\20ba9b31e658e67c53efc29a248a4a7c\transformed\material3-release\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\Lilitha\.gradle\caches\transforms-4\5bce5ba12043d1def950ac5d1a535f81\transformed\loader-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.savedstate:savedstate-ktx:1.2.1] C:\Users\Lilitha\.gradle\caches\transforms-4\6012b203c2ab497ef7f2cdab58e5ad07\transformed\savedstate-ktx-1.2.1\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.savedstate:savedstate:1.2.1] C:\Users\Lilitha\.gradle\caches\transforms-4\aaeae586ccff6fb46d1be59ad92df96e\transformed\savedstate-1.2.1\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.compose.animation:animation-core-android:1.6.8] C:\Users\Lilitha\.gradle\caches\transforms-4\3be7edb25b0752a236cb8189c633a35c\transformed\animation-core-release\AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.material:material-icons-core-android:1.6.8] C:\Users\Lilitha\.gradle\caches\transforms-4\e2a685053d0274ad7682c5e71c73121a\transformed\material-icons-core-release\AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.material:material-ripple-android:1.6.8] C:\Users\Lilitha\.gradle\caches\transforms-4\5436e323e0c6a016830fc20e5251909c\transformed\material-ripple-release\AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.animation:animation-android:1.6.8] C:\Users\Lilitha\.gradle\caches\transforms-4\1f5a65872292e67736417694fab3a2bf\transformed\animation-release\AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.foundation:foundation-layout-android:1.6.8] C:\Users\Lilitha\.gradle\caches\transforms-4\b6f405ef4ce5e3a9b475e7185dfa9471\transformed\foundation-layout-release\AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.foundation:foundation-android:1.6.8] C:\Users\Lilitha\.gradle\caches\transforms-4\d1ee4689aada9f36f1c5be228a6aef85\transformed\foundation-release\AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.ui:ui-unit-android:1.6.8] C:\Users\Lilitha\.gradle\caches\transforms-4\c6cb3e6520d6b7eed807f3299310b078\transformed\ui-unit-release\AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.ui:ui-geometry-android:1.6.8] C:\Users\Lilitha\.gradle\caches\transforms-4\044e189ca489435debe7f847e33c7713\transformed\ui-geometry-release\AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.ui:ui-util-android:1.6.8] C:\Users\Lilitha\.gradle\caches\transforms-4\cae8282f5ff463b33d816a9f79bef66f\transformed\ui-util-release\AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.ui:ui-tooling-preview-android:1.6.8] C:\Users\Lilitha\.gradle\caches\transforms-4\66c926c38a2c171566bf33119b26ad31\transformed\ui-tooling-preview-release\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.compose.ui:ui-graphics-android:1.6.8] C:\Users\Lilitha\.gradle\caches\transforms-4\d686df2b24bf44fd40b1d8a885309d99\transformed\ui-graphics-release\AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.ui:ui-text-android:1.6.8] C:\Users\Lilitha\.gradle\caches\transforms-4\d6222b37b67c7b4b0a30dafa9d86cba4\transformed\ui-text-release\AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.emoji2:emoji2:1.3.0] C:\Users\Lilitha\.gradle\caches\transforms-4\bcd45f5f61d8ca973ea9566707aa49bd\transformed\emoji2-1.3.0\AndroidManifest.xml:17:1-35:12
+MERGED from [androidx.lifecycle:lifecycle-process:2.8.4] C:\Users\Lilitha\.gradle\caches\transforms-4\9a164b99af1d99867c9b009d9d6803bf\transformed\lifecycle-process-2.8.4\AndroidManifest.xml:17:1-35:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core-ktx:2.8.4] C:\Users\Lilitha\.gradle\caches\transforms-4\d466930a7287f109b02bed0080f917e6\transformed\lifecycle-livedata-core-ktx-2.8.4\AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.8.4] C:\Users\Lilitha\.gradle\caches\transforms-4\43380efefa5eebabe43dc5d583e9c348\transformed\lifecycle-livedata-2.8.4\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.8.4] C:\Users\Lilitha\.gradle\caches\transforms-4\329e53fd5c80e1d1bf38f3cc7b463096\transformed\lifecycle-livedata-core-2.8.4\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.8.4] C:\Users\Lilitha\.gradle\caches\transforms-4\bcbd221cac3fa8a6a601c169b9a705d7\transformed\lifecycle-viewmodel-2.8.4\AndroidManifest.xml:2:1-5:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-android:2.8.4] C:\Users\Lilitha\.gradle\caches\transforms-4\0e26b391d497651e4ba4747da1abb748\transformed\lifecycle-viewmodel-release\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-runtime-android:2.8.4] C:\Users\Lilitha\.gradle\caches\transforms-4\35179bb5af36d73cce66ba58baaa5556\transformed\lifecycle-runtime-release\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.8.4] C:\Users\Lilitha\.gradle\caches\transforms-4\0bdc5145e609c36d200d5052073f17a4\transformed\lifecycle-viewmodel-savedstate-2.8.4\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-ktx:2.8.4] C:\Users\Lilitha\.gradle\caches\transforms-4\5cee3cbdc8104b16dd1e982917d2225a\transformed\lifecycle-viewmodel-ktx-2.8.4\AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.lifecycle:lifecycle-runtime-ktx-android:2.8.4] C:\Users\Lilitha\.gradle\caches\transforms-4\2fd78b23731a2fecabda7f943ea8e469\transformed\lifecycle-runtime-ktx-release\AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-compose-android:2.8.4] C:\Users\Lilitha\.gradle\caches\transforms-4\0e2b9640bf5072b1dcc5785e1764a1ec\transformed\lifecycle-viewmodel-compose-release\AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.runtime:runtime-saveable-android:1.6.8] C:\Users\Lilitha\.gradle\caches\transforms-4\bcf16e06aaea9e9ef30fc969cfe7767d\transformed\runtime-saveable-release\AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.runtime:runtime-android:1.6.8] C:\Users\Lilitha\.gradle\caches\transforms-4\c817a8158cbaea5ec8dc617006d4303c\transformed\runtime-release\AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.datastore:datastore-core-android:1.1.7] C:\Users\Lilitha\.gradle\caches\transforms-4\1cdc571680938c084066e562724a3b04\transformed\datastore-core-release\AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.datastore:datastore-preferences-core-android:1.1.7] C:\Users\Lilitha\.gradle\caches\transforms-4\6c135b1f29f9c18677a582596dff56f3\transformed\datastore-preferences-core-release\AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.datastore:datastore-android:1.1.7] C:\Users\Lilitha\.gradle\caches\transforms-4\a2ee867fd74805d573ee485eea869203\transformed\datastore-release\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.datastore:datastore-preferences-android:1.1.7] C:\Users\Lilitha\.gradle\caches\transforms-4\21ffe99d8c4a23f6270553b592dc495f\transformed\datastore-preferences-release\AndroidManifest.xml:17:1-22:12
+MERGED from [com.google.android.gms:play-services-tasks:18.4.0] C:\Users\Lilitha\.gradle\caches\transforms-4\cfe5902d5f26c7f32aeb4de6cf2ce195\transformed\play-services-tasks-18.4.0\AndroidManifest.xml:2:1-6:12
+MERGED from [com.google.android.gms:play-services-basement:18.9.0] C:\Users\Lilitha\.gradle\caches\transforms-4\e49a50d63ebc3d42c873869d6a0722e7\transformed\play-services-basement-18.9.0\AndroidManifest.xml:16:1-26:12
+MERGED from [androidx.fragment:fragment:1.1.0] C:\Users\Lilitha\.gradle\caches\transforms-4\df664874782ff7d56d8fcc88b20a38a0\transformed\fragment-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.activity:activity:1.9.1] C:\Users\Lilitha\.gradle\caches\transforms-4\a3ac12ac230a849b34fb0b4e53c54a4f\transformed\activity-1.9.1\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.activity:activity-ktx:1.9.1] C:\Users\Lilitha\.gradle\caches\transforms-4\ffee21d2bd29801c468b2ed9d9969cf1\transformed\activity-ktx-1.9.1\AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.activity:activity-compose:1.9.1] C:\Users\Lilitha\.gradle\caches\transforms-4\a2d03d8ed243ac94bba34b7d207bd257\transformed\activity-compose-1.9.1\AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.ui:ui-android:1.6.8] C:\Users\Lilitha\.gradle\caches\transforms-4\cb7a83ab7c652a68300839b10796ede2\transformed\ui-release\AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.browser:browser:1.4.0] C:\Users\Lilitha\.gradle\caches\transforms-4\9ab0000804a564e6ba9e664b92fd2421\transformed\browser-1.4.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.autofill:autofill:1.0.0] C:\Users\Lilitha\.gradle\caches\transforms-4\7422b07e56b685da8a8728c85240767c\transformed\autofill-1.0.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\Lilitha\.gradle\caches\transforms-4\cac53300865f6aec69e373701b0c2be0\transformed\viewpager-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.customview:customview:1.0.0] C:\Users\Lilitha\.gradle\caches\transforms-4\f10a9dc47d6dd05f4f9356a719e72f3b\transformed\customview-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.core:core:1.13.1] C:\Users\Lilitha\.gradle\caches\transforms-4\3b4a80f28217db5b2f8f0fdaf73c3346\transformed\core-1.13.1\AndroidManifest.xml:17:1-30:12
+MERGED from [androidx.customview:customview-poolingcontainer:1.0.0] C:\Users\Lilitha\.gradle\caches\transforms-4\2d130a576770c598f2eccaa7f500fb41\transformed\customview-poolingcontainer-1.0.0\AndroidManifest.xml:17:1-23:12
+MERGED from [androidx.core:core-ktx:1.13.1] C:\Users\Lilitha\.gradle\caches\transforms-4\f3bc1cb1a5f85f738205bdb616604966\transformed\core-ktx-1.13.1\AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.annotation:annotation-experimental:1.4.0] C:\Users\Lilitha\.gradle\caches\transforms-4\de35b538453a2f9084e1dc42b017fd67\transformed\annotation-experimental-1.4.0\AndroidManifest.xml:2:1-7:12
+MERGED from [com.google.android.libraries.identity.googleid:googleid:1.1.0] C:\Users\Lilitha\.gradle\caches\transforms-4\2f184aae4a071e454c450ce57855181b\transformed\googleid-1.1.0\AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\Lilitha\.gradle\caches\transforms-4\4ce77348f6259beadaaefa30fa7eda83\transformed\localbroadcastmanager-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\Lilitha\.gradle\caches\transforms-4\f0c35fca5c5bd2cb433e2f638d3f6d9d\transformed\interpolator-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\Lilitha\.gradle\caches\transforms-4\3e6c7ac83699b9a5691eff8454ce6f4a\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:17:1-27:12
+MERGED from [com.google.firebase:firebase-components:19.0.0] C:\Users\Lilitha\.gradle\caches\transforms-4\48d5bd6f3da07fc35adaf4416a08606a\transformed\firebase-components-19.0.0\AndroidManifest.xml:15:1-20:12
+MERGED from [androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Lilitha\.gradle\caches\transforms-4\e2d5b112e41edf46b4c95d953be5b926\transformed\profileinstaller-1.3.1\AndroidManifest.xml:17:1-55:12
+MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\Lilitha\.gradle\caches\transforms-4\1b5de4175969159377c2c9f6ff298a35\transformed\startup-runtime-1.1.1\AndroidManifest.xml:17:1-33:12
+MERGED from [androidx.tracing:tracing:1.0.0] C:\Users\Lilitha\.gradle\caches\transforms-4\d72aa97b5a2476ee0dfcaa194f2c6cd8\transformed\tracing-1.0.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.arch.core:core-runtime:2.2.0] C:\Users\Lilitha\.gradle\caches\transforms-4\9d26f81b9eb479492ad2343351d77f3c\transformed\core-runtime-2.2.0\AndroidManifest.xml:17:1-22:12
+MERGED from [com.google.android.play:core-common:2.0.3] C:\Users\Lilitha\.gradle\caches\transforms-4\f2397d89fef36ea4d551c6e9cb309312\transformed\core-common-2.0.3\AndroidManifest.xml:2:1-21:12
+	package
+		INJECTED from C:\Users\Lilitha\Desktop\Open Source\Second semester\MzantsiTable-Android(with gradle)\MzantsiTable-Android\app\src\main\AndroidManifest.xml
+	android:versionName
+		INJECTED from C:\Users\Lilitha\Desktop\Open Source\Second semester\MzantsiTable-Android(with gradle)\MzantsiTable-Android\app\src\main\AndroidManifest.xml
+	android:versionCode
+		INJECTED from C:\Users\Lilitha\Desktop\Open Source\Second semester\MzantsiTable-Android(with gradle)\MzantsiTable-Android\app\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from C:\Users\Lilitha\Desktop\Open Source\Second semester\MzantsiTable-Android(with gradle)\MzantsiTable-Android\app\src\main\AndroidManifest.xml:2:11-69
+uses-permission#android.permission.INTERNET
+ADDED from C:\Users\Lilitha\Desktop\Open Source\Second semester\MzantsiTable-Android(with gradle)\MzantsiTable-Android\app\src\main\AndroidManifest.xml:4:5-67
+MERGED from [com.google.firebase:firebase-auth:24.2.0] C:\Users\Lilitha\.gradle\caches\transforms-4\c364ade8899b1b806092bb8d7ae263ca\transformed\firebase-auth-24.2.0\AndroidManifest.xml:25:5-67
+MERGED from [com.google.firebase:firebase-auth:24.2.0] C:\Users\Lilitha\.gradle\caches\transforms-4\c364ade8899b1b806092bb8d7ae263ca\transformed\firebase-auth-24.2.0\AndroidManifest.xml:25:5-67
+MERGED from [com.google.android.recaptcha:recaptcha:18.6.1] C:\Users\Lilitha\.gradle\caches\transforms-4\12b8af616316f6a3121dd114b29d118d\transformed\recaptcha-18.6.1\AndroidManifest.xml:7:5-67
+MERGED from [com.google.android.recaptcha:recaptcha:18.6.1] C:\Users\Lilitha\.gradle\caches\transforms-4\12b8af616316f6a3121dd114b29d118d\transformed\recaptcha-18.6.1\AndroidManifest.xml:7:5-67
+	android:name
+		ADDED from C:\Users\Lilitha\Desktop\Open Source\Second semester\MzantsiTable-Android(with gradle)\MzantsiTable-Android\app\src\main\AndroidManifest.xml:4:22-64
+application
+ADDED from C:\Users\Lilitha\Desktop\Open Source\Second semester\MzantsiTable-Android(with gradle)\MzantsiTable-Android\app\src\main\AndroidManifest.xml:6:5-22:19
+INJECTED from C:\Users\Lilitha\Desktop\Open Source\Second semester\MzantsiTable-Android(with gradle)\MzantsiTable-Android\app\src\main\AndroidManifest.xml:6:5-22:19
+MERGED from [com.google.firebase:firebase-auth:24.2.0] C:\Users\Lilitha\.gradle\caches\transforms-4\c364ade8899b1b806092bb8d7ae263ca\transformed\firebase-auth-24.2.0\AndroidManifest.xml:28:5-73:19
+MERGED from [com.google.firebase:firebase-auth:24.2.0] C:\Users\Lilitha\.gradle\caches\transforms-4\c364ade8899b1b806092bb8d7ae263ca\transformed\firebase-auth-24.2.0\AndroidManifest.xml:28:5-73:19
+MERGED from [androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Users\Lilitha\.gradle\caches\transforms-4\ba57e1dbc9be916d4a2c6fdae8cd792b\transformed\credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:23:5-42:19
+MERGED from [androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Users\Lilitha\.gradle\caches\transforms-4\ba57e1dbc9be916d4a2c6fdae8cd792b\transformed\credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:23:5-42:19
+MERGED from [com.google.android.gms:play-services-auth:20.7.0] C:\Users\Lilitha\.gradle\caches\transforms-4\0257693d4d946fed1015c9cfd836f1fd\transformed\play-services-auth-20.7.0\AndroidManifest.xml:22:5-38:19
+MERGED from [com.google.android.gms:play-services-auth:20.7.0] C:\Users\Lilitha\.gradle\caches\transforms-4\0257693d4d946fed1015c9cfd836f1fd\transformed\play-services-auth-20.7.0\AndroidManifest.xml:22:5-38:19
+MERGED from [com.google.android.play:integrity:1.3.0] C:\Users\Lilitha\.gradle\caches\transforms-4\64392b0933789c4014756e17bdedbecf\transformed\integrity-1.3.0\AndroidManifest.xml:5:5-6:19
+MERGED from [com.google.android.play:integrity:1.3.0] C:\Users\Lilitha\.gradle\caches\transforms-4\64392b0933789c4014756e17bdedbecf\transformed\integrity-1.3.0\AndroidManifest.xml:5:5-6:19
+MERGED from [com.google.firebase:firebase-auth-interop:20.0.0] C:\Users\Lilitha\.gradle\caches\transforms-4\260dd64f51fada8d4c8ec343a24027ba\transformed\firebase-auth-interop-20.0.0\AndroidManifest.xml:7:5-8:19
+MERGED from [com.google.firebase:firebase-auth-interop:20.0.0] C:\Users\Lilitha\.gradle\caches\transforms-4\260dd64f51fada8d4c8ec343a24027ba\transformed\firebase-auth-interop-20.0.0\AndroidManifest.xml:7:5-8:19
+MERGED from [com.google.firebase:firebase-common:22.2.1] C:\Users\Lilitha\.gradle\caches\transforms-4\428eb08a55d26071ed6b8940b7e946cb\transformed\firebase-common-22.2.1\AndroidManifest.xml:22:5-39:19
+MERGED from [com.google.firebase:firebase-common:22.2.1] C:\Users\Lilitha\.gradle\caches\transforms-4\428eb08a55d26071ed6b8940b7e946cb\transformed\firebase-common-22.2.1\AndroidManifest.xml:22:5-39:19
+MERGED from [com.google.android.gms:play-services-fido:20.1.0] C:\Users\Lilitha\.gradle\caches\transforms-4\b6cf13a374961a16eddc216041b15523\transformed\play-services-fido-20.1.0\AndroidManifest.xml:7:5-8:19
+MERGED from [com.google.android.gms:play-services-fido:20.1.0] C:\Users\Lilitha\.gradle\caches\transforms-4\b6cf13a374961a16eddc216041b15523\transformed\play-services-fido-20.1.0\AndroidManifest.xml:7:5-8:19
+MERGED from [com.google.firebase:firebase-appcheck-interop:17.0.0] C:\Users\Lilitha\.gradle\caches\transforms-4\2991f2f60ed733df5fa45c831480ad9b\transformed\firebase-appcheck-interop-17.0.0\AndroidManifest.xml:23:5-20
+MERGED from [com.google.firebase:firebase-appcheck-interop:17.0.0] C:\Users\Lilitha\.gradle\caches\transforms-4\2991f2f60ed733df5fa45c831480ad9b\transformed\firebase-appcheck-interop-17.0.0\AndroidManifest.xml:23:5-20
+MERGED from [com.google.android.gms:play-services-base:18.0.1] C:\Users\Lilitha\.gradle\caches\transforms-4\4dfe9a3345fe5c323b1d3289d5af6fbe\transformed\play-services-base-18.0.1\AndroidManifest.xml:19:5-23:19
+MERGED from [com.google.android.gms:play-services-base:18.0.1] C:\Users\Lilitha\.gradle\caches\transforms-4\4dfe9a3345fe5c323b1d3289d5af6fbe\transformed\play-services-base-18.0.1\AndroidManifest.xml:19:5-23:19
+MERGED from [androidx.emoji2:emoji2:1.3.0] C:\Users\Lilitha\.gradle\caches\transforms-4\bcd45f5f61d8ca973ea9566707aa49bd\transformed\emoji2-1.3.0\AndroidManifest.xml:23:5-33:19
+MERGED from [androidx.emoji2:emoji2:1.3.0] C:\Users\Lilitha\.gradle\caches\transforms-4\bcd45f5f61d8ca973ea9566707aa49bd\transformed\emoji2-1.3.0\AndroidManifest.xml:23:5-33:19
+MERGED from [androidx.lifecycle:lifecycle-process:2.8.4] C:\Users\Lilitha\.gradle\caches\transforms-4\9a164b99af1d99867c9b009d9d6803bf\transformed\lifecycle-process-2.8.4\AndroidManifest.xml:23:5-33:19
+MERGED from [androidx.lifecycle:lifecycle-process:2.8.4] C:\Users\Lilitha\.gradle\caches\transforms-4\9a164b99af1d99867c9b009d9d6803bf\transformed\lifecycle-process-2.8.4\AndroidManifest.xml:23:5-33:19
+MERGED from [com.google.android.gms:play-services-tasks:18.4.0] C:\Users\Lilitha\.gradle\caches\transforms-4\cfe5902d5f26c7f32aeb4de6cf2ce195\transformed\play-services-tasks-18.4.0\AndroidManifest.xml:5:5-20
+MERGED from [com.google.android.gms:play-services-tasks:18.4.0] C:\Users\Lilitha\.gradle\caches\transforms-4\cfe5902d5f26c7f32aeb4de6cf2ce195\transformed\play-services-tasks-18.4.0\AndroidManifest.xml:5:5-20
+MERGED from [com.google.android.gms:play-services-basement:18.9.0] C:\Users\Lilitha\.gradle\caches\transforms-4\e49a50d63ebc3d42c873869d6a0722e7\transformed\play-services-basement-18.9.0\AndroidManifest.xml:20:5-24:19
+MERGED from [com.google.android.gms:play-services-basement:18.9.0] C:\Users\Lilitha\.gradle\caches\transforms-4\e49a50d63ebc3d42c873869d6a0722e7\transformed\play-services-basement-18.9.0\AndroidManifest.xml:20:5-24:19
+MERGED from [androidx.core:core:1.13.1] C:\Users\Lilitha\.gradle\caches\transforms-4\3b4a80f28217db5b2f8f0fdaf73c3346\transformed\core-1.13.1\AndroidManifest.xml:28:5-89
+MERGED from [androidx.core:core:1.13.1] C:\Users\Lilitha\.gradle\caches\transforms-4\3b4a80f28217db5b2f8f0fdaf73c3346\transformed\core-1.13.1\AndroidManifest.xml:28:5-89
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\Lilitha\.gradle\caches\transforms-4\3e6c7ac83699b9a5691eff8454ce6f4a\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:24:5-25:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\Lilitha\.gradle\caches\transforms-4\3e6c7ac83699b9a5691eff8454ce6f4a\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:24:5-25:19
+MERGED from [androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Lilitha\.gradle\caches\transforms-4\e2d5b112e41edf46b4c95d953be5b926\transformed\profileinstaller-1.3.1\AndroidManifest.xml:23:5-53:19
+MERGED from [androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Lilitha\.gradle\caches\transforms-4\e2d5b112e41edf46b4c95d953be5b926\transformed\profileinstaller-1.3.1\AndroidManifest.xml:23:5-53:19
+MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\Lilitha\.gradle\caches\transforms-4\1b5de4175969159377c2c9f6ff298a35\transformed\startup-runtime-1.1.1\AndroidManifest.xml:25:5-31:19
+MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\Lilitha\.gradle\caches\transforms-4\1b5de4175969159377c2c9f6ff298a35\transformed\startup-runtime-1.1.1\AndroidManifest.xml:25:5-31:19
+MERGED from [com.google.android.play:core-common:2.0.3] C:\Users\Lilitha\.gradle\caches\transforms-4\f2397d89fef36ea4d551c6e9cb309312\transformed\core-common-2.0.3\AndroidManifest.xml:11:5-19:19
+MERGED from [com.google.android.play:core-common:2.0.3] C:\Users\Lilitha\.gradle\caches\transforms-4\f2397d89fef36ea4d551c6e9cb309312\transformed\core-common-2.0.3\AndroidManifest.xml:11:5-19:19
+	android:extractNativeLibs
+		INJECTED from C:\Users\Lilitha\Desktop\Open Source\Second semester\MzantsiTable-Android(with gradle)\MzantsiTable-Android\app\src\main\AndroidManifest.xml
+	android:appComponentFactory
+		ADDED from [androidx.core:core:1.13.1] C:\Users\Lilitha\.gradle\caches\transforms-4\3b4a80f28217db5b2f8f0fdaf73c3346\transformed\core-1.13.1\AndroidManifest.xml:28:18-86
+	android:label
+		ADDED from C:\Users\Lilitha\Desktop\Open Source\Second semester\MzantsiTable-Android(with gradle)\MzantsiTable-Android\app\src\main\AndroidManifest.xml:10:9-41
+	android:roundIcon
+		ADDED from C:\Users\Lilitha\Desktop\Open Source\Second semester\MzantsiTable-Android(with gradle)\MzantsiTable-Android\app\src\main\AndroidManifest.xml:9:9-54
+	android:icon
+		ADDED from C:\Users\Lilitha\Desktop\Open Source\Second semester\MzantsiTable-Android(with gradle)\MzantsiTable-Android\app\src\main\AndroidManifest.xml:8:9-43
+	android:allowBackup
+		ADDED from C:\Users\Lilitha\Desktop\Open Source\Second semester\MzantsiTable-Android(with gradle)\MzantsiTable-Android\app\src\main\AndroidManifest.xml:7:9-35
+	android:theme
+		ADDED from C:\Users\Lilitha\Desktop\Open Source\Second semester\MzantsiTable-Android(with gradle)\MzantsiTable-Android\app\src\main\AndroidManifest.xml:11:9-50
+	android:usesCleartextTraffic
+		ADDED from C:\Users\Lilitha\Desktop\Open Source\Second semester\MzantsiTable-Android(with gradle)\MzantsiTable-Android\app\src\main\AndroidManifest.xml:12:9-44
+activity#com.mzantsi.table.MainActivity
+ADDED from C:\Users\Lilitha\Desktop\Open Source\Second semester\MzantsiTable-Android(with gradle)\MzantsiTable-Android\app\src\main\AndroidManifest.xml:13:9-21:20
+	android:exported
+		ADDED from C:\Users\Lilitha\Desktop\Open Source\Second semester\MzantsiTable-Android(with gradle)\MzantsiTable-Android\app\src\main\AndroidManifest.xml:15:13-36
+	android:theme
+		ADDED from C:\Users\Lilitha\Desktop\Open Source\Second semester\MzantsiTable-Android(with gradle)\MzantsiTable-Android\app\src\main\AndroidManifest.xml:16:13-54
+	android:name
+		ADDED from C:\Users\Lilitha\Desktop\Open Source\Second semester\MzantsiTable-Android(with gradle)\MzantsiTable-Android\app\src\main\AndroidManifest.xml:14:13-41
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from C:\Users\Lilitha\Desktop\Open Source\Second semester\MzantsiTable-Android(with gradle)\MzantsiTable-Android\app\src\main\AndroidManifest.xml:17:13-20:29
+action#android.intent.action.MAIN
+ADDED from C:\Users\Lilitha\Desktop\Open Source\Second semester\MzantsiTable-Android(with gradle)\MzantsiTable-Android\app\src\main\AndroidManifest.xml:18:17-69
+	android:name
+		ADDED from C:\Users\Lilitha\Desktop\Open Source\Second semester\MzantsiTable-Android(with gradle)\MzantsiTable-Android\app\src\main\AndroidManifest.xml:18:25-66
+category#android.intent.category.LAUNCHER
+ADDED from C:\Users\Lilitha\Desktop\Open Source\Second semester\MzantsiTable-Android(with gradle)\MzantsiTable-Android\app\src\main\AndroidManifest.xml:19:17-77
+	android:name
+		ADDED from C:\Users\Lilitha\Desktop\Open Source\Second semester\MzantsiTable-Android(with gradle)\MzantsiTable-Android\app\src\main\AndroidManifest.xml:19:27-74
+uses-sdk
+INJECTED from C:\Users\Lilitha\Desktop\Open Source\Second semester\MzantsiTable-Android(with gradle)\MzantsiTable-Android\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from C:\Users\Lilitha\Desktop\Open Source\Second semester\MzantsiTable-Android(with gradle)\MzantsiTable-Android\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\Lilitha\Desktop\Open Source\Second semester\MzantsiTable-Android(with gradle)\MzantsiTable-Android\app\src\main\AndroidManifest.xml
+MERGED from [androidx.navigation:navigation-common:2.7.7] C:\Users\Lilitha\.gradle\caches\transforms-4\9217b931e59ef6dcdd11d35e0d82c433\transformed\navigation-common-2.7.7\AndroidManifest.xml:20:5-44
+MERGED from [androidx.navigation:navigation-common:2.7.7] C:\Users\Lilitha\.gradle\caches\transforms-4\9217b931e59ef6dcdd11d35e0d82c433\transformed\navigation-common-2.7.7\AndroidManifest.xml:20:5-44
+MERGED from [androidx.navigation:navigation-runtime:2.7.7] C:\Users\Lilitha\.gradle\caches\transforms-4\3569b25480f19935e2b62505dacda753\transformed\navigation-runtime-2.7.7\AndroidManifest.xml:20:5-44
+MERGED from [androidx.navigation:navigation-runtime:2.7.7] C:\Users\Lilitha\.gradle\caches\transforms-4\3569b25480f19935e2b62505dacda753\transformed\navigation-runtime-2.7.7\AndroidManifest.xml:20:5-44
+MERGED from [androidx.navigation:navigation-common-ktx:2.7.7] C:\Users\Lilitha\.gradle\caches\transforms-4\0574d23e5a94f1af3cd4f9e9bac3e543\transformed\navigation-common-ktx-2.7.7\AndroidManifest.xml:5:5-44
+MERGED from [androidx.navigation:navigation-common-ktx:2.7.7] C:\Users\Lilitha\.gradle\caches\transforms-4\0574d23e5a94f1af3cd4f9e9bac3e543\transformed\navigation-common-ktx-2.7.7\AndroidManifest.xml:5:5-44
+MERGED from [androidx.navigation:navigation-runtime-ktx:2.7.7] C:\Users\Lilitha\.gradle\caches\transforms-4\0f3755719d2ea30131440bfbc034799c\transformed\navigation-runtime-ktx-2.7.7\AndroidManifest.xml:5:5-44
+MERGED from [androidx.navigation:navigation-runtime-ktx:2.7.7] C:\Users\Lilitha\.gradle\caches\transforms-4\0f3755719d2ea30131440bfbc034799c\transformed\navigation-runtime-ktx-2.7.7\AndroidManifest.xml:5:5-44
+MERGED from [androidx.navigation:navigation-compose:2.7.7] C:\Users\Lilitha\.gradle\caches\transforms-4\1744f159322e55ac3ab603b80ca64673\transformed\navigation-compose-2.7.7\AndroidManifest.xml:5:5-44
+MERGED from [androidx.navigation:navigation-compose:2.7.7] C:\Users\Lilitha\.gradle\caches\transforms-4\1744f159322e55ac3ab603b80ca64673\transformed\navigation-compose-2.7.7\AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-auth:24.2.0] C:\Users\Lilitha\.gradle\caches\transforms-4\c364ade8899b1b806092bb8d7ae263ca\transformed\firebase-auth-24.2.0\AndroidManifest.xml:21:5-23:151
+MERGED from [com.google.firebase:firebase-auth:24.2.0] C:\Users\Lilitha\.gradle\caches\transforms-4\c364ade8899b1b806092bb8d7ae263ca\transformed\firebase-auth-24.2.0\AndroidManifest.xml:21:5-23:151
+MERGED from [androidx.credentials:credentials:1.2.0-rc01] C:\Users\Lilitha\.gradle\caches\transforms-4\ab36b5f1e828bf2da83639f6b5659b1d\transformed\credentials-1.2.0-rc01\AndroidManifest.xml:5:5-44
+MERGED from [androidx.credentials:credentials:1.2.0-rc01] C:\Users\Lilitha\.gradle\caches\transforms-4\ab36b5f1e828bf2da83639f6b5659b1d\transformed\credentials-1.2.0-rc01\AndroidManifest.xml:5:5-44
+MERGED from [androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Users\Lilitha\.gradle\caches\transforms-4\ba57e1dbc9be916d4a2c6fdae8cd792b\transformed\credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:21:5-44
+MERGED from [androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Users\Lilitha\.gradle\caches\transforms-4\ba57e1dbc9be916d4a2c6fdae8cd792b\transformed\credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:21:5-44
+MERGED from [com.google.android.gms:play-services-auth:20.7.0] C:\Users\Lilitha\.gradle\caches\transforms-4\0257693d4d946fed1015c9cfd836f1fd\transformed\play-services-auth-20.7.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-auth:20.7.0] C:\Users\Lilitha\.gradle\caches\transforms-4\0257693d4d946fed1015c9cfd836f1fd\transformed\play-services-auth-20.7.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-auth-api-phone:18.0.2] C:\Users\Lilitha\.gradle\caches\transforms-4\abc47ab7c68d68fa1eeb52aa9710395f\transformed\play-services-auth-api-phone-18.0.2\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-auth-api-phone:18.0.2] C:\Users\Lilitha\.gradle\caches\transforms-4\abc47ab7c68d68fa1eeb52aa9710395f\transformed\play-services-auth-api-phone-18.0.2\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.recaptcha:recaptcha:18.6.1] C:\Users\Lilitha\.gradle\caches\transforms-4\12b8af616316f6a3121dd114b29d118d\transformed\recaptcha-18.6.1\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.recaptcha:recaptcha:18.6.1] C:\Users\Lilitha\.gradle\caches\transforms-4\12b8af616316f6a3121dd114b29d118d\transformed\recaptcha-18.6.1\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.play:integrity:1.3.0] C:\Users\Lilitha\.gradle\caches\transforms-4\64392b0933789c4014756e17bdedbecf\transformed\integrity-1.3.0\AndroidManifest.xml:4:5-44
+MERGED from [com.google.android.play:integrity:1.3.0] C:\Users\Lilitha\.gradle\caches\transforms-4\64392b0933789c4014756e17bdedbecf\transformed\integrity-1.3.0\AndroidManifest.xml:4:5-44
+MERGED from [com.google.firebase:firebase-auth-interop:20.0.0] C:\Users\Lilitha\.gradle\caches\transforms-4\260dd64f51fada8d4c8ec343a24027ba\transformed\firebase-auth-interop-20.0.0\AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-auth-interop:20.0.0] C:\Users\Lilitha\.gradle\caches\transforms-4\260dd64f51fada8d4c8ec343a24027ba\transformed\firebase-auth-interop-20.0.0\AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-common:22.2.1] C:\Users\Lilitha\.gradle\caches\transforms-4\428eb08a55d26071ed6b8940b7e946cb\transformed\firebase-common-22.2.1\AndroidManifest.xml:19:5-44
+MERGED from [com.google.firebase:firebase-common:22.2.1] C:\Users\Lilitha\.gradle\caches\transforms-4\428eb08a55d26071ed6b8940b7e946cb\transformed\firebase-common-22.2.1\AndroidManifest.xml:19:5-44
+MERGED from [com.google.android.gms:play-services-fido:20.1.0] C:\Users\Lilitha\.gradle\caches\transforms-4\b6cf13a374961a16eddc216041b15523\transformed\play-services-fido-20.1.0\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-fido:20.1.0] C:\Users\Lilitha\.gradle\caches\transforms-4\b6cf13a374961a16eddc216041b15523\transformed\play-services-fido-20.1.0\AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-appcheck-interop:17.0.0] C:\Users\Lilitha\.gradle\caches\transforms-4\2991f2f60ed733df5fa45c831480ad9b\transformed\firebase-appcheck-interop-17.0.0\AndroidManifest.xml:18:5-20:41
+MERGED from [com.google.firebase:firebase-appcheck-interop:17.0.0] C:\Users\Lilitha\.gradle\caches\transforms-4\2991f2f60ed733df5fa45c831480ad9b\transformed\firebase-appcheck-interop-17.0.0\AndroidManifest.xml:18:5-20:41
+MERGED from [com.google.android.gms:play-services-auth-base:18.0.4] C:\Users\Lilitha\.gradle\caches\transforms-4\4c2bae3e044fa66a2ac0c845077e0052\transformed\play-services-auth-base-18.0.4\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-auth-base:18.0.4] C:\Users\Lilitha\.gradle\caches\transforms-4\4c2bae3e044fa66a2ac0c845077e0052\transformed\play-services-auth-base-18.0.4\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-base:18.0.1] C:\Users\Lilitha\.gradle\caches\transforms-4\4dfe9a3345fe5c323b1d3289d5af6fbe\transformed\play-services-base-18.0.1\AndroidManifest.xml:18:5-43
+MERGED from [com.google.android.gms:play-services-base:18.0.1] C:\Users\Lilitha\.gradle\caches\transforms-4\4dfe9a3345fe5c323b1d3289d5af6fbe\transformed\play-services-base-18.0.1\AndroidManifest.xml:18:5-43
+MERGED from [androidx.compose.material3:material3-android:1.2.1] C:\Users\Lilitha\.gradle\caches\transforms-4\20ba9b31e658e67c53efc29a248a4a7c\transformed\material3-release\AndroidManifest.xml:20:5-44
+MERGED from [androidx.compose.material3:material3-android:1.2.1] C:\Users\Lilitha\.gradle\caches\transforms-4\20ba9b31e658e67c53efc29a248a4a7c\transformed\material3-release\AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\Lilitha\.gradle\caches\transforms-4\5bce5ba12043d1def950ac5d1a535f81\transformed\loader-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\Lilitha\.gradle\caches\transforms-4\5bce5ba12043d1def950ac5d1a535f81\transformed\loader-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.savedstate:savedstate-ktx:1.2.1] C:\Users\Lilitha\.gradle\caches\transforms-4\6012b203c2ab497ef7f2cdab58e5ad07\transformed\savedstate-ktx-1.2.1\AndroidManifest.xml:20:5-44
+MERGED from [androidx.savedstate:savedstate-ktx:1.2.1] C:\Users\Lilitha\.gradle\caches\transforms-4\6012b203c2ab497ef7f2cdab58e5ad07\transformed\savedstate-ktx-1.2.1\AndroidManifest.xml:20:5-44
+MERGED from [androidx.savedstate:savedstate:1.2.1] C:\Users\Lilitha\.gradle\caches\transforms-4\aaeae586ccff6fb46d1be59ad92df96e\transformed\savedstate-1.2.1\AndroidManifest.xml:20:5-44
+MERGED from [androidx.savedstate:savedstate:1.2.1] C:\Users\Lilitha\.gradle\caches\transforms-4\aaeae586ccff6fb46d1be59ad92df96e\transformed\savedstate-1.2.1\AndroidManifest.xml:20:5-44
+MERGED from [androidx.compose.animation:animation-core-android:1.6.8] C:\Users\Lilitha\.gradle\caches\transforms-4\3be7edb25b0752a236cb8189c633a35c\transformed\animation-core-release\AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.animation:animation-core-android:1.6.8] C:\Users\Lilitha\.gradle\caches\transforms-4\3be7edb25b0752a236cb8189c633a35c\transformed\animation-core-release\AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.material:material-icons-core-android:1.6.8] C:\Users\Lilitha\.gradle\caches\transforms-4\e2a685053d0274ad7682c5e71c73121a\transformed\material-icons-core-release\AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.material:material-icons-core-android:1.6.8] C:\Users\Lilitha\.gradle\caches\transforms-4\e2a685053d0274ad7682c5e71c73121a\transformed\material-icons-core-release\AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.material:material-ripple-android:1.6.8] C:\Users\Lilitha\.gradle\caches\transforms-4\5436e323e0c6a016830fc20e5251909c\transformed\material-ripple-release\AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.material:material-ripple-android:1.6.8] C:\Users\Lilitha\.gradle\caches\transforms-4\5436e323e0c6a016830fc20e5251909c\transformed\material-ripple-release\AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.animation:animation-android:1.6.8] C:\Users\Lilitha\.gradle\caches\transforms-4\1f5a65872292e67736417694fab3a2bf\transformed\animation-release\AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.animation:animation-android:1.6.8] C:\Users\Lilitha\.gradle\caches\transforms-4\1f5a65872292e67736417694fab3a2bf\transformed\animation-release\AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.foundation:foundation-layout-android:1.6.8] C:\Users\Lilitha\.gradle\caches\transforms-4\b6f405ef4ce5e3a9b475e7185dfa9471\transformed\foundation-layout-release\AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.foundation:foundation-layout-android:1.6.8] C:\Users\Lilitha\.gradle\caches\transforms-4\b6f405ef4ce5e3a9b475e7185dfa9471\transformed\foundation-layout-release\AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.foundation:foundation-android:1.6.8] C:\Users\Lilitha\.gradle\caches\transforms-4\d1ee4689aada9f36f1c5be228a6aef85\transformed\foundation-release\AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.foundation:foundation-android:1.6.8] C:\Users\Lilitha\.gradle\caches\transforms-4\d1ee4689aada9f36f1c5be228a6aef85\transformed\foundation-release\AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-unit-android:1.6.8] C:\Users\Lilitha\.gradle\caches\transforms-4\c6cb3e6520d6b7eed807f3299310b078\transformed\ui-unit-release\AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-unit-android:1.6.8] C:\Users\Lilitha\.gradle\caches\transforms-4\c6cb3e6520d6b7eed807f3299310b078\transformed\ui-unit-release\AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-geometry-android:1.6.8] C:\Users\Lilitha\.gradle\caches\transforms-4\044e189ca489435debe7f847e33c7713\transformed\ui-geometry-release\AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-geometry-android:1.6.8] C:\Users\Lilitha\.gradle\caches\transforms-4\044e189ca489435debe7f847e33c7713\transformed\ui-geometry-release\AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-util-android:1.6.8] C:\Users\Lilitha\.gradle\caches\transforms-4\cae8282f5ff463b33d816a9f79bef66f\transformed\ui-util-release\AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-util-android:1.6.8] C:\Users\Lilitha\.gradle\caches\transforms-4\cae8282f5ff463b33d816a9f79bef66f\transformed\ui-util-release\AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-tooling-preview-android:1.6.8] C:\Users\Lilitha\.gradle\caches\transforms-4\66c926c38a2c171566bf33119b26ad31\transformed\ui-tooling-preview-release\AndroidManifest.xml:20:5-44
+MERGED from [androidx.compose.ui:ui-tooling-preview-android:1.6.8] C:\Users\Lilitha\.gradle\caches\transforms-4\66c926c38a2c171566bf33119b26ad31\transformed\ui-tooling-preview-release\AndroidManifest.xml:20:5-44
+MERGED from [androidx.compose.ui:ui-graphics-android:1.6.8] C:\Users\Lilitha\.gradle\caches\transforms-4\d686df2b24bf44fd40b1d8a885309d99\transformed\ui-graphics-release\AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-graphics-android:1.6.8] C:\Users\Lilitha\.gradle\caches\transforms-4\d686df2b24bf44fd40b1d8a885309d99\transformed\ui-graphics-release\AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-text-android:1.6.8] C:\Users\Lilitha\.gradle\caches\transforms-4\d6222b37b67c7b4b0a30dafa9d86cba4\transformed\ui-text-release\AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-text-android:1.6.8] C:\Users\Lilitha\.gradle\caches\transforms-4\d6222b37b67c7b4b0a30dafa9d86cba4\transformed\ui-text-release\AndroidManifest.xml:5:5-44
+MERGED from [androidx.emoji2:emoji2:1.3.0] C:\Users\Lilitha\.gradle\caches\transforms-4\bcd45f5f61d8ca973ea9566707aa49bd\transformed\emoji2-1.3.0\AndroidManifest.xml:21:5-44
+MERGED from [androidx.emoji2:emoji2:1.3.0] C:\Users\Lilitha\.gradle\caches\transforms-4\bcd45f5f61d8ca973ea9566707aa49bd\transformed\emoji2-1.3.0\AndroidManifest.xml:21:5-44
+MERGED from [androidx.lifecycle:lifecycle-process:2.8.4] C:\Users\Lilitha\.gradle\caches\transforms-4\9a164b99af1d99867c9b009d9d6803bf\transformed\lifecycle-process-2.8.4\AndroidManifest.xml:21:5-44
+MERGED from [androidx.lifecycle:lifecycle-process:2.8.4] C:\Users\Lilitha\.gradle\caches\transforms-4\9a164b99af1d99867c9b009d9d6803bf\transformed\lifecycle-process-2.8.4\AndroidManifest.xml:21:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core-ktx:2.8.4] C:\Users\Lilitha\.gradle\caches\transforms-4\d466930a7287f109b02bed0080f917e6\transformed\lifecycle-livedata-core-ktx-2.8.4\AndroidManifest.xml:5:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core-ktx:2.8.4] C:\Users\Lilitha\.gradle\caches\transforms-4\d466930a7287f109b02bed0080f917e6\transformed\lifecycle-livedata-core-ktx-2.8.4\AndroidManifest.xml:5:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.8.4] C:\Users\Lilitha\.gradle\caches\transforms-4\43380efefa5eebabe43dc5d583e9c348\transformed\lifecycle-livedata-2.8.4\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.8.4] C:\Users\Lilitha\.gradle\caches\transforms-4\43380efefa5eebabe43dc5d583e9c348\transformed\lifecycle-livedata-2.8.4\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.8.4] C:\Users\Lilitha\.gradle\caches\transforms-4\329e53fd5c80e1d1bf38f3cc7b463096\transformed\lifecycle-livedata-core-2.8.4\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.8.4] C:\Users\Lilitha\.gradle\caches\transforms-4\329e53fd5c80e1d1bf38f3cc7b463096\transformed\lifecycle-livedata-core-2.8.4\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.8.4] C:\Users\Lilitha\.gradle\caches\transforms-4\bcbd221cac3fa8a6a601c169b9a705d7\transformed\lifecycle-viewmodel-2.8.4\AndroidManifest.xml:4:5-43
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.8.4] C:\Users\Lilitha\.gradle\caches\transforms-4\bcbd221cac3fa8a6a601c169b9a705d7\transformed\lifecycle-viewmodel-2.8.4\AndroidManifest.xml:4:5-43
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-android:2.8.4] C:\Users\Lilitha\.gradle\caches\transforms-4\0e26b391d497651e4ba4747da1abb748\transformed\lifecycle-viewmodel-release\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-android:2.8.4] C:\Users\Lilitha\.gradle\caches\transforms-4\0e26b391d497651e4ba4747da1abb748\transformed\lifecycle-viewmodel-release\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime-android:2.8.4] C:\Users\Lilitha\.gradle\caches\transforms-4\35179bb5af36d73cce66ba58baaa5556\transformed\lifecycle-runtime-release\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime-android:2.8.4] C:\Users\Lilitha\.gradle\caches\transforms-4\35179bb5af36d73cce66ba58baaa5556\transformed\lifecycle-runtime-release\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.8.4] C:\Users\Lilitha\.gradle\caches\transforms-4\0bdc5145e609c36d200d5052073f17a4\transformed\lifecycle-viewmodel-savedstate-2.8.4\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.8.4] C:\Users\Lilitha\.gradle\caches\transforms-4\0bdc5145e609c36d200d5052073f17a4\transformed\lifecycle-viewmodel-savedstate-2.8.4\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-ktx:2.8.4] C:\Users\Lilitha\.gradle\caches\transforms-4\5cee3cbdc8104b16dd1e982917d2225a\transformed\lifecycle-viewmodel-ktx-2.8.4\AndroidManifest.xml:5:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-ktx:2.8.4] C:\Users\Lilitha\.gradle\caches\transforms-4\5cee3cbdc8104b16dd1e982917d2225a\transformed\lifecycle-viewmodel-ktx-2.8.4\AndroidManifest.xml:5:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime-ktx-android:2.8.4] C:\Users\Lilitha\.gradle\caches\transforms-4\2fd78b23731a2fecabda7f943ea8e469\transformed\lifecycle-runtime-ktx-release\AndroidManifest.xml:5:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime-ktx-android:2.8.4] C:\Users\Lilitha\.gradle\caches\transforms-4\2fd78b23731a2fecabda7f943ea8e469\transformed\lifecycle-runtime-ktx-release\AndroidManifest.xml:5:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-compose-android:2.8.4] C:\Users\Lilitha\.gradle\caches\transforms-4\0e2b9640bf5072b1dcc5785e1764a1ec\transformed\lifecycle-viewmodel-compose-release\AndroidManifest.xml:5:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-compose-android:2.8.4] C:\Users\Lilitha\.gradle\caches\transforms-4\0e2b9640bf5072b1dcc5785e1764a1ec\transformed\lifecycle-viewmodel-compose-release\AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.runtime:runtime-saveable-android:1.6.8] C:\Users\Lilitha\.gradle\caches\transforms-4\bcf16e06aaea9e9ef30fc969cfe7767d\transformed\runtime-saveable-release\AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.runtime:runtime-saveable-android:1.6.8] C:\Users\Lilitha\.gradle\caches\transforms-4\bcf16e06aaea9e9ef30fc969cfe7767d\transformed\runtime-saveable-release\AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.runtime:runtime-android:1.6.8] C:\Users\Lilitha\.gradle\caches\transforms-4\c817a8158cbaea5ec8dc617006d4303c\transformed\runtime-release\AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.runtime:runtime-android:1.6.8] C:\Users\Lilitha\.gradle\caches\transforms-4\c817a8158cbaea5ec8dc617006d4303c\transformed\runtime-release\AndroidManifest.xml:5:5-44
+MERGED from [androidx.datastore:datastore-core-android:1.1.7] C:\Users\Lilitha\.gradle\caches\transforms-4\1cdc571680938c084066e562724a3b04\transformed\datastore-core-release\AndroidManifest.xml:5:5-44
+MERGED from [androidx.datastore:datastore-core-android:1.1.7] C:\Users\Lilitha\.gradle\caches\transforms-4\1cdc571680938c084066e562724a3b04\transformed\datastore-core-release\AndroidManifest.xml:5:5-44
+MERGED from [androidx.datastore:datastore-preferences-core-android:1.1.7] C:\Users\Lilitha\.gradle\caches\transforms-4\6c135b1f29f9c18677a582596dff56f3\transformed\datastore-preferences-core-release\AndroidManifest.xml:5:5-44
+MERGED from [androidx.datastore:datastore-preferences-core-android:1.1.7] C:\Users\Lilitha\.gradle\caches\transforms-4\6c135b1f29f9c18677a582596dff56f3\transformed\datastore-preferences-core-release\AndroidManifest.xml:5:5-44
+MERGED from [androidx.datastore:datastore-android:1.1.7] C:\Users\Lilitha\.gradle\caches\transforms-4\a2ee867fd74805d573ee485eea869203\transformed\datastore-release\AndroidManifest.xml:20:5-44
+MERGED from [androidx.datastore:datastore-android:1.1.7] C:\Users\Lilitha\.gradle\caches\transforms-4\a2ee867fd74805d573ee485eea869203\transformed\datastore-release\AndroidManifest.xml:20:5-44
+MERGED from [androidx.datastore:datastore-preferences-android:1.1.7] C:\Users\Lilitha\.gradle\caches\transforms-4\21ffe99d8c4a23f6270553b592dc495f\transformed\datastore-preferences-release\AndroidManifest.xml:20:5-44
+MERGED from [androidx.datastore:datastore-preferences-android:1.1.7] C:\Users\Lilitha\.gradle\caches\transforms-4\21ffe99d8c4a23f6270553b592dc495f\transformed\datastore-preferences-release\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-tasks:18.4.0] C:\Users\Lilitha\.gradle\caches\transforms-4\cfe5902d5f26c7f32aeb4de6cf2ce195\transformed\play-services-tasks-18.4.0\AndroidManifest.xml:4:5-43
+MERGED from [com.google.android.gms:play-services-tasks:18.4.0] C:\Users\Lilitha\.gradle\caches\transforms-4\cfe5902d5f26c7f32aeb4de6cf2ce195\transformed\play-services-tasks-18.4.0\AndroidManifest.xml:4:5-43
+MERGED from [com.google.android.gms:play-services-basement:18.9.0] C:\Users\Lilitha\.gradle\caches\transforms-4\e49a50d63ebc3d42c873869d6a0722e7\transformed\play-services-basement-18.9.0\AndroidManifest.xml:18:5-43
+MERGED from [com.google.android.gms:play-services-basement:18.9.0] C:\Users\Lilitha\.gradle\caches\transforms-4\e49a50d63ebc3d42c873869d6a0722e7\transformed\play-services-basement-18.9.0\AndroidManifest.xml:18:5-43
+MERGED from [androidx.fragment:fragment:1.1.0] C:\Users\Lilitha\.gradle\caches\transforms-4\df664874782ff7d56d8fcc88b20a38a0\transformed\fragment-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.fragment:fragment:1.1.0] C:\Users\Lilitha\.gradle\caches\transforms-4\df664874782ff7d56d8fcc88b20a38a0\transformed\fragment-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.activity:activity:1.9.1] C:\Users\Lilitha\.gradle\caches\transforms-4\a3ac12ac230a849b34fb0b4e53c54a4f\transformed\activity-1.9.1\AndroidManifest.xml:20:5-44
+MERGED from [androidx.activity:activity:1.9.1] C:\Users\Lilitha\.gradle\caches\transforms-4\a3ac12ac230a849b34fb0b4e53c54a4f\transformed\activity-1.9.1\AndroidManifest.xml:20:5-44
+MERGED from [androidx.activity:activity-ktx:1.9.1] C:\Users\Lilitha\.gradle\caches\transforms-4\ffee21d2bd29801c468b2ed9d9969cf1\transformed\activity-ktx-1.9.1\AndroidManifest.xml:5:5-44
+MERGED from [androidx.activity:activity-ktx:1.9.1] C:\Users\Lilitha\.gradle\caches\transforms-4\ffee21d2bd29801c468b2ed9d9969cf1\transformed\activity-ktx-1.9.1\AndroidManifest.xml:5:5-44
+MERGED from [androidx.activity:activity-compose:1.9.1] C:\Users\Lilitha\.gradle\caches\transforms-4\a2d03d8ed243ac94bba34b7d207bd257\transformed\activity-compose-1.9.1\AndroidManifest.xml:5:5-44
+MERGED from [androidx.activity:activity-compose:1.9.1] C:\Users\Lilitha\.gradle\caches\transforms-4\a2d03d8ed243ac94bba34b7d207bd257\transformed\activity-compose-1.9.1\AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-android:1.6.8] C:\Users\Lilitha\.gradle\caches\transforms-4\cb7a83ab7c652a68300839b10796ede2\transformed\ui-release\AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-android:1.6.8] C:\Users\Lilitha\.gradle\caches\transforms-4\cb7a83ab7c652a68300839b10796ede2\transformed\ui-release\AndroidManifest.xml:5:5-44
+MERGED from [androidx.browser:browser:1.4.0] C:\Users\Lilitha\.gradle\caches\transforms-4\9ab0000804a564e6ba9e664b92fd2421\transformed\browser-1.4.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.browser:browser:1.4.0] C:\Users\Lilitha\.gradle\caches\transforms-4\9ab0000804a564e6ba9e664b92fd2421\transformed\browser-1.4.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.autofill:autofill:1.0.0] C:\Users\Lilitha\.gradle\caches\transforms-4\7422b07e56b685da8a8728c85240767c\transformed\autofill-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.autofill:autofill:1.0.0] C:\Users\Lilitha\.gradle\caches\transforms-4\7422b07e56b685da8a8728c85240767c\transformed\autofill-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\Lilitha\.gradle\caches\transforms-4\cac53300865f6aec69e373701b0c2be0\transformed\viewpager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\Lilitha\.gradle\caches\transforms-4\cac53300865f6aec69e373701b0c2be0\transformed\viewpager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] C:\Users\Lilitha\.gradle\caches\transforms-4\f10a9dc47d6dd05f4f9356a719e72f3b\transformed\customview-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] C:\Users\Lilitha\.gradle\caches\transforms-4\f10a9dc47d6dd05f4f9356a719e72f3b\transformed\customview-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core:1.13.1] C:\Users\Lilitha\.gradle\caches\transforms-4\3b4a80f28217db5b2f8f0fdaf73c3346\transformed\core-1.13.1\AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core:1.13.1] C:\Users\Lilitha\.gradle\caches\transforms-4\3b4a80f28217db5b2f8f0fdaf73c3346\transformed\core-1.13.1\AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview-poolingcontainer:1.0.0] C:\Users\Lilitha\.gradle\caches\transforms-4\2d130a576770c598f2eccaa7f500fb41\transformed\customview-poolingcontainer-1.0.0\AndroidManifest.xml:20:5-21:38
+MERGED from [androidx.customview:customview-poolingcontainer:1.0.0] C:\Users\Lilitha\.gradle\caches\transforms-4\2d130a576770c598f2eccaa7f500fb41\transformed\customview-poolingcontainer-1.0.0\AndroidManifest.xml:20:5-21:38
+MERGED from [androidx.core:core-ktx:1.13.1] C:\Users\Lilitha\.gradle\caches\transforms-4\f3bc1cb1a5f85f738205bdb616604966\transformed\core-ktx-1.13.1\AndroidManifest.xml:5:5-44
+MERGED from [androidx.core:core-ktx:1.13.1] C:\Users\Lilitha\.gradle\caches\transforms-4\f3bc1cb1a5f85f738205bdb616604966\transformed\core-ktx-1.13.1\AndroidManifest.xml:5:5-44
+MERGED from [androidx.annotation:annotation-experimental:1.4.0] C:\Users\Lilitha\.gradle\caches\transforms-4\de35b538453a2f9084e1dc42b017fd67\transformed\annotation-experimental-1.4.0\AndroidManifest.xml:5:5-44
+MERGED from [androidx.annotation:annotation-experimental:1.4.0] C:\Users\Lilitha\.gradle\caches\transforms-4\de35b538453a2f9084e1dc42b017fd67\transformed\annotation-experimental-1.4.0\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.libraries.identity.googleid:googleid:1.1.0] C:\Users\Lilitha\.gradle\caches\transforms-4\2f184aae4a071e454c450ce57855181b\transformed\googleid-1.1.0\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.libraries.identity.googleid:googleid:1.1.0] C:\Users\Lilitha\.gradle\caches\transforms-4\2f184aae4a071e454c450ce57855181b\transformed\googleid-1.1.0\AndroidManifest.xml:5:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\Lilitha\.gradle\caches\transforms-4\4ce77348f6259beadaaefa30fa7eda83\transformed\localbroadcastmanager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\Lilitha\.gradle\caches\transforms-4\4ce77348f6259beadaaefa30fa7eda83\transformed\localbroadcastmanager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\Lilitha\.gradle\caches\transforms-4\f0c35fca5c5bd2cb433e2f638d3f6d9d\transformed\interpolator-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\Lilitha\.gradle\caches\transforms-4\f0c35fca5c5bd2cb433e2f638d3f6d9d\transformed\interpolator-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\Lilitha\.gradle\caches\transforms-4\3e6c7ac83699b9a5691eff8454ce6f4a\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\Lilitha\.gradle\caches\transforms-4\3e6c7ac83699b9a5691eff8454ce6f4a\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.firebase:firebase-components:19.0.0] C:\Users\Lilitha\.gradle\caches\transforms-4\48d5bd6f3da07fc35adaf4416a08606a\transformed\firebase-components-19.0.0\AndroidManifest.xml:18:5-44
+MERGED from [com.google.firebase:firebase-components:19.0.0] C:\Users\Lilitha\.gradle\caches\transforms-4\48d5bd6f3da07fc35adaf4416a08606a\transformed\firebase-components-19.0.0\AndroidManifest.xml:18:5-44
+MERGED from [androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Lilitha\.gradle\caches\transforms-4\e2d5b112e41edf46b4c95d953be5b926\transformed\profileinstaller-1.3.1\AndroidManifest.xml:21:5-44
+MERGED from [androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Lilitha\.gradle\caches\transforms-4\e2d5b112e41edf46b4c95d953be5b926\transformed\profileinstaller-1.3.1\AndroidManifest.xml:21:5-44
+MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\Lilitha\.gradle\caches\transforms-4\1b5de4175969159377c2c9f6ff298a35\transformed\startup-runtime-1.1.1\AndroidManifest.xml:21:5-23:41
+MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\Lilitha\.gradle\caches\transforms-4\1b5de4175969159377c2c9f6ff298a35\transformed\startup-runtime-1.1.1\AndroidManifest.xml:21:5-23:41
+MERGED from [androidx.tracing:tracing:1.0.0] C:\Users\Lilitha\.gradle\caches\transforms-4\d72aa97b5a2476ee0dfcaa194f2c6cd8\transformed\tracing-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.tracing:tracing:1.0.0] C:\Users\Lilitha\.gradle\caches\transforms-4\d72aa97b5a2476ee0dfcaa194f2c6cd8\transformed\tracing-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.arch.core:core-runtime:2.2.0] C:\Users\Lilitha\.gradle\caches\transforms-4\9d26f81b9eb479492ad2343351d77f3c\transformed\core-runtime-2.2.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.2.0] C:\Users\Lilitha\.gradle\caches\transforms-4\9d26f81b9eb479492ad2343351d77f3c\transformed\core-runtime-2.2.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.play:core-common:2.0.3] C:\Users\Lilitha\.gradle\caches\transforms-4\f2397d89fef36ea4d551c6e9cb309312\transformed\core-common-2.0.3\AndroidManifest.xml:7:5-9:41
+MERGED from [com.google.android.play:core-common:2.0.3] C:\Users\Lilitha\.gradle\caches\transforms-4\f2397d89fef36ea4d551c6e9cb309312\transformed\core-common-2.0.3\AndroidManifest.xml:7:5-9:41
+	tools:overrideLibrary
+		ADDED from [com.google.firebase:firebase-auth:24.2.0] C:\Users\Lilitha\.gradle\caches\transforms-4\c364ade8899b1b806092bb8d7ae263ca\transformed\firebase-auth-24.2.0\AndroidManifest.xml:23:9-148
+	android:targetSdkVersion
+		INJECTED from C:\Users\Lilitha\Desktop\Open Source\Second semester\MzantsiTable-Android(with gradle)\MzantsiTable-Android\app\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from C:\Users\Lilitha\Desktop\Open Source\Second semester\MzantsiTable-Android(with gradle)\MzantsiTable-Android\app\src\main\AndroidManifest.xml
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from [com.google.firebase:firebase-auth:24.2.0] C:\Users\Lilitha\.gradle\caches\transforms-4\c364ade8899b1b806092bb8d7ae263ca\transformed\firebase-auth-24.2.0\AndroidManifest.xml:26:5-79
+MERGED from [com.google.android.recaptcha:recaptcha:18.6.1] C:\Users\Lilitha\.gradle\caches\transforms-4\12b8af616316f6a3121dd114b29d118d\transformed\recaptcha-18.6.1\AndroidManifest.xml:8:5-79
+MERGED from [com.google.android.recaptcha:recaptcha:18.6.1] C:\Users\Lilitha\.gradle\caches\transforms-4\12b8af616316f6a3121dd114b29d118d\transformed\recaptcha-18.6.1\AndroidManifest.xml:8:5-79
+	android:name
+		ADDED from [com.google.firebase:firebase-auth:24.2.0] C:\Users\Lilitha\.gradle\caches\transforms-4\c364ade8899b1b806092bb8d7ae263ca\transformed\firebase-auth-24.2.0\AndroidManifest.xml:26:22-76
+activity#com.google.firebase.auth.internal.GenericIdpActivity
+ADDED from [com.google.firebase:firebase-auth:24.2.0] C:\Users\Lilitha\.gradle\caches\transforms-4\c364ade8899b1b806092bb8d7ae263ca\transformed\firebase-auth-24.2.0\AndroidManifest.xml:29:9-46:20
+	android:excludeFromRecents
+		ADDED from [com.google.firebase:firebase-auth:24.2.0] C:\Users\Lilitha\.gradle\caches\transforms-4\c364ade8899b1b806092bb8d7ae263ca\transformed\firebase-auth-24.2.0\AndroidManifest.xml:31:13-46
+	android:launchMode
+		ADDED from [com.google.firebase:firebase-auth:24.2.0] C:\Users\Lilitha\.gradle\caches\transforms-4\c364ade8899b1b806092bb8d7ae263ca\transformed\firebase-auth-24.2.0\AndroidManifest.xml:33:13-44
+	android:exported
+		ADDED from [com.google.firebase:firebase-auth:24.2.0] C:\Users\Lilitha\.gradle\caches\transforms-4\c364ade8899b1b806092bb8d7ae263ca\transformed\firebase-auth-24.2.0\AndroidManifest.xml:32:13-36
+	android:theme
+		ADDED from [com.google.firebase:firebase-auth:24.2.0] C:\Users\Lilitha\.gradle\caches\transforms-4\c364ade8899b1b806092bb8d7ae263ca\transformed\firebase-auth-24.2.0\AndroidManifest.xml:34:13-72
+	android:name
+		ADDED from [com.google.firebase:firebase-auth:24.2.0] C:\Users\Lilitha\.gradle\caches\transforms-4\c364ade8899b1b806092bb8d7ae263ca\transformed\firebase-auth-24.2.0\AndroidManifest.xml:30:13-80
+intent-filter#action:name:android.intent.action.VIEW+category:name:android.intent.category.BROWSABLE+category:name:android.intent.category.DEFAULT+data:host:firebase.auth+data:path:/+data:scheme:genericidp
+ADDED from [com.google.firebase:firebase-auth:24.2.0] C:\Users\Lilitha\.gradle\caches\transforms-4\c364ade8899b1b806092bb8d7ae263ca\transformed\firebase-auth-24.2.0\AndroidManifest.xml:35:13-45:29
+action#android.intent.action.VIEW
+ADDED from [com.google.firebase:firebase-auth:24.2.0] C:\Users\Lilitha\.gradle\caches\transforms-4\c364ade8899b1b806092bb8d7ae263ca\transformed\firebase-auth-24.2.0\AndroidManifest.xml:36:17-69
+	android:name
+		ADDED from [com.google.firebase:firebase-auth:24.2.0] C:\Users\Lilitha\.gradle\caches\transforms-4\c364ade8899b1b806092bb8d7ae263ca\transformed\firebase-auth-24.2.0\AndroidManifest.xml:36:25-66
+category#android.intent.category.DEFAULT
+ADDED from [com.google.firebase:firebase-auth:24.2.0] C:\Users\Lilitha\.gradle\caches\transforms-4\c364ade8899b1b806092bb8d7ae263ca\transformed\firebase-auth-24.2.0\AndroidManifest.xml:38:17-76
+	android:name
+		ADDED from [com.google.firebase:firebase-auth:24.2.0] C:\Users\Lilitha\.gradle\caches\transforms-4\c364ade8899b1b806092bb8d7ae263ca\transformed\firebase-auth-24.2.0\AndroidManifest.xml:38:27-73
+category#android.intent.category.BROWSABLE
+ADDED from [com.google.firebase:firebase-auth:24.2.0] C:\Users\Lilitha\.gradle\caches\transforms-4\c364ade8899b1b806092bb8d7ae263ca\transformed\firebase-auth-24.2.0\AndroidManifest.xml:39:17-78
+	android:name
+		ADDED from [com.google.firebase:firebase-auth:24.2.0] C:\Users\Lilitha\.gradle\caches\transforms-4\c364ade8899b1b806092bb8d7ae263ca\transformed\firebase-auth-24.2.0\AndroidManifest.xml:39:27-75
+data
+ADDED from [com.google.firebase:firebase-auth:24.2.0] C:\Users\Lilitha\.gradle\caches\transforms-4\c364ade8899b1b806092bb8d7ae263ca\transformed\firebase-auth-24.2.0\AndroidManifest.xml:41:17-44:51
+	android:path
+		ADDED from [com.google.firebase:firebase-auth:24.2.0] C:\Users\Lilitha\.gradle\caches\transforms-4\c364ade8899b1b806092bb8d7ae263ca\transformed\firebase-auth-24.2.0\AndroidManifest.xml:43:21-37
+	android:host
+		ADDED from [com.google.firebase:firebase-auth:24.2.0] C:\Users\Lilitha\.gradle\caches\transforms-4\c364ade8899b1b806092bb8d7ae263ca\transformed\firebase-auth-24.2.0\AndroidManifest.xml:42:21-49
+	android:scheme
+		ADDED from [com.google.firebase:firebase-auth:24.2.0] C:\Users\Lilitha\.gradle\caches\transforms-4\c364ade8899b1b806092bb8d7ae263ca\transformed\firebase-auth-24.2.0\AndroidManifest.xml:44:21-48
+activity#com.google.firebase.auth.internal.RecaptchaActivity
+ADDED from [com.google.firebase:firebase-auth:24.2.0] C:\Users\Lilitha\.gradle\caches\transforms-4\c364ade8899b1b806092bb8d7ae263ca\transformed\firebase-auth-24.2.0\AndroidManifest.xml:47:9-64:20
+	android:excludeFromRecents
+		ADDED from [com.google.firebase:firebase-auth:24.2.0] C:\Users\Lilitha\.gradle\caches\transforms-4\c364ade8899b1b806092bb8d7ae263ca\transformed\firebase-auth-24.2.0\AndroidManifest.xml:49:13-46
+	android:launchMode
+		ADDED from [com.google.firebase:firebase-auth:24.2.0] C:\Users\Lilitha\.gradle\caches\transforms-4\c364ade8899b1b806092bb8d7ae263ca\transformed\firebase-auth-24.2.0\AndroidManifest.xml:51:13-44
+	android:exported
+		ADDED from [com.google.firebase:firebase-auth:24.2.0] C:\Users\Lilitha\.gradle\caches\transforms-4\c364ade8899b1b806092bb8d7ae263ca\transformed\firebase-auth-24.2.0\AndroidManifest.xml:50:13-36
+	android:theme
+		ADDED from [com.google.firebase:firebase-auth:24.2.0] C:\Users\Lilitha\.gradle\caches\transforms-4\c364ade8899b1b806092bb8d7ae263ca\transformed\firebase-auth-24.2.0\AndroidManifest.xml:52:13-72
+	android:name
+		ADDED from [com.google.firebase:firebase-auth:24.2.0] C:\Users\Lilitha\.gradle\caches\transforms-4\c364ade8899b1b806092bb8d7ae263ca\transformed\firebase-auth-24.2.0\AndroidManifest.xml:48:13-79
+intent-filter#action:name:android.intent.action.VIEW+category:name:android.intent.category.BROWSABLE+category:name:android.intent.category.DEFAULT+data:host:firebase.auth+data:path:/+data:scheme:recaptcha
+ADDED from [com.google.firebase:firebase-auth:24.2.0] C:\Users\Lilitha\.gradle\caches\transforms-4\c364ade8899b1b806092bb8d7ae263ca\transformed\firebase-auth-24.2.0\AndroidManifest.xml:53:13-63:29
+service#com.google.firebase.components.ComponentDiscoveryService
+ADDED from [com.google.firebase:firebase-auth:24.2.0] C:\Users\Lilitha\.gradle\caches\transforms-4\c364ade8899b1b806092bb8d7ae263ca\transformed\firebase-auth-24.2.0\AndroidManifest.xml:66:9-72:19
+MERGED from [com.google.firebase:firebase-common:22.2.1] C:\Users\Lilitha\.gradle\caches\transforms-4\428eb08a55d26071ed6b8940b7e946cb\transformed\firebase-common-22.2.1\AndroidManifest.xml:30:9-38:19
+MERGED from [com.google.firebase:firebase-common:22.2.1] C:\Users\Lilitha\.gradle\caches\transforms-4\428eb08a55d26071ed6b8940b7e946cb\transformed\firebase-common-22.2.1\AndroidManifest.xml:30:9-38:19
+	android:exported
+		ADDED from [com.google.firebase:firebase-auth:24.2.0] C:\Users\Lilitha\.gradle\caches\transforms-4\c364ade8899b1b806092bb8d7ae263ca\transformed\firebase-auth-24.2.0\AndroidManifest.xml:68:13-37
+	tools:targetApi
+		ADDED from [com.google.firebase:firebase-common:22.2.1] C:\Users\Lilitha\.gradle\caches\transforms-4\428eb08a55d26071ed6b8940b7e946cb\transformed\firebase-common-22.2.1\AndroidManifest.xml:34:13-32
+	android:directBootAware
+		ADDED from [com.google.firebase:firebase-common:22.2.1] C:\Users\Lilitha\.gradle\caches\transforms-4\428eb08a55d26071ed6b8940b7e946cb\transformed\firebase-common-22.2.1\AndroidManifest.xml:32:13-43
+	android:name
+		ADDED from [com.google.firebase:firebase-auth:24.2.0] C:\Users\Lilitha\.gradle\caches\transforms-4\c364ade8899b1b806092bb8d7ae263ca\transformed\firebase-auth-24.2.0\AndroidManifest.xml:67:13-84
+meta-data#com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar
+ADDED from [com.google.firebase:firebase-auth:24.2.0] C:\Users\Lilitha\.gradle\caches\transforms-4\c364ade8899b1b806092bb8d7ae263ca\transformed\firebase-auth-24.2.0\AndroidManifest.xml:69:13-71:85
+	android:value
+		ADDED from [com.google.firebase:firebase-auth:24.2.0] C:\Users\Lilitha\.gradle\caches\transforms-4\c364ade8899b1b806092bb8d7ae263ca\transformed\firebase-auth-24.2.0\AndroidManifest.xml:71:17-82
+	android:name
+		ADDED from [com.google.firebase:firebase-auth:24.2.0] C:\Users\Lilitha\.gradle\caches\transforms-4\c364ade8899b1b806092bb8d7ae263ca\transformed\firebase-auth-24.2.0\AndroidManifest.xml:70:17-109
+service#androidx.credentials.playservices.CredentialProviderMetadataHolder
+ADDED from [androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Users\Lilitha\.gradle\caches\transforms-4\ba57e1dbc9be916d4a2c6fdae8cd792b\transformed\credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:24:9-32:19
+	android:enabled
+		ADDED from [androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Users\Lilitha\.gradle\caches\transforms-4\ba57e1dbc9be916d4a2c6fdae8cd792b\transformed\credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:26:13-35
+	android:exported
+		ADDED from [androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Users\Lilitha\.gradle\caches\transforms-4\ba57e1dbc9be916d4a2c6fdae8cd792b\transformed\credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:27:13-37
+	tools:ignore
+		ADDED from [androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Users\Lilitha\.gradle\caches\transforms-4\ba57e1dbc9be916d4a2c6fdae8cd792b\transformed\credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:28:13-60
+	android:name
+		ADDED from [androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Users\Lilitha\.gradle\caches\transforms-4\ba57e1dbc9be916d4a2c6fdae8cd792b\transformed\credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:25:13-94
+meta-data#androidx.credentials.CREDENTIAL_PROVIDER_KEY
+ADDED from [androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Users\Lilitha\.gradle\caches\transforms-4\ba57e1dbc9be916d4a2c6fdae8cd792b\transformed\credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:29:13-31:104
+	android:value
+		ADDED from [androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Users\Lilitha\.gradle\caches\transforms-4\ba57e1dbc9be916d4a2c6fdae8cd792b\transformed\credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:31:17-101
+	android:name
+		ADDED from [androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Users\Lilitha\.gradle\caches\transforms-4\ba57e1dbc9be916d4a2c6fdae8cd792b\transformed\credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:30:17-76
+activity#androidx.credentials.playservices.HiddenActivity
+ADDED from [androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Users\Lilitha\.gradle\caches\transforms-4\ba57e1dbc9be916d4a2c6fdae8cd792b\transformed\credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:34:9-41:20
+	android:fitsSystemWindows
+		ADDED from [androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Users\Lilitha\.gradle\caches\transforms-4\ba57e1dbc9be916d4a2c6fdae8cd792b\transformed\credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:39:13-45
+	android:enabled
+		ADDED from [androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Users\Lilitha\.gradle\caches\transforms-4\ba57e1dbc9be916d4a2c6fdae8cd792b\transformed\credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:37:13-35
+	android:exported
+		ADDED from [androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Users\Lilitha\.gradle\caches\transforms-4\ba57e1dbc9be916d4a2c6fdae8cd792b\transformed\credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:38:13-37
+	android:configChanges
+		ADDED from [androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Users\Lilitha\.gradle\caches\transforms-4\ba57e1dbc9be916d4a2c6fdae8cd792b\transformed\credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:36:13-87
+	android:theme
+		ADDED from [androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Users\Lilitha\.gradle\caches\transforms-4\ba57e1dbc9be916d4a2c6fdae8cd792b\transformed\credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:40:13-48
+	android:name
+		ADDED from [androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Users\Lilitha\.gradle\caches\transforms-4\ba57e1dbc9be916d4a2c6fdae8cd792b\transformed\credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:35:13-76
+activity#com.google.android.gms.auth.api.signin.internal.SignInHubActivity
+ADDED from [com.google.android.gms:play-services-auth:20.7.0] C:\Users\Lilitha\.gradle\caches\transforms-4\0257693d4d946fed1015c9cfd836f1fd\transformed\play-services-auth-20.7.0\AndroidManifest.xml:23:9-27:75
+	android:excludeFromRecents
+		ADDED from [com.google.android.gms:play-services-auth:20.7.0] C:\Users\Lilitha\.gradle\caches\transforms-4\0257693d4d946fed1015c9cfd836f1fd\transformed\play-services-auth-20.7.0\AndroidManifest.xml:25:13-46
+	android:exported
+		ADDED from [com.google.android.gms:play-services-auth:20.7.0] C:\Users\Lilitha\.gradle\caches\transforms-4\0257693d4d946fed1015c9cfd836f1fd\transformed\play-services-auth-20.7.0\AndroidManifest.xml:26:13-37
+	android:theme
+		ADDED from [com.google.android.gms:play-services-auth:20.7.0] C:\Users\Lilitha\.gradle\caches\transforms-4\0257693d4d946fed1015c9cfd836f1fd\transformed\play-services-auth-20.7.0\AndroidManifest.xml:27:13-72
+	android:name
+		ADDED from [com.google.android.gms:play-services-auth:20.7.0] C:\Users\Lilitha\.gradle\caches\transforms-4\0257693d4d946fed1015c9cfd836f1fd\transformed\play-services-auth-20.7.0\AndroidManifest.xml:24:13-93
+service#com.google.android.gms.auth.api.signin.RevocationBoundService
+ADDED from [com.google.android.gms:play-services-auth:20.7.0] C:\Users\Lilitha\.gradle\caches\transforms-4\0257693d4d946fed1015c9cfd836f1fd\transformed\play-services-auth-20.7.0\AndroidManifest.xml:33:9-37:51
+	android:exported
+		ADDED from [com.google.android.gms:play-services-auth:20.7.0] C:\Users\Lilitha\.gradle\caches\transforms-4\0257693d4d946fed1015c9cfd836f1fd\transformed\play-services-auth-20.7.0\AndroidManifest.xml:35:13-36
+	android:visibleToInstantApps
+		ADDED from [com.google.android.gms:play-services-auth:20.7.0] C:\Users\Lilitha\.gradle\caches\transforms-4\0257693d4d946fed1015c9cfd836f1fd\transformed\play-services-auth-20.7.0\AndroidManifest.xml:37:13-48
+	android:permission
+		ADDED from [com.google.android.gms:play-services-auth:20.7.0] C:\Users\Lilitha\.gradle\caches\transforms-4\0257693d4d946fed1015c9cfd836f1fd\transformed\play-services-auth-20.7.0\AndroidManifest.xml:36:13-107
+	android:name
+		ADDED from [com.google.android.gms:play-services-auth:20.7.0] C:\Users\Lilitha\.gradle\caches\transforms-4\0257693d4d946fed1015c9cfd836f1fd\transformed\play-services-auth-20.7.0\AndroidManifest.xml:34:13-89
+uses-permission#com.google.android.providers.gsf.permission.READ_GSERVICES
+ADDED from [com.google.android.recaptcha:recaptcha:18.6.1] C:\Users\Lilitha\.gradle\caches\transforms-4\12b8af616316f6a3121dd114b29d118d\transformed\recaptcha-18.6.1\AndroidManifest.xml:9:5-98
+	android:name
+		ADDED from [com.google.android.recaptcha:recaptcha:18.6.1] C:\Users\Lilitha\.gradle\caches\transforms-4\12b8af616316f6a3121dd114b29d118d\transformed\recaptcha-18.6.1\AndroidManifest.xml:9:22-95
+provider#com.google.firebase.provider.FirebaseInitProvider
+ADDED from [com.google.firebase:firebase-common:22.2.1] C:\Users\Lilitha\.gradle\caches\transforms-4\428eb08a55d26071ed6b8940b7e946cb\transformed\firebase-common-22.2.1\AndroidManifest.xml:23:9-28:39
+	android:authorities
+		ADDED from [com.google.firebase:firebase-common:22.2.1] C:\Users\Lilitha\.gradle\caches\transforms-4\428eb08a55d26071ed6b8940b7e946cb\transformed\firebase-common-22.2.1\AndroidManifest.xml:25:13-72
+	android:exported
+		ADDED from [com.google.firebase:firebase-common:22.2.1] C:\Users\Lilitha\.gradle\caches\transforms-4\428eb08a55d26071ed6b8940b7e946cb\transformed\firebase-common-22.2.1\AndroidManifest.xml:27:13-37
+	android:directBootAware
+		ADDED from [com.google.firebase:firebase-common:22.2.1] C:\Users\Lilitha\.gradle\caches\transforms-4\428eb08a55d26071ed6b8940b7e946cb\transformed\firebase-common-22.2.1\AndroidManifest.xml:26:13-43
+	android:initOrder
+		ADDED from [com.google.firebase:firebase-common:22.2.1] C:\Users\Lilitha\.gradle\caches\transforms-4\428eb08a55d26071ed6b8940b7e946cb\transformed\firebase-common-22.2.1\AndroidManifest.xml:28:13-36
+	android:name
+		ADDED from [com.google.firebase:firebase-common:22.2.1] C:\Users\Lilitha\.gradle\caches\transforms-4\428eb08a55d26071ed6b8940b7e946cb\transformed\firebase-common-22.2.1\AndroidManifest.xml:24:13-77
+meta-data#com.google.firebase.components:com.google.firebase.FirebaseCommonKtxRegistrar
+ADDED from [com.google.firebase:firebase-common:22.2.1] C:\Users\Lilitha\.gradle\caches\transforms-4\428eb08a55d26071ed6b8940b7e946cb\transformed\firebase-common-22.2.1\AndroidManifest.xml:35:13-37:85
+	android:value
+		ADDED from [com.google.firebase:firebase-common:22.2.1] C:\Users\Lilitha\.gradle\caches\transforms-4\428eb08a55d26071ed6b8940b7e946cb\transformed\firebase-common-22.2.1\AndroidManifest.xml:37:17-82
+	android:name
+		ADDED from [com.google.firebase:firebase-common:22.2.1] C:\Users\Lilitha\.gradle\caches\transforms-4\428eb08a55d26071ed6b8940b7e946cb\transformed\firebase-common-22.2.1\AndroidManifest.xml:36:17-109
+activity#com.google.android.gms.common.api.GoogleApiActivity
+ADDED from [com.google.android.gms:play-services-base:18.0.1] C:\Users\Lilitha\.gradle\caches\transforms-4\4dfe9a3345fe5c323b1d3289d5af6fbe\transformed\play-services-base-18.0.1\AndroidManifest.xml:20:9-22:45
+	android:exported
+		ADDED from [com.google.android.gms:play-services-base:18.0.1] C:\Users\Lilitha\.gradle\caches\transforms-4\4dfe9a3345fe5c323b1d3289d5af6fbe\transformed\play-services-base-18.0.1\AndroidManifest.xml:22:19-43
+	android:theme
+		ADDED from [com.google.android.gms:play-services-base:18.0.1] C:\Users\Lilitha\.gradle\caches\transforms-4\4dfe9a3345fe5c323b1d3289d5af6fbe\transformed\play-services-base-18.0.1\AndroidManifest.xml:21:19-78
+	android:name
+		ADDED from [com.google.android.gms:play-services-base:18.0.1] C:\Users\Lilitha\.gradle\caches\transforms-4\4dfe9a3345fe5c323b1d3289d5af6fbe\transformed\play-services-base-18.0.1\AndroidManifest.xml:20:19-85
+provider#androidx.startup.InitializationProvider
+ADDED from [androidx.emoji2:emoji2:1.3.0] C:\Users\Lilitha\.gradle\caches\transforms-4\bcd45f5f61d8ca973ea9566707aa49bd\transformed\emoji2-1.3.0\AndroidManifest.xml:24:9-32:20
+MERGED from [androidx.lifecycle:lifecycle-process:2.8.4] C:\Users\Lilitha\.gradle\caches\transforms-4\9a164b99af1d99867c9b009d9d6803bf\transformed\lifecycle-process-2.8.4\AndroidManifest.xml:24:9-32:20
+MERGED from [androidx.lifecycle:lifecycle-process:2.8.4] C:\Users\Lilitha\.gradle\caches\transforms-4\9a164b99af1d99867c9b009d9d6803bf\transformed\lifecycle-process-2.8.4\AndroidManifest.xml:24:9-32:20
+MERGED from [androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Lilitha\.gradle\caches\transforms-4\e2d5b112e41edf46b4c95d953be5b926\transformed\profileinstaller-1.3.1\AndroidManifest.xml:24:9-32:20
+MERGED from [androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Lilitha\.gradle\caches\transforms-4\e2d5b112e41edf46b4c95d953be5b926\transformed\profileinstaller-1.3.1\AndroidManifest.xml:24:9-32:20
+MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\Lilitha\.gradle\caches\transforms-4\1b5de4175969159377c2c9f6ff298a35\transformed\startup-runtime-1.1.1\AndroidManifest.xml:26:9-30:34
+MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\Lilitha\.gradle\caches\transforms-4\1b5de4175969159377c2c9f6ff298a35\transformed\startup-runtime-1.1.1\AndroidManifest.xml:26:9-30:34
+	tools:node
+		ADDED from [androidx.emoji2:emoji2:1.3.0] C:\Users\Lilitha\.gradle\caches\transforms-4\bcd45f5f61d8ca973ea9566707aa49bd\transformed\emoji2-1.3.0\AndroidManifest.xml:28:13-31
+	android:authorities
+		ADDED from [androidx.emoji2:emoji2:1.3.0] C:\Users\Lilitha\.gradle\caches\transforms-4\bcd45f5f61d8ca973ea9566707aa49bd\transformed\emoji2-1.3.0\AndroidManifest.xml:26:13-68
+	android:exported
+		ADDED from [androidx.emoji2:emoji2:1.3.0] C:\Users\Lilitha\.gradle\caches\transforms-4\bcd45f5f61d8ca973ea9566707aa49bd\transformed\emoji2-1.3.0\AndroidManifest.xml:27:13-37
+	android:name
+		ADDED from [androidx.emoji2:emoji2:1.3.0] C:\Users\Lilitha\.gradle\caches\transforms-4\bcd45f5f61d8ca973ea9566707aa49bd\transformed\emoji2-1.3.0\AndroidManifest.xml:25:13-67
+meta-data#androidx.emoji2.text.EmojiCompatInitializer
+ADDED from [androidx.emoji2:emoji2:1.3.0] C:\Users\Lilitha\.gradle\caches\transforms-4\bcd45f5f61d8ca973ea9566707aa49bd\transformed\emoji2-1.3.0\AndroidManifest.xml:29:13-31:52
+	android:value
+		ADDED from [androidx.emoji2:emoji2:1.3.0] C:\Users\Lilitha\.gradle\caches\transforms-4\bcd45f5f61d8ca973ea9566707aa49bd\transformed\emoji2-1.3.0\AndroidManifest.xml:31:17-49
+	android:name
+		ADDED from [androidx.emoji2:emoji2:1.3.0] C:\Users\Lilitha\.gradle\caches\transforms-4\bcd45f5f61d8ca973ea9566707aa49bd\transformed\emoji2-1.3.0\AndroidManifest.xml:30:17-75
+meta-data#androidx.lifecycle.ProcessLifecycleInitializer
+ADDED from [androidx.lifecycle:lifecycle-process:2.8.4] C:\Users\Lilitha\.gradle\caches\transforms-4\9a164b99af1d99867c9b009d9d6803bf\transformed\lifecycle-process-2.8.4\AndroidManifest.xml:29:13-31:52
+	android:value
+		ADDED from [androidx.lifecycle:lifecycle-process:2.8.4] C:\Users\Lilitha\.gradle\caches\transforms-4\9a164b99af1d99867c9b009d9d6803bf\transformed\lifecycle-process-2.8.4\AndroidManifest.xml:31:17-49
+	android:name
+		ADDED from [androidx.lifecycle:lifecycle-process:2.8.4] C:\Users\Lilitha\.gradle\caches\transforms-4\9a164b99af1d99867c9b009d9d6803bf\transformed\lifecycle-process-2.8.4\AndroidManifest.xml:30:17-78
+meta-data#com.google.android.gms.version
+ADDED from [com.google.android.gms:play-services-basement:18.9.0] C:\Users\Lilitha\.gradle\caches\transforms-4\e49a50d63ebc3d42c873869d6a0722e7\transformed\play-services-basement-18.9.0\AndroidManifest.xml:21:9-23:69
+	android:value
+		ADDED from [com.google.android.gms:play-services-basement:18.9.0] C:\Users\Lilitha\.gradle\caches\transforms-4\e49a50d63ebc3d42c873869d6a0722e7\transformed\play-services-basement-18.9.0\AndroidManifest.xml:23:13-66
+	android:name
+		ADDED from [com.google.android.gms:play-services-basement:18.9.0] C:\Users\Lilitha\.gradle\caches\transforms-4\e49a50d63ebc3d42c873869d6a0722e7\transformed\play-services-basement-18.9.0\AndroidManifest.xml:22:13-58
+permission#${applicationId}.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+ADDED from [androidx.core:core:1.13.1] C:\Users\Lilitha\.gradle\caches\transforms-4\3b4a80f28217db5b2f8f0fdaf73c3346\transformed\core-1.13.1\AndroidManifest.xml:22:5-24:47
+	android:protectionLevel
+		ADDED from [androidx.core:core:1.13.1] C:\Users\Lilitha\.gradle\caches\transforms-4\3b4a80f28217db5b2f8f0fdaf73c3346\transformed\core-1.13.1\AndroidManifest.xml:24:9-44
+	android:name
+		ADDED from [androidx.core:core:1.13.1] C:\Users\Lilitha\.gradle\caches\transforms-4\3b4a80f28217db5b2f8f0fdaf73c3346\transformed\core-1.13.1\AndroidManifest.xml:23:9-81
+permission#com.mzantsi.table.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+ADDED from [androidx.core:core:1.13.1] C:\Users\Lilitha\.gradle\caches\transforms-4\3b4a80f28217db5b2f8f0fdaf73c3346\transformed\core-1.13.1\AndroidManifest.xml:22:5-24:47
+	android:protectionLevel
+		ADDED from [androidx.core:core:1.13.1] C:\Users\Lilitha\.gradle\caches\transforms-4\3b4a80f28217db5b2f8f0fdaf73c3346\transformed\core-1.13.1\AndroidManifest.xml:24:9-44
+	android:name
+		ADDED from [androidx.core:core:1.13.1] C:\Users\Lilitha\.gradle\caches\transforms-4\3b4a80f28217db5b2f8f0fdaf73c3346\transformed\core-1.13.1\AndroidManifest.xml:23:9-81
+uses-permission#${applicationId}.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+ADDED from [androidx.core:core:1.13.1] C:\Users\Lilitha\.gradle\caches\transforms-4\3b4a80f28217db5b2f8f0fdaf73c3346\transformed\core-1.13.1\AndroidManifest.xml:26:5-97
+	android:name
+		ADDED from [androidx.core:core:1.13.1] C:\Users\Lilitha\.gradle\caches\transforms-4\3b4a80f28217db5b2f8f0fdaf73c3346\transformed\core-1.13.1\AndroidManifest.xml:26:22-94
+uses-permission#com.mzantsi.table.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+ADDED from [androidx.core:core:1.13.1] C:\Users\Lilitha\.gradle\caches\transforms-4\3b4a80f28217db5b2f8f0fdaf73c3346\transformed\core-1.13.1\AndroidManifest.xml:26:5-97
+	android:name
+		ADDED from [androidx.core:core:1.13.1] C:\Users\Lilitha\.gradle\caches\transforms-4\3b4a80f28217db5b2f8f0fdaf73c3346\transformed\core-1.13.1\AndroidManifest.xml:26:22-94
+meta-data#androidx.profileinstaller.ProfileInstallerInitializer
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Lilitha\.gradle\caches\transforms-4\e2d5b112e41edf46b4c95d953be5b926\transformed\profileinstaller-1.3.1\AndroidManifest.xml:29:13-31:52
+	android:value
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Lilitha\.gradle\caches\transforms-4\e2d5b112e41edf46b4c95d953be5b926\transformed\profileinstaller-1.3.1\AndroidManifest.xml:31:17-49
+	android:name
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Lilitha\.gradle\caches\transforms-4\e2d5b112e41edf46b4c95d953be5b926\transformed\profileinstaller-1.3.1\AndroidManifest.xml:30:17-85
+receiver#androidx.profileinstaller.ProfileInstallReceiver
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Lilitha\.gradle\caches\transforms-4\e2d5b112e41edf46b4c95d953be5b926\transformed\profileinstaller-1.3.1\AndroidManifest.xml:34:9-52:20
+	android:enabled
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Lilitha\.gradle\caches\transforms-4\e2d5b112e41edf46b4c95d953be5b926\transformed\profileinstaller-1.3.1\AndroidManifest.xml:37:13-35
+	android:exported
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Lilitha\.gradle\caches\transforms-4\e2d5b112e41edf46b4c95d953be5b926\transformed\profileinstaller-1.3.1\AndroidManifest.xml:38:13-36
+	android:permission
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Lilitha\.gradle\caches\transforms-4\e2d5b112e41edf46b4c95d953be5b926\transformed\profileinstaller-1.3.1\AndroidManifest.xml:39:13-57
+	android:directBootAware
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Lilitha\.gradle\caches\transforms-4\e2d5b112e41edf46b4c95d953be5b926\transformed\profileinstaller-1.3.1\AndroidManifest.xml:36:13-44
+	android:name
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Lilitha\.gradle\caches\transforms-4\e2d5b112e41edf46b4c95d953be5b926\transformed\profileinstaller-1.3.1\AndroidManifest.xml:35:13-76
+intent-filter#action:name:androidx.profileinstaller.action.INSTALL_PROFILE
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Lilitha\.gradle\caches\transforms-4\e2d5b112e41edf46b4c95d953be5b926\transformed\profileinstaller-1.3.1\AndroidManifest.xml:40:13-42:29
+action#androidx.profileinstaller.action.INSTALL_PROFILE
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Lilitha\.gradle\caches\transforms-4\e2d5b112e41edf46b4c95d953be5b926\transformed\profileinstaller-1.3.1\AndroidManifest.xml:41:17-91
+	android:name
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Lilitha\.gradle\caches\transforms-4\e2d5b112e41edf46b4c95d953be5b926\transformed\profileinstaller-1.3.1\AndroidManifest.xml:41:25-88
+intent-filter#action:name:androidx.profileinstaller.action.SKIP_FILE
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Lilitha\.gradle\caches\transforms-4\e2d5b112e41edf46b4c95d953be5b926\transformed\profileinstaller-1.3.1\AndroidManifest.xml:43:13-45:29
+action#androidx.profileinstaller.action.SKIP_FILE
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Lilitha\.gradle\caches\transforms-4\e2d5b112e41edf46b4c95d953be5b926\transformed\profileinstaller-1.3.1\AndroidManifest.xml:44:17-85
+	android:name
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Lilitha\.gradle\caches\transforms-4\e2d5b112e41edf46b4c95d953be5b926\transformed\profileinstaller-1.3.1\AndroidManifest.xml:44:25-82
+intent-filter#action:name:androidx.profileinstaller.action.SAVE_PROFILE
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Lilitha\.gradle\caches\transforms-4\e2d5b112e41edf46b4c95d953be5b926\transformed\profileinstaller-1.3.1\AndroidManifest.xml:46:13-48:29
+action#androidx.profileinstaller.action.SAVE_PROFILE
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Lilitha\.gradle\caches\transforms-4\e2d5b112e41edf46b4c95d953be5b926\transformed\profileinstaller-1.3.1\AndroidManifest.xml:47:17-88
+	android:name
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Lilitha\.gradle\caches\transforms-4\e2d5b112e41edf46b4c95d953be5b926\transformed\profileinstaller-1.3.1\AndroidManifest.xml:47:25-85
+intent-filter#action:name:androidx.profileinstaller.action.BENCHMARK_OPERATION
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Lilitha\.gradle\caches\transforms-4\e2d5b112e41edf46b4c95d953be5b926\transformed\profileinstaller-1.3.1\AndroidManifest.xml:49:13-51:29
+action#androidx.profileinstaller.action.BENCHMARK_OPERATION
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Lilitha\.gradle\caches\transforms-4\e2d5b112e41edf46b4c95d953be5b926\transformed\profileinstaller-1.3.1\AndroidManifest.xml:50:17-95
+	android:name
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Lilitha\.gradle\caches\transforms-4\e2d5b112e41edf46b4c95d953be5b926\transformed\profileinstaller-1.3.1\AndroidManifest.xml:50:25-92
+activity#com.google.android.play.core.common.PlayCoreDialogWrapperActivity
+ADDED from [com.google.android.play:core-common:2.0.3] C:\Users\Lilitha\.gradle\caches\transforms-4\f2397d89fef36ea4d551c6e9cb309312\transformed\core-common-2.0.3\AndroidManifest.xml:14:9-18:65
+	android:stateNotNeeded
+		ADDED from [com.google.android.play:core-common:2.0.3] C:\Users\Lilitha\.gradle\caches\transforms-4\f2397d89fef36ea4d551c6e9cb309312\transformed\core-common-2.0.3\AndroidManifest.xml:17:13-42
+	android:exported
+		ADDED from [com.google.android.play:core-common:2.0.3] C:\Users\Lilitha\.gradle\caches\transforms-4\f2397d89fef36ea4d551c6e9cb309312\transformed\core-common-2.0.3\AndroidManifest.xml:16:13-37
+	android:theme
+		ADDED from [com.google.android.play:core-common:2.0.3] C:\Users\Lilitha\.gradle\caches\transforms-4\f2397d89fef36ea4d551c6e9cb309312\transformed\core-common-2.0.3\AndroidManifest.xml:18:13-62
+	android:name
+		ADDED from [com.google.android.play:core-common:2.0.3] C:\Users\Lilitha\.gradle\caches\transforms-4\f2397d89fef36ea4d551c6e9cb309312\transformed\core-common-2.0.3\AndroidManifest.xml:15:13-93

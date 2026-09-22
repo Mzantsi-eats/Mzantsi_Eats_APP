@@ -1,0 +1,64 @@
+com.mzantsi.table.app-play-services-auth-20.7.0-0 C:\Users\Lilitha\.gradle\caches\transforms-4\0257693d4d946fed1015c9cfd836f1fd\transformed\play-services-auth-20.7.0\res
+com.mzantsi.table.app-ui-geometry-release-1 C:\Users\Lilitha\.gradle\caches\transforms-4\044e189ca489435debe7f847e33c7713\transformed\ui-geometry-release\res
+com.mzantsi.table.app-navigation-common-ktx-2.7.7-2 C:\Users\Lilitha\.gradle\caches\transforms-4\0574d23e5a94f1af3cd4f9e9bac3e543\transformed\navigation-common-ktx-2.7.7\res
+com.mzantsi.table.app-lifecycle-viewmodel-savedstate-2.8.4-3 C:\Users\Lilitha\.gradle\caches\transforms-4\0bdc5145e609c36d200d5052073f17a4\transformed\lifecycle-viewmodel-savedstate-2.8.4\res
+com.mzantsi.table.app-lifecycle-viewmodel-release-4 C:\Users\Lilitha\.gradle\caches\transforms-4\0e26b391d497651e4ba4747da1abb748\transformed\lifecycle-viewmodel-release\res
+com.mzantsi.table.app-lifecycle-viewmodel-compose-release-5 C:\Users\Lilitha\.gradle\caches\transforms-4\0e2b9640bf5072b1dcc5785e1764a1ec\transformed\lifecycle-viewmodel-compose-release\res
+com.mzantsi.table.app-navigation-runtime-ktx-2.7.7-6 C:\Users\Lilitha\.gradle\caches\transforms-4\0f3755719d2ea30131440bfbc034799c\transformed\navigation-runtime-ktx-2.7.7\res
+com.mzantsi.table.app-navigation-compose-2.7.7-7 C:\Users\Lilitha\.gradle\caches\transforms-4\1744f159322e55ac3ab603b80ca64673\transformed\navigation-compose-2.7.7\res
+com.mzantsi.table.app-startup-runtime-1.1.1-8 C:\Users\Lilitha\.gradle\caches\transforms-4\1b5de4175969159377c2c9f6ff298a35\transformed\startup-runtime-1.1.1\res
+com.mzantsi.table.app-datastore-core-release-9 C:\Users\Lilitha\.gradle\caches\transforms-4\1cdc571680938c084066e562724a3b04\transformed\datastore-core-release\res
+com.mzantsi.table.app-animation-release-10 C:\Users\Lilitha\.gradle\caches\transforms-4\1f5a65872292e67736417694fab3a2bf\transformed\animation-release\res
+com.mzantsi.table.app-material3-release-11 C:\Users\Lilitha\.gradle\caches\transforms-4\20ba9b31e658e67c53efc29a248a4a7c\transformed\material3-release\res
+com.mzantsi.table.app-datastore-preferences-release-12 C:\Users\Lilitha\.gradle\caches\transforms-4\21ffe99d8c4a23f6270553b592dc495f\transformed\datastore-preferences-release\res
+com.mzantsi.table.app-customview-poolingcontainer-1.0.0-13 C:\Users\Lilitha\.gradle\caches\transforms-4\2d130a576770c598f2eccaa7f500fb41\transformed\customview-poolingcontainer-1.0.0\res
+com.mzantsi.table.app-lifecycle-runtime-ktx-release-14 C:\Users\Lilitha\.gradle\caches\transforms-4\2fd78b23731a2fecabda7f943ea8e469\transformed\lifecycle-runtime-ktx-release\res
+com.mzantsi.table.app-lifecycle-livedata-core-2.8.4-15 C:\Users\Lilitha\.gradle\caches\transforms-4\329e53fd5c80e1d1bf38f3cc7b463096\transformed\lifecycle-livedata-core-2.8.4\res
+com.mzantsi.table.app-lifecycle-runtime-release-16 C:\Users\Lilitha\.gradle\caches\transforms-4\35179bb5af36d73cce66ba58baaa5556\transformed\lifecycle-runtime-release\res
+com.mzantsi.table.app-navigation-runtime-2.7.7-17 C:\Users\Lilitha\.gradle\caches\transforms-4\3569b25480f19935e2b62505dacda753\transformed\navigation-runtime-2.7.7\res
+com.mzantsi.table.app-core-1.13.1-18 C:\Users\Lilitha\.gradle\caches\transforms-4\3b4a80f28217db5b2f8f0fdaf73c3346\transformed\core-1.13.1\res
+com.mzantsi.table.app-animation-core-release-19 C:\Users\Lilitha\.gradle\caches\transforms-4\3be7edb25b0752a236cb8189c633a35c\transformed\animation-core-release\res
+com.mzantsi.table.app-firebase-common-22.2.1-20 C:\Users\Lilitha\.gradle\caches\transforms-4\428eb08a55d26071ed6b8940b7e946cb\transformed\firebase-common-22.2.1\res
+com.mzantsi.table.app-lifecycle-livedata-2.8.4-21 C:\Users\Lilitha\.gradle\caches\transforms-4\43380efefa5eebabe43dc5d583e9c348\transformed\lifecycle-livedata-2.8.4\res
+com.mzantsi.table.app-play-services-base-18.0.1-22 C:\Users\Lilitha\.gradle\caches\transforms-4\4dfe9a3345fe5c323b1d3289d5af6fbe\transformed\play-services-base-18.0.1\res
+com.mzantsi.table.app-material-ripple-release-23 C:\Users\Lilitha\.gradle\caches\transforms-4\5436e323e0c6a016830fc20e5251909c\transformed\material-ripple-release\res
+com.mzantsi.table.app-lifecycle-viewmodel-ktx-2.8.4-24 C:\Users\Lilitha\.gradle\caches\transforms-4\5cee3cbdc8104b16dd1e982917d2225a\transformed\lifecycle-viewmodel-ktx-2.8.4\res
+com.mzantsi.table.app-savedstate-ktx-1.2.1-25 C:\Users\Lilitha\.gradle\caches\transforms-4\6012b203c2ab497ef7f2cdab58e5ad07\transformed\savedstate-ktx-1.2.1\res
+com.mzantsi.table.app-ui-tooling-preview-release-26 C:\Users\Lilitha\.gradle\caches\transforms-4\66c926c38a2c171566bf33119b26ad31\transformed\ui-tooling-preview-release\res
+com.mzantsi.table.app-datastore-preferences-core-release-27 C:\Users\Lilitha\.gradle\caches\transforms-4\6c135b1f29f9c18677a582596dff56f3\transformed\datastore-preferences-core-release\res
+com.mzantsi.table.app-navigation-common-2.7.7-28 C:\Users\Lilitha\.gradle\caches\transforms-4\9217b931e59ef6dcdd11d35e0d82c433\transformed\navigation-common-2.7.7\res
+com.mzantsi.table.app-lifecycle-process-2.8.4-29 C:\Users\Lilitha\.gradle\caches\transforms-4\9a164b99af1d99867c9b009d9d6803bf\transformed\lifecycle-process-2.8.4\res
+com.mzantsi.table.app-browser-1.4.0-30 C:\Users\Lilitha\.gradle\caches\transforms-4\9ab0000804a564e6ba9e664b92fd2421\transformed\browser-1.4.0\res
+com.mzantsi.table.app-core-runtime-2.2.0-31 C:\Users\Lilitha\.gradle\caches\transforms-4\9d26f81b9eb479492ad2343351d77f3c\transformed\core-runtime-2.2.0\res
+com.mzantsi.table.app-activity-compose-1.9.1-32 C:\Users\Lilitha\.gradle\caches\transforms-4\a2d03d8ed243ac94bba34b7d207bd257\transformed\activity-compose-1.9.1\res
+com.mzantsi.table.app-datastore-release-33 C:\Users\Lilitha\.gradle\caches\transforms-4\a2ee867fd74805d573ee485eea869203\transformed\datastore-release\res
+com.mzantsi.table.app-activity-1.9.1-34 C:\Users\Lilitha\.gradle\caches\transforms-4\a3ac12ac230a849b34fb0b4e53c54a4f\transformed\activity-1.9.1\res
+com.mzantsi.table.app-savedstate-1.2.1-35 C:\Users\Lilitha\.gradle\caches\transforms-4\aaeae586ccff6fb46d1be59ad92df96e\transformed\savedstate-1.2.1\res
+com.mzantsi.table.app-credentials-1.2.0-rc01-36 C:\Users\Lilitha\.gradle\caches\transforms-4\ab36b5f1e828bf2da83639f6b5659b1d\transformed\credentials-1.2.0-rc01\res
+com.mzantsi.table.app-foundation-layout-release-37 C:\Users\Lilitha\.gradle\caches\transforms-4\b6f405ef4ce5e3a9b475e7185dfa9471\transformed\foundation-layout-release\res
+com.mzantsi.table.app-credentials-play-services-auth-1.2.0-rc01-38 C:\Users\Lilitha\.gradle\caches\transforms-4\ba57e1dbc9be916d4a2c6fdae8cd792b\transformed\credentials-play-services-auth-1.2.0-rc01\res
+com.mzantsi.table.app-emoji2-1.3.0-39 C:\Users\Lilitha\.gradle\caches\transforms-4\bcd45f5f61d8ca973ea9566707aa49bd\transformed\emoji2-1.3.0\res
+com.mzantsi.table.app-runtime-saveable-release-40 C:\Users\Lilitha\.gradle\caches\transforms-4\bcf16e06aaea9e9ef30fc969cfe7767d\transformed\runtime-saveable-release\res
+com.mzantsi.table.app-ui-unit-release-41 C:\Users\Lilitha\.gradle\caches\transforms-4\c6cb3e6520d6b7eed807f3299310b078\transformed\ui-unit-release\res
+com.mzantsi.table.app-runtime-release-42 C:\Users\Lilitha\.gradle\caches\transforms-4\c817a8158cbaea5ec8dc617006d4303c\transformed\runtime-release\res
+com.mzantsi.table.app-ui-util-release-43 C:\Users\Lilitha\.gradle\caches\transforms-4\cae8282f5ff463b33d816a9f79bef66f\transformed\ui-util-release\res
+com.mzantsi.table.app-ui-release-44 C:\Users\Lilitha\.gradle\caches\transforms-4\cb7a83ab7c652a68300839b10796ede2\transformed\ui-release\res
+com.mzantsi.table.app-foundation-release-45 C:\Users\Lilitha\.gradle\caches\transforms-4\d1ee4689aada9f36f1c5be228a6aef85\transformed\foundation-release\res
+com.mzantsi.table.app-lifecycle-livedata-core-ktx-2.8.4-46 C:\Users\Lilitha\.gradle\caches\transforms-4\d466930a7287f109b02bed0080f917e6\transformed\lifecycle-livedata-core-ktx-2.8.4\res
+com.mzantsi.table.app-ui-text-release-47 C:\Users\Lilitha\.gradle\caches\transforms-4\d6222b37b67c7b4b0a30dafa9d86cba4\transformed\ui-text-release\res
+com.mzantsi.table.app-ui-graphics-release-48 C:\Users\Lilitha\.gradle\caches\transforms-4\d686df2b24bf44fd40b1d8a885309d99\transformed\ui-graphics-release\res
+com.mzantsi.table.app-annotation-experimental-1.4.0-49 C:\Users\Lilitha\.gradle\caches\transforms-4\de35b538453a2f9084e1dc42b017fd67\transformed\annotation-experimental-1.4.0\res
+com.mzantsi.table.app-material-icons-core-release-50 C:\Users\Lilitha\.gradle\caches\transforms-4\e2a685053d0274ad7682c5e71c73121a\transformed\material-icons-core-release\res
+com.mzantsi.table.app-profileinstaller-1.3.1-51 C:\Users\Lilitha\.gradle\caches\transforms-4\e2d5b112e41edf46b4c95d953be5b926\transformed\profileinstaller-1.3.1\res
+com.mzantsi.table.app-play-services-basement-18.9.0-52 C:\Users\Lilitha\.gradle\caches\transforms-4\e49a50d63ebc3d42c873869d6a0722e7\transformed\play-services-basement-18.9.0\res
+com.mzantsi.table.app-core-common-2.0.3-53 C:\Users\Lilitha\.gradle\caches\transforms-4\f2397d89fef36ea4d551c6e9cb309312\transformed\core-common-2.0.3\res
+com.mzantsi.table.app-core-ktx-1.13.1-54 C:\Users\Lilitha\.gradle\caches\transforms-4\f3bc1cb1a5f85f738205bdb616604966\transformed\core-ktx-1.13.1\res
+com.mzantsi.table.app-activity-ktx-1.9.1-55 C:\Users\Lilitha\.gradle\caches\transforms-4\ffee21d2bd29801c468b2ed9d9969cf1\transformed\activity-ktx-1.9.1\res
+com.mzantsi.table.app-pngs-56 C:\Users\Lilitha\Desktop\Open Source\Second semester\MzantsiTable-Android(with gradle)\MzantsiTable-Android\app\build\generated\res\pngs\debug
+com.mzantsi.table.app-res-57 C:\Users\Lilitha\Desktop\Open Source\Second semester\MzantsiTable-Android(with gradle)\MzantsiTable-Android\app\build\generated\res\processDebugGoogleServices
+com.mzantsi.table.app-resValues-58 C:\Users\Lilitha\Desktop\Open Source\Second semester\MzantsiTable-Android(with gradle)\MzantsiTable-Android\app\build\generated\res\resValues\debug
+com.mzantsi.table.app-packageDebugResources-59 C:\Users\Lilitha\Desktop\Open Source\Second semester\MzantsiTable-Android(with gradle)\MzantsiTable-Android\app\build\intermediates\incremental\debug\packageDebugResources\merged.dir
+com.mzantsi.table.app-packageDebugResources-60 C:\Users\Lilitha\Desktop\Open Source\Second semester\MzantsiTable-Android(with gradle)\MzantsiTable-Android\app\build\intermediates\incremental\debug\packageDebugResources\stripped.dir
+com.mzantsi.table.app-debug-61 C:\Users\Lilitha\Desktop\Open Source\Second semester\MzantsiTable-Android(with gradle)\MzantsiTable-Android\app\build\intermediates\merged_res\debug\mergeDebugResources
+com.mzantsi.table.app-debug-62 C:\Users\Lilitha\Desktop\Open Source\Second semester\MzantsiTable-Android(with gradle)\MzantsiTable-Android\app\src\debug\res
+com.mzantsi.table.app-main-63 C:\Users\Lilitha\Desktop\Open Source\Second semester\MzantsiTable-Android(with gradle)\MzantsiTable-Android\app\src\main\res
