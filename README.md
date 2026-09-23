@@ -9,7 +9,6 @@ and the celebration of South African cuisines. The Mzantsi Table bridges this ga
 South African languages such as isiXhosa, isiZulu, Sesotho, and Afrikaans.
 This app aims to serve as a digital living library, enabling users to discover, share, and preserve traditional 
 recipes while leveraging technology for features such as offline access, real-time notifications, and a community hub.
-
 The app was developed as part of the Open Source 6312 Portfolio of Evidence at Rosebank International University College.
 
 Collaborators include:
@@ -20,8 +19,12 @@ Avuyile Dumezweni - Wire Retrofit client to RecipeRepository with MockData fallb
                     Add editable settings menu (dietary prefs, language, notifications)
                     Add reviews section to RecipeDetailScreen 
                     Enable HTTP cleartext traffic for local API
-Bukhulu Mjana - Added validation for login, register, gradle.
+Bukhulu Mjana - Added Authentication with real validation and error handling for login, register,                   gradle.
                 Created the google SSO 
+                All 8 screens with navigation
+                Mock recipe data
+                Retrofit interface scaffolding
+                Working multi-language toggle (EN/ZU/ST)
 Olilitha Adam - Database creation, functionality and integration, API modifications
 
 YouTube link - https://youtu.be/DLh84YgZRdU?si=xfbpVTyqtsRZce3i 
