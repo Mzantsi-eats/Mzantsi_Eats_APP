@@ -60,15 +60,16 @@ Each subfolder has its own README with detailed setup instructions.
 git clone https://github.com/Mzantsi-eats/Mzantsi_Eats_APP.git
 cd Mzantsi_Eats_APP
 
-Run the API
-Open MzantsiTableApi/MzantsiTableApi.sln in Visual Studio.
+##Run the API
+1. Open MzantsiTableApi/MzantsiTableApi.sln in Visual Studio.
 
-Add your firebase-service-account.json to MzantsiTableApi/
+2. Add your firebase-service-account.json to MzantsiTableApi/
 (see MzantsiTableApi/FIREBASE_SETUP.md for how to obtain it).
 
-Press F5 to start the API.
+3. Press F5 to start the API.
 
-Swagger UI opens at https://localhost:5081/swagger.
+4. Swagger UI opens at **`https://localhost:5081/swagger/index.html`** — you can
+   test every endpoint from the browser without the Android app.
 
 Run the Android app
 Open the MzantsiTable-Android/ folder in Android Studio.
@@ -143,8 +144,12 @@ Community hub with follow / share features.
 Afrikaans language support.
 
 API reference
-The API exposes the following endpoints. All are documented and testable via
-Swagger UI at /swagger when the API runs in development mode.
+The API is self-documenting. When it runs locally, Swagger UI is available at:
+
+> **<https://localhost:5081/swagger/index.html>**
+
+Every endpoint listed below can be tested there — including authenticated ones,
+after pasting a Firebase ID token into the **Authorize** dialog.
 
 Recipes
 Method	Endpoint	Auth	Purpose
