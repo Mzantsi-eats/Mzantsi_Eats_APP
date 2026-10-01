@@ -1,0 +1,16 @@
+*.iml
+.gradle/
+/local.properties
+/build
+/app/build
+.idea/
+
+# Firebase configuration
+google-services.json
+
+# Signing keys
+*.jks
+*.keystore
+
+# Local project README
+README.md
