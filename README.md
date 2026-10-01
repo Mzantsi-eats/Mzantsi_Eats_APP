@@ -40,6 +40,14 @@ Planned Auth - Firebase Authentication
 Planned Database - Firebase Firestore
 Password Hashing - BCrypt work in progress
 
+How to clone the repository:
+In Android studio:
+1. Open the terminal
+2. Run: git clone https://github.com/Mzantsi-eats/Mzantsi_Eats_APP.git
+3. Run: cd Mzantsi_Eats_APP
+4. Open the folder Mzantsi_Eats_APP -> MzantsiTable-Android-SSO/
+5. To run the Firebase/SSO, follow the instructions in the MzantsiTable-Android-SSO/FIREBASE_SETUP.md and MzantsiTable-Android-SSO/SETUP_GOOGLE_SSO.md files
+
 Running the Android App
 
 1. Open the `MzantsiTable-Android/` folder in Android Studio
