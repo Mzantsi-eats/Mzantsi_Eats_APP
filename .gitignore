@@ -1,0 +1,18 @@
+
+# The Mzantsi Table — API project ignores
+
+
+# Firebase Admin SDK credentials 
+# Anyone with this file can read, write and delete the whole Firebase project.
+firebase-service-account.json
+
+# Local development overrides 
+appsettings.Development.json
+
+# .NET build output — regenerated on every build.
+bin/
+obj/
+
+# Visual Studio local user settings.
+.vs/
+*.user
