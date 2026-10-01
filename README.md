@@ -1,9 +1,9 @@
-The Mzantsi Table - Android Prototype
+# The Mzantsi Table - Android Prototype
 Slogan - Where Mzantsi eats together
 
 This is a Kotlin and Jetpack composed prototype of The Mzantsi Table 
 
-Introduction 
+# Introduction 
 Existing recipe applications offer robust features, but none cater specifically to South African food preservation 
 and the celebration of South African cuisines. The Mzantsi Table bridges this gap by including support for 
 South African languages such as isiXhosa, isiZulu, Sesotho, and Afrikaans.
@@ -11,7 +11,7 @@ This app aims to serve as a digital living library, enabling users to discover, 
 recipes while leveraging technology for features such as offline access, real-time notifications, and a community hub.
 The app was developed as part of the Open Source 6312 Portfolio of Evidence at Rosebank International University College.
 
-Collaborators include:
+## Collaborators include:
 Ondela Skwatsha - she built the base code structure (screens, navigation, theme, mock data)
                   API on visual studio code
 Avuyile Dumezweni - Wire Retrofit client to RecipeRepository with MockData fallback
@@ -29,7 +29,7 @@ Olilitha Adam - Database creation, functionality and integration, API modificati
 
 YouTube link - https://youtu.be/DLh84YgZRdU?si=xfbpVTyqtsRZce3i 
 
-Tech Stack
+## Tech Stack
 Mobile App - Kotlin, Jetpack Compose, Material 3
 Navigation - Jetpack Compose Navigation
 State Management - ViewModel + `mutableStateOf`
@@ -40,7 +40,7 @@ Planned Auth - Firebase Authentication
 Planned Database - Firebase Firestore
 Password Hashing - BCrypt work in progress
 
-How to clone the repository:
+## How to clone the repository:
 In Android studio:
 1. Open the terminal
 2. Run: git clone https://github.com/Mzantsi-eats/Mzantsi_Eats_APP.git
@@ -48,29 +48,29 @@ In Android studio:
 4. Open the folder Mzantsi_Eats_APP -> MzantsiTable-Android-SSO/
 5. To run the Firebase/SSO, follow the instructions in the MzantsiTable-Android-SSO/FIREBASE_SETUP.md and MzantsiTable-Android-SSO/SETUP_GOOGLE_SSO.md files
 
-Running the Android App
+## Running the Android App
 
 1. Open the `MzantsiTable-Android/` folder in Android Studio
 2. Let Gradle sync (File - Sync Project with Gradle Files)
 3. Start an Android emulator or connect a physical device
 4. Click the green Run button
 
-Running the Backend API
+## Running the Backend API
 
 1. Open `MzantsiTableApi/MzantsiTableApi.sln` in Visual Studio
 2. Press F5 to run
 3. Swagger UI opens automatically at `http://localhost:5080/swagger`
 4. Test any endpoint with Try it out - Execute
 
-Connecting the App to the API
+## Connecting the App to the API
 
 In `data/api/RetrofitClient.kt`, the base URL is set to `http://10.0.2.2:5080/`
 — this is how the Android emulator reaches your computer's `localhost`. 
 For a physical device, replace with your computer's LAN IP. For production, replace with your deployed API URL.
 
-Features Implemented
+# Features Implemented
 
-Mandatory Requirements
+## Mandatory Requirements
 
 1. Register / Login
 Real form validation with inline error messages
@@ -92,7 +92,7 @@ Endpoints for recipes, users, reviews, and settings
 Retrofit client on the Android side
 Repository pattern with MockData fallback when offline
 
-Additional Features
+## Additional Features
 
 4. Recipe Detail Screen
 Hero section with culture chip and title
@@ -120,22 +120,22 @@ Saved recipes accessible via bottom navigation
 Profile shows user details and dietary preferences
 Sign out button
 
-Swagger Documentation
+## Swagger Documentation
 Swagger UI is available at /swagger in development mode. Every endpoint can be tested there without the Android app.
 
-Database
+## Database
 The API is designed to connect to Firebase Firestore as the NoSQL database for storing:
 Users, Recipes, Reviews, User preferences, Firebase Authentication will manage user registration and login and
 Firebase Storage will store recipe images.
 
-Current Implementation
+## Current Implementation
 During development, the API uses an in-memory repository so it runs immediately with no cloud setup. 
 The repository interfaces (IRecipeRepository, IUserRepository) allow swapping to Firestore with no changes to controllers or services.
 
-Security
+## Security
 Passwords are hashed with BCrypt before storage. Each hash includes a random salt, so identical passwords produce different hashes.
 
-Branch structure
+## Branch structure
 Each team member contributed on their own branch to avoid conflicts:
 Ondela
 Avuyile 
