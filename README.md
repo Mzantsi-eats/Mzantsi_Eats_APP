@@ -68,8 +68,13 @@ cd Mzantsi_Eats_APP
 
 3. Press F5 to start the API.
 
-4. Swagger UI opens at **`https://localhost:5081/swagger/index.html`** — you can
-   test every endpoint from the browser without the Android app.
+4. Swagger UI opens at:
+ **`https://localhost:5081/swagger/index.html`**
+ you can test every endpoint from the browser without the Android app.
+
+5. A live version of the API is also deployed to Microsoft Azure and can be accessed at:
+
+   **`https://mzantsitableapi20261001221325-e9gxfnbbemdbbhcu.southafricanorth-01.azurewebsites.net/swagger/index.html`**
 
 Run the Android app
 Open the MzantsiTable-Android/ folder in Android Studio.
@@ -84,7 +89,18 @@ Connect the app to the API
 In MzantsiTable-Android/app/src/main/java/com/mzantsi/table/data/api/RetrofitClient.kt,
 the base URL is http://10.0.2.2:5081/ — this is how the Android emulator reaches
 the host computer's localhost. For a physical device, replace with your computer's
-LAN IP. For production, replace with the deployed API URL.
+LAN IP.
+For production, replace the base URL with the Azure-hosted API:
+
+```
+https://mzantsitableapi20261001221325-e9gxfnbbemdbbhcu.southafricanorth-01.azurewebsites.net/
+```
+
+Example:
+
+```
+https://mzantsitableapi20261001221325-e9gxfnbbemdbbhcu.southafricanorth-01.azurewebsites.net/api/Recipes
+```
 
 Tech stack
 Android app
@@ -116,21 +132,21 @@ Recipe management — browse, search, and view recipes; add your own with photos
 and cultural categorisation (Xhosa, Zulu, Cape Malay, Sesotho, Braai, Coloured,
 Desserts, Street Food).
 
-Cultural recipe discovery — explore recipes by culture and province.
+Cultural recipe discovery - explore recipes by culture and province.
 
-Saved recipes — bookmark recipes for later.
+Saved recipes - bookmark recipes for later.
 
-Reviews — rate and comment on recipes.
+Reviews - rate and comment on recipes.
 
-Celebration pop-up — a confetti animation when a user marks a recipe as cooked.
+Celebration pop-up - a confetti animation when a user marks a recipe as cooked.
 
-User settings — profile name, dietary preferences, notification toggle,
+User settings - profile name, dietary preferences, notification toggle,
 language preference.
 
-Offline support — recipes and user data remain accessible without an internet
+Offline support - recipes and user data remain accessible without an internet
 connection via Firestore's offline cache.
 
-REST API — full CRUD for recipes, users, and reviews, documented via Swagger.
+REST API - full CRUD for recipes, users, and reviews, documented via Swagger.
 
 Planned / future work
 Firebase Storage for recipe images (currently local file paths).
@@ -143,14 +159,23 @@ Community hub with follow / share features.
 
 Afrikaans language support.
 
-API reference
-The API is self-documenting. When it runs locally, Swagger UI is available at:
+## API Reference
 
-> **<https://localhost:5081/swagger/index.html>**
+The API is self-documenting using Swagger/OpenAPI.
 
-Every endpoint listed below can be tested there — including authenticated ones,
-after pasting a Firebase ID token into the **Authorize** dialog.
+### Local development
 
+```
+https://localhost:5081/swagger/index.html
+```
+
+### Live Azure deployment
+
+```
+https://mzantsitableapi20261001221325-e9gxfnbbemdbbhcu.southafricanorth-01.azurewebsites.net/swagger/index.html
+```
+
+The live Swagger UI allows reviewers and collaborators to explore and test all available API endpoints without running the project locally.
 Recipes
 Method	Endpoint	Auth	Purpose
 GET	/api/Recipes	Public	List all recipes (optional ?cuisine= filter)
@@ -169,28 +194,28 @@ Security model
 User authentication — handled by Firebase Authentication. The API does not
 store passwords.
 
-Request authentication — every protected endpoint verifies the Firebase ID
+Request authentication - every protected endpoint verifies the Firebase ID
 token via the Firebase Admin SDK, before the request reaches the controller.
 
 Client-supplied identity is never trusted — the API reads the user's UID
 from the verified ID token, not from the request body.
 
-Firestore access — the Android app writes to Firestore through Firebase's
+Firestore access - the Android app writes to Firestore through Firebase's
 security rules; the API writes through the Admin SDK, which bypasses rules
 and is used only from trusted server-side code.
 
-Service credentials — the Firebase service-account key is stored in
+Service credentials - the Firebase service-account key is stored in
 firebase-service-account.json, is listed in .gitignore, and is never
 committed to source control.
 
 Project documentation
-Firebase setup — MzantsiTableApi/FIREBASE_SETUP.md
+Firebase setup - MzantsiTableApi/FIREBASE_SETUP.md
 
-Google SSO setup — MzantsiTable-Android/SETUP_GOOGLE_SSO.md
+Google SSO setup - MzantsiTable-Android/SETUP_GOOGLE_SSO.md
 
-API setup — MzantsiTableApi/README.md
+API setup - MzantsiTableApi/README.md
 
-Android app setup — see the "Quick start" section above
+Android app setup - see the "Quick start" section above
 
 Collaborators
 Name	Primary contributions
@@ -221,7 +246,7 @@ Academic context
 This project was developed as part of the Open Source 6312 Portfolio of
 Evidence at Rosebank International University College (2026).
 
-Video demonstration: Watch on YouTube
+Video demonstration: Watch on YouTube 
 
 License
 This project is developed for academic purposes. See the assignment brief
