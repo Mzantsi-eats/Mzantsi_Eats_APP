@@ -49,19 +49,20 @@ This project was built collaboratively by Group 4:
 
 Here is a look at the final implemented features of The Mzantsi Table:
 
-| Profile & Settings | Add Recipe |
+| Profile Settings & Language | Add Recipe |
 | :---: | :---: |
-| <img src="profile-settings.png" width="300" alt="Profile Settings"> | <img src="add-recipe.png" width="300" alt="Add Recipe"> |
-| *Dietary preferences, language toggle, and notifications.* | *Comprehensive form for uploading new recipes.* |
+| <img src="Add%20language.jpeg" width="300" alt="Language Settings"> | <img src="Add%20recipe.jpeg" width="300" alt="Add Recipe"> |
+| *Switch between English, isiZulu, and Sesotho.* | *Fill in details to upload a new recipe.* |
 
-| Community Hub | Notifications |
+| Add Recipe (Continued) | Community Notifications |
 | :---: | :---: |
-| <img src="community.png" width="300" alt="Community Hub"> | <img src="notifications.png" width="300" alt="In-App Notifications"> |
-| *Share attempts, rate, and cheer other cooks.* | *In-app alerts for ratings and comments.* |
+| <img src="Add%20recipe%20cont..jpeg" width="300" alt="Add Recipe Continued"> | <img src="Do%20you%20want%20notifications.jpeg" width="300" alt="Notification Prompt"> |
+| *Ingredients, method steps, and save button.* | *Prompt to enable push notifications.* |
 
-| Push Notifications | Home Feed |
+| In-App Notifications | Real-time Push Notifications |
 | :---: | :---: |
-| <img src="notifications-push.png" width="300" alt="Push Notifications"> | <img src="home.png" width="300" alt="Home Feed"> |
-| *Native device notifications for interactions.* | *Discover popular recipes and cultural categories.* |
+| <img src="Notifications%20in%20the%20APP.jpeg" width="300" alt="In-App Notifications"> | <img src="Real-time%20notifications.jpeg" width="300" alt="Push Notifications"> |
+| *See ratings and comments on your recipes.* | *Alerts that appear directly on the device.* |
 ---
+
 *Developed for the Open Source 6312 Portfolio of Evidence at Rosebank International University College (2026).*
