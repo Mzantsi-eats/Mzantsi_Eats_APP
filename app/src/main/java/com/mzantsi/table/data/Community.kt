@@ -1,7 +1,5 @@
 package com.mzantsi.table.data
 
-// ---------------------------------------------------------------- Community Hub models
-//
 // The Community Hub lets users:
 //  - join communities (one per culture, for example "Xhosa Kitchen"),
 //  - follow the cooks who share recipes,

@@ -25,7 +25,7 @@ object CommunityStore {
         }
     }
 
-    // ---------------------------------------------------------------- joined communities and followed cooks
+    // --- joined communities and followed cooks
 
     fun joined(userKey: String): Set<String> = readSet(JOINED_PREFIX + userKey)
     fun setJoined(userKey: String, ids: Set<String>) = writeSet(JOINED_PREFIX + userKey, ids)
@@ -33,7 +33,7 @@ object CommunityStore {
     fun following(userKey: String): Set<String> = readSet(FOLLOWING_PREFIX + userKey)
     fun setFollowing(userKey: String, names: Set<String>) = writeSet(FOLLOWING_PREFIX + userKey, names)
 
-    // ---------------------------------------------------------------- posts
+    // posts
 
     // Posts saved on this phone: the sample posts (with the user's ratings and cheers on them)
     // plus, in offline mode, the attempts users shared on this phone.
@@ -72,7 +72,7 @@ object CommunityStore {
         prefs?.edit()?.putString(KEY_REMOTE_CACHE, JsonCodec.writeList(posts, JsonCodec::postToJson))?.apply()
     }
 
-    // ---------------------------------------------------------------- helpers
+    // helpers
 
     private fun readSet(key: String): Set<String> {
         val raw = prefs?.getString(key, null) ?: return emptySet()

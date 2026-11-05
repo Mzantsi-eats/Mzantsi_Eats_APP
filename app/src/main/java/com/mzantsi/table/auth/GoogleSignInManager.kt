@@ -15,7 +15,6 @@ import com.google.firebase.auth.GoogleAuthProvider
 import kotlinx.coroutines.CancellationException
 import kotlinx.coroutines.tasks.await
 
-// The Google account details we need after a successful Google sign-in.
 data class GoogleAccount(
     val uid: String,
     val name: String,
@@ -30,8 +29,7 @@ sealed interface GoogleSignInResult {
     data class Failure(val message: String) : GoogleSignInResult
 }
 
-// Handles Google sign-in (SSO): Android Credential Manager gives us a Google ID token,
-// and we use that token to sign in to Firebase Authentication.
+// Handles Google sign-in (SSO): Android Credential Manager gives us a Google ID token, and we use that token to sign in to Firebase Authentication.
 object GoogleSignInManager {
 
     // The web client id is created from google-services.json at build time. No file means no id.
