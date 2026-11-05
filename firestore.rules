@@ -1,0 +1,49 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    // True when the person is signed in.
+    function signedIn() { return request.auth != null; }
+
+    // Users can only read and change their own profile and their own completed recipes.
+    match /users/{uid} {
+      allow read, write: if signedIn() && request.auth.uid == uid;
+
+      match /completed/{recipeId} {
+        allow read, write: if signedIn() && request.auth.uid == uid;
+      }
+    }
+
+    // Anyone signed in can read recipes. Only the person who added a recipe can change or delete it.
+    match /recipes/{recipeId} {
+      allow read: if signedIn();
+      allow create: if signedIn() && request.resource.data.authorUid == request.auth.uid;
+      allow update, delete: if signedIn() && resource.data.authorUid == request.auth.uid;
+
+      // Anyone signed in can read reviews and add one in their own name (1 to 5 stars).
+      // Only the person who wrote a review can delete it.
+      match /reviews/{reviewId} {
+        allow read: if signedIn();
+        allow create: if signedIn()
+          && request.resource.data.userUid == request.auth.uid
+          && request.resource.data.rating is int
+          && request.resource.data.rating >= 1
+          && request.resource.data.rating <= 5;
+        allow delete: if signedIn() && resource.data.userUid == request.auth.uid;
+      }
+    }
+
+    // Community Hub attempts. Anyone signed in can read them and share one in their own name.
+    // Anyone signed in can rate, cheer or comment (only those three fields may change);
+    // only the author can edit the rest or delete the post.
+    match /community_posts/{postId} {
+      allow read: if signedIn();
+      allow create: if signedIn() && request.resource.data.authorUid == request.auth.uid;
+      allow update: if signedIn() && (
+        resource.data.authorUid == request.auth.uid
+        || request.resource.data.diff(resource.data).affectedKeys().hasOnly(['ratings', 'cheeredBy', 'comments'])
+      );
+      allow delete: if signedIn() && resource.data.authorUid == request.auth.uid;
+    }
+  }
+}
