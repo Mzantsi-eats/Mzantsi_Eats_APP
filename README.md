@@ -45,6 +45,23 @@ This project was built collaboratively by Group 4:
 - **Olilitha Adam**
 
 
+## 📸 Application Screenshots
 
+Here is a look at the final implemented features of The Mzantsi Table:
+
+| Profile & Settings | Add Recipe |
+| :---: | :---: |
+| <img src="profile-settings.png" width="300" alt="Profile Settings"> | <img src="add-recipe.png" width="300" alt="Add Recipe"> |
+| *Dietary preferences, language toggle, and notifications.* | *Comprehensive form for uploading new recipes.* |
+
+| Community Hub | Notifications |
+| :---: | :---: |
+| <img src="community.png" width="300" alt="Community Hub"> | <img src="notifications.png" width="300" alt="In-App Notifications"> |
+| *Share attempts, rate, and cheer other cooks.* | *In-app alerts for ratings and comments.* |
+
+| Push Notifications | Home Feed |
+| :---: | :---: |
+| <img src="notifications-push.png" width="300" alt="Push Notifications"> | <img src="home.png" width="300" alt="Home Feed"> |
+| *Native device notifications for interactions.* | *Discover popular recipes and cultural categories.* |
 ---
 *Developed for the Open Source 6312 Portfolio of Evidence at Rosebank International University College (2026).*
