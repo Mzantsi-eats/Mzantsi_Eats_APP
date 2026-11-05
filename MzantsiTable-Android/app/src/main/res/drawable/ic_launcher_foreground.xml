@@ -1,0 +1,33 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <!-- Plate -->
+    <path
+        android:fillColor="#FBF3E7"
+        android:pathData="M54,27 m-24,0 a24,24 0 1,0 48,0 a24,24 0 1,0 -48,0" />
+    <path
+        android:fillColor="#E0A83A"
+        android:pathData="M54,27 m-17,0 a17,17 0 1,0 34,0 a17,17 0 1,0 -34,0" />
+    <!-- "M" monogram -->
+    <path
+        android:fillColor="#1F6B3B"
+        android:pathData="M43,20 L43,34 L46.5,34 L46.5,25 L50.5,32 L53,32 L57,25 L57,34 L60.5,34 L60.5,20 L56.5,20 L51.75,28.5 L47,20 Z" />
+    <!-- Fork + knife crossed beneath -->
+    <path
+        android:fillColor="#E8862E"
+        android:pathData="M38,60 L70,92 L67,95 L35,63 Z" />
+    <path
+        android:fillColor="#E8862E"
+        android:pathData="M70,60 L38,92 L41,95 L73,63 Z" />
+    <path
+        android:fillColor="#E8862E"
+        android:pathData="M36,52 L40,52 L40,64 L36,64 Z" />
+    <path
+        android:fillColor="#E8862E"
+        android:pathData="M42,52 L46,52 L46,64 L42,64 Z" />
+    <path
+        android:fillColor="#E8862E"
+        android:pathData="M36,52 L46,52 L46,56 L41,60 L36,56 Z" />
+</vector>
