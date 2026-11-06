@@ -16,12 +16,8 @@ import com.mzantsi.table.data.Recipe
 import com.mzantsi.table.ui.components.CultureCard
 import com.mzantsi.table.ui.theme.MzantsiGreenDark
 
-
-// A grid of South African cultures, like the prototype: each card is filled with a photo
-// that fades into the culture's colour, with the name and number of dishes on top.
 @Composable
 fun ExploreScreen(recipes: List<Recipe>, onCultureClick: (String) -> Unit) {
-    // The built-in cultures plus any new culture that came from a recipe a user added.
     val cultures = (MockData.cultures + recipes.map { it.culture }).distinct()
 
     Column(Modifier.fillMaxSize()) {
@@ -49,7 +45,6 @@ fun ExploreScreen(recipes: List<Recipe>, onCultureClick: (String) -> Unit) {
                 CultureCard(
                     culture = culture,
                     recipes = recipes,
-                    // Taller than wide, so the photos fill the screen like the prototype.
                     modifier = Modifier.fillMaxWidth().aspectRatio(0.82f),
                     onClick = { onCultureClick(culture) }
                 )

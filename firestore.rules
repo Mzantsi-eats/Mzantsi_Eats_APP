@@ -12,6 +12,24 @@ service cloud.firestore {
       match /completed/{recipeId} {
         allow read, write: if signedIn() && request.auth.uid == uid;
       }
+
+      // Notifications. Only the owner can read them, mark them as read or delete them.
+      // Anyone signed in can send one to someone else, but only in their own name (fromUid)
+      // and it must start as unread. Nobody can send a notification to themselves.
+      match /notifications/{notificationId} {
+        allow read, delete: if signedIn() && request.auth.uid == uid;
+        allow update: if signedIn() && request.auth.uid == uid
+          && request.resource.data.diff(resource.data).affectedKeys().hasOnly(['read']);
+        allow create: if signedIn()
+          && request.auth.uid != uid
+          && request.resource.data.fromUid == request.auth.uid
+          && request.resource.data.toUid == uid
+          && request.resource.data.read == false
+          && request.resource.data.title is string
+          && request.resource.data.title.size() <= 120
+          && request.resource.data.body is string
+          && request.resource.data.body.size() <= 400;
+      }
     }
 
     // Anyone signed in can read recipes. Only the person who added a recipe can change or delete it.

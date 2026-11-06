@@ -20,8 +20,6 @@ import com.mzantsi.table.ui.components.LOGO_IMAGE_PATH
 import com.mzantsi.table.ui.theme.MzantsiGreen
 import com.mzantsi.table.ui.theme.MzantsiOrange
 
-
-// The welcome screen: logo, slogan, language buttons (EN / ZU / ST), Get Started and Log in.
 @Composable
 fun LaunchScreen(
     language: AppLanguage,
@@ -83,7 +81,6 @@ fun LaunchScreen(
     }
 }
 
-// One language button. The selected language is highlighted.
 @Composable
 private fun LanguageChip(label: String, selected: Boolean, onClick: () -> Unit) {
     FilterChip(selected = selected, onClick = onClick, label = { Text(label) })

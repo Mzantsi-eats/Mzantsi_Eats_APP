@@ -2,12 +2,6 @@ package com.mzantsi.table.auth
 
 import android.util.Patterns
 
-// Checks the Register / Login / Change Password forms before we send anything to Firebase.
-// Password rules from our POE: at least 8 characters with an uppercase letter,
-// a lowercase letter, a number and a special character.
-//
-// Instead of showing a list of rules on the screen, the password box tells the user
-// exactly what is still missing while they type (for example "Add a number (0-9)").
 object AuthValidation {
 
     const val MIN_PASSWORD_LENGTH = 8
@@ -24,7 +18,6 @@ object AuthValidation {
         else -> null
     }
 
-    // What the password still needs, in plain words. Empty when the password is strong enough.
     fun missingPasswordParts(password: String): List<String> {
         val missing = mutableListOf<String>()
         if (password.length < MIN_PASSWORD_LENGTH) {
@@ -44,8 +37,6 @@ object AuthValidation {
     private fun hasEdgeSpaces(password: String) =
         password.isNotEmpty() && (password.first().isWhitespace() || password.last().isWhitespace())
 
-    // Used when creating a password (Register and Change Password).
-    // Returns a message that tells the user what to do next, or null if the password is fine.
     fun newPasswordError(password: String): String? {
         if (password.isEmpty()) return "Create a password"
         if (hasEdgeSpaces(password)) return "Remove the space at the start or end of your password"
@@ -53,7 +44,6 @@ object AuthValidation {
         return if (missing.isEmpty()) null else "Add " + joinNaturally(missing)
     }
 
-    // Used on the Login screen: we only check that something sensible was typed.
     fun loginPasswordError(password: String): String? = when {
         password.isEmpty() -> "Enter your password"
         password.length < MIN_PASSWORD_LENGTH ->
@@ -67,7 +57,6 @@ object AuthValidation {
         else -> null
     }
 
-    // "a", "b" and "c"
     private fun joinNaturally(parts: List<String>): String = when (parts.size) {
         0 -> ""
         1 -> parts[0]

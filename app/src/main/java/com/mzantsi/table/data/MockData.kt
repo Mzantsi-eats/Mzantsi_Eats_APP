@@ -1,12 +1,12 @@
 package com.mzantsi.table.data
 
 
-// The built-in recipes and cultures that come with the app, so there is always something to show.
+
 object MockData {
 
     val cultures = listOf("Xhosa", "Zulu", "Cape Malay", "Sesotho", "Braai", "Coloured", "Desserts", "Street Food")
 
-    // Who shared each built-in recipe. These cooks also appear in the Community Hub.
+
     private val defaultAuthors = mapOf(
         4 to "Johan V.", 5 to "Thabo M.", 6 to "Zanele D.", 7 to "Zanele D.", 8 to "Nadia A.",
         9 to "Thabo M.", 10 to "Thabo M.", 11 to "Lerato K.", 12 to "Johan V.", 13 to "Ayesha P.",

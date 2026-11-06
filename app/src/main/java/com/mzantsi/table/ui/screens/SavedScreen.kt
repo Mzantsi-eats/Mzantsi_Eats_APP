@@ -16,7 +16,6 @@ import com.mzantsi.table.data.Recipe
 import com.mzantsi.table.ui.theme.MzantsiGreen
 import com.mzantsi.table.ui.theme.MzantsiRed
 
-// Two lists: the recipes the user saved (heart), and the recipes downloaded for offline use.
 @Composable
 fun SavedScreen(
     savedRecipes: List<Recipe>,

@@ -17,10 +17,6 @@ import androidx.compose.ui.text.input.PasswordVisualTransformation
 import androidx.compose.ui.text.input.VisualTransformation
 import com.mzantsi.table.ui.theme.MzantsiGreen
 
-// The password box used everywhere in the app (Register, Login and Change Password).
-// - error: shown in red under the box, telling the user what to fix (for example "Add a number (0-9)").
-// - success: shown in green when the password is good (for example "Strong password").
-// The eye button shows or hides what was typed.
 @Composable
 fun PasswordField(
     value: String,

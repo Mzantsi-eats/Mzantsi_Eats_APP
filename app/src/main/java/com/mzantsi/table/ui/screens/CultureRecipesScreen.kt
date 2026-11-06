@@ -19,8 +19,6 @@ import androidx.compose.ui.unit.dp
 import com.mzantsi.table.data.Recipe
 import com.mzantsi.table.ui.theme.MzantsiGreen
 
-
-// Shows all the recipes of one culture (opened from Home or Explore).
 @Composable
 fun CultureRecipesScreen(
     culture: String,
@@ -40,7 +38,6 @@ fun CultureRecipesScreen(
         )
         if (recipes.isNotEmpty()) {
             Spacer(Modifier.height(8.dp))
-            // Saves every recipe of this culture on the phone, so this page works without internet.
             OutlinedButton(onClick = { if (!allDownloaded) onDownloadAll(recipes) }, enabled = !allDownloaded) {
                 Icon(
                     if (allDownloaded) Icons.Filled.OfflinePin else Icons.Filled.DownloadForOffline,

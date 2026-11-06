@@ -9,9 +9,6 @@ import java.security.SecureRandom
 import javax.crypto.SecretKeyFactory
 import javax.crypto.spec.PBEKeySpec
 
-// Offline mode storage. This is used when the app has no google-services.json (no Firebase).
-// Everything is saved on the phone in SharedPreferences, so it is still there after the app closes.
-// Passwords are never saved as plain text. We save a salted PBKDF2 hash instead.
 object LocalAccountStore {
 
     private const val PREFS = "mzantsi_accounts"
@@ -24,7 +21,6 @@ object LocalAccountStore {
 
     private var prefs: SharedPreferences? = null
 
-    // One user account saved on the phone.
     data class Account(
         val userId: Int,
         val name: String,
@@ -51,7 +47,6 @@ object LocalAccountStore {
         )
     }
 
-    // Called once when the app starts (see MzantsiApp).
     fun init(context: Context) {
         if (prefs == null) {
             prefs = context.applicationContext.getSharedPreferences(PREFS, Context.MODE_PRIVATE)
@@ -60,7 +55,6 @@ object LocalAccountStore {
 
     private fun normalise(email: String) = email.trim().lowercase()
 
-    // Find an account by email. Returns null if there is no account.
     fun find(email: String): Account? {
         val raw = prefs?.getString(ACCOUNT_PREFIX + normalise(email), null) ?: return null
         return runCatching { JSONObject(raw).toAccount() }.getOrNull()
@@ -70,7 +64,6 @@ object LocalAccountStore {
         prefs?.edit()?.putString(ACCOUNT_PREFIX + normalise(account.email), account.toJson().toString())?.apply()
     }
 
-    // Create a new email and password account.
     fun createPasswordAccount(
         name: String,
         email: String,
@@ -92,7 +85,6 @@ object LocalAccountStore {
         return account
     }
 
-    // Create a new Google account (no password, because Google checks who the user is).
     fun createGoogleAccount(name: String, email: String, photoUrl: String, language: AppLanguage): Account {
         val account = Account(
             userId = nextId(),
@@ -106,14 +98,12 @@ object LocalAccountStore {
         return account
     }
 
-    // Checks the password by hashing it again with the same salt and comparing the result.
     fun verifyPassword(account: Account, password: String): Boolean {
         if (account.provider != AuthProvider.EMAIL || account.salt.isBlank()) return false
         val salt = Base64.decode(account.salt, Base64.NO_WRAP)
         return hash(password, salt) == account.hash
     }
 
-    // Saves a new password (with a new random salt). Returns the updated account.
     fun changePassword(account: Account, newPassword: String): Account {
         val salt = ByteArray(16).also { SecureRandom().nextBytes(it) }
         val updated = account.copy(
@@ -124,7 +114,6 @@ object LocalAccountStore {
         return updated
     }
 
-    // Remembers who is signed in, so the user stays signed in next time. Pass null to sign out.
     fun setSession(email: String?) {
         prefs?.edit()?.apply {
             if (email == null) remove(KEY_SESSION) else putString(KEY_SESSION, normalise(email))
@@ -136,7 +125,6 @@ object LocalAccountStore {
         return find(email)
     }
 
-    // Recipes that users added on this phone.
     fun recipes(): List<Recipe> {
         val raw = prefs?.getString(KEY_RECIPES, null) ?: return emptyList()
         return runCatching {
@@ -151,7 +139,6 @@ object LocalAccountStore {
         prefs?.edit()?.putString(KEY_RECIPES, array.toString())?.apply()
     }
 
-    // Reviews for one recipe, newest first.
     fun reviews(recipeId: Int): List<Review> {
         val raw = prefs?.getString(REVIEWS_PREFIX + recipeId, null) ?: return emptyList()
         return runCatching {
@@ -166,8 +153,6 @@ object LocalAccountStore {
         prefs?.edit()?.putString(REVIEWS_PREFIX + review.recipeId, array.toString())?.apply()
     }
 
-    // Small helper functions
-
     private fun nextId(): Int {
         val p = prefs ?: return 1
         val id = p.getInt(KEY_NEXT_ID, 1)
@@ -180,8 +165,6 @@ object LocalAccountStore {
         val bytes = SecretKeyFactory.getInstance("PBKDF2WithHmacSHA256").generateSecret(spec).encoded
         return Base64.encodeToString(bytes, Base64.NO_WRAP)
     }
-
-    // Turning objects into JSON text (to save) and back again (to load)
 
     private fun Account.toJson() = JSONObject().apply {
         put("userId", userId)

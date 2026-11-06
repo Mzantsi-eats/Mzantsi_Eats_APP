@@ -3,8 +3,6 @@ package com.mzantsi.table.data
 import org.json.JSONArray
 import org.json.JSONObject
 
-// Turns recipes, reviews and community posts into JSON text (to save on the phone) and back again.
-// Used by OfflineStore (downloads) and CommunityStore.
 internal object JsonCodec {
 
     fun recipeToJson(r: Recipe) = JSONObject().apply {
@@ -22,6 +20,7 @@ internal object JsonCodec {
         put("ingredients", JSONArray(r.ingredients))
         put("method", JSONArray(r.method))
         put("authorName", r.authorName)
+        put("authorUid", r.authorUid)
     }
 
     fun jsonToRecipe(o: JSONObject) = Recipe(
@@ -38,7 +37,8 @@ internal object JsonCodec {
         ratingAvg = o.optDouble("ratingAvg", 0.0).toFloat(),
         ingredients = o.optJSONArray("ingredients").strings(),
         method = o.optJSONArray("method").strings(),
-        authorName = o.optString("authorName")
+        authorName = o.optString("authorName"),
+        authorUid = o.optString("authorUid")
     )
 
     fun reviewToJson(r: Review) = JSONObject().apply {
@@ -115,7 +115,7 @@ internal object JsonCodec {
     fun JSONArray?.strings(): List<String> =
         if (this == null) emptyList() else (0 until length()).map { optString(it) }
 
-    // Reads a JSON array of objects, skipping any item that can't be read instead of crashing.
+
     fun <T> parseList(raw: String?, read: (JSONObject) -> T): List<T> {
         if (raw.isNullOrBlank()) return emptyList()
         return runCatching {

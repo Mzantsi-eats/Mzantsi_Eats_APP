@@ -4,10 +4,6 @@ import android.content.Context
 import android.content.SharedPreferences
 import org.json.JSONObject
 
-// Recipes the user downloaded for offline use.
-// A download saves the whole recipe (ingredients, method, photo path) and its reviews on the phone,
-// so the recipe can be opened and cooked from without internet - even recipes other users added.
-// Downloads are kept per user, so two people sharing a phone each have their own list.
 object OfflineStore {
 
     private const val PREFS = "mzantsi_offline"
@@ -32,7 +28,6 @@ object OfflineStore {
             )
         }.sortedByDescending { it.downloadedAtMillis }
 
-    // Saves (or refreshes) downloads. Returns the new list.
     fun save(userKey: String, items: List<Download>): List<Download> {
         val byId = downloads(userKey).associateBy { it.recipe.recipeId }.toMutableMap()
         items.forEach { byId[it.recipe.recipeId] = it }

@@ -33,7 +33,6 @@ import com.mzantsi.table.ui.theme.MzantsiGreen
 import com.mzantsi.table.ui.theme.MzantsiRed
 import java.util.Locale
 
-// Shows one recipe: picture, details, ingredients, method steps, reviews and the "Mark as Completed" button.
 @Composable
 fun RecipeDetailScreen(
     recipe: Recipe,
@@ -49,7 +48,6 @@ fun RecipeDetailScreen(
 ) {
     var showReviewDialog by remember { mutableStateOf(false) }
 
-    // If people left reviews, show the average of their stars. If not, show the recipe's starting rating.
     val rating = if (reviews.isNotEmpty()) reviews.map { it.rating }.average().toFloat() else recipe.ratingAvg
     val ratingText = "★ " + String.format(Locale.US, "%.1f", rating) +
         if (reviews.isNotEmpty()) " (${reviews.size})" else ""
@@ -62,7 +60,6 @@ fun RecipeDetailScreen(
         ) {
             TextButton(onClick = onBack) { Text("← Back") }
             Row(verticalAlignment = Alignment.CenterVertically) {
-                // Download: keeps the whole recipe (and its reviews) on the phone for offline use.
                 TextButton(onClick = onToggleDownload) {
                     Icon(
                         imageVector = if (isDownloaded) Icons.Filled.OfflinePin else Icons.Filled.DownloadForOffline,
@@ -101,7 +98,6 @@ fun RecipeDetailScreen(
             }
             Text(recipe.title, style = MaterialTheme.typography.headlineMedium)
             Spacer(Modifier.height(6.dp))
-            // This row can scroll sideways, so nothing gets cut off on small phones.
             Row(
                 Modifier.horizontalScroll(rememberScrollState()),
                 horizontalArrangement = Arrangement.spacedBy(12.dp)
@@ -138,7 +134,6 @@ fun RecipeDetailScreen(
             }
             item { Spacer(Modifier.height(16.dp)) }
 
-            // Reviews section
             item {
                 Row(
                     Modifier.fillMaxWidth(),
@@ -188,7 +183,6 @@ private fun StatPill(text: String) {
     Text(text, style = MaterialTheme.typography.labelSmall)
 }
 
-// One numbered line, used for the ingredients and the method steps.
 @Composable
 private fun NumberedRow(number: Int, text: String) {
     Row(
@@ -206,7 +200,6 @@ private fun NumberedRow(number: Int, text: String) {
     }
 }
 
-// One review: the person's name, their stars and their comment.
 @Composable
 private fun ReviewRow(review: Review) {
     Column(
@@ -230,7 +223,6 @@ private fun ReviewRow(review: Review) {
     }
 }
 
-// The pop-up where the user taps 1 to 5 stars and types a comment.
 @Composable
 private fun WriteReviewDialog(
     recipeTitle: String,
@@ -283,7 +275,6 @@ private fun WriteReviewDialog(
     )
 }
 
-// Shown if a recipe can't be found (for example it was deleted from the database).
 @Composable
 fun RecipeNotFound(onBack: () -> Unit) {
     Column(Modifier.fillMaxSize().padding(16.dp)) {
@@ -293,7 +284,6 @@ fun RecipeNotFound(onBack: () -> Unit) {
     }
 }
 
-// The pop-up that shows after the user taps "Mark as Completed".
 @Composable
 fun CompletionCelebrationDialog(
     recipe: Recipe,
@@ -305,7 +295,6 @@ fun CompletionCelebrationDialog(
         onDismissRequest = onDismiss,
         confirmButton = {
             if (onShareWithCommunity != null) {
-                // Sharing the attempt motivates other members to cook it too.
                 TextButton(onClick = onShareWithCommunity) { Text("Share with the community") }
             } else {
                 TextButton(onClick = onDismiss) { Text("Nice!") }

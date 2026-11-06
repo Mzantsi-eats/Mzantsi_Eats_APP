@@ -15,7 +15,6 @@ import com.google.firebase.auth.GoogleAuthProvider
 import kotlinx.coroutines.CancellationException
 import kotlinx.coroutines.tasks.await
 
-// The Google account details we need after a successful Google sign-in.
 data class GoogleAccount(
     val uid: String,
     val name: String,
@@ -23,35 +22,29 @@ data class GoogleAccount(
     val photoUrl: String
 )
 
-// The three things that can happen when the user taps "Continue with Google".
 sealed interface GoogleSignInResult {
     data class Success(val account: GoogleAccount) : GoogleSignInResult
     data object Cancelled : GoogleSignInResult
     data class Failure(val message: String) : GoogleSignInResult
 }
 
-// Handles Google sign-in (SSO): Android Credential Manager gives us a Google ID token,
-// and we use that token to sign in to Firebase Authentication.
 object GoogleSignInManager {
 
-    // The web client id is created from google-services.json at build time. No file means no id.
     private fun webClientId(context: Context): String? {
         val resId = context.resources.getIdentifier("default_web_client_id", "string", context.packageName)
         if (resId == 0) return null
         return context.getString(resId).takeIf { it.isNotBlank() }
     }
 
-    // False means real Google sign-in is not set up, so the screen shows the demo account chooser instead.
     fun isConfigured(context: Context): Boolean = webClientId(context) != null
 
-    // Shows the Google account picker, then signs in to Firebase with the chosen account.
     suspend fun signIn(context: Context): GoogleSignInResult {
         val clientId = webClientId(context)
             ?: return GoogleSignInResult.Failure("Google Sign-In is not configured (google-services.json missing).")
 
         return try {
             val option = GetGoogleIdOption.Builder()
-                .setFilterByAuthorizedAccounts(false) // show all Google accounts on the phone, so new users can sign up too
+                .setFilterByAuthorizedAccounts(false)
                 .setServerClientId(clientId)
                 .setAutoSelectEnabled(false)
                 .build()
@@ -96,7 +89,6 @@ object GoogleSignInManager {
         }
     }
 
-    // Signs out of Firebase and tells Credential Manager to forget the last account.
     suspend fun signOut(context: Context) {
         if (!isConfigured(context)) return
         runCatching { FirebaseAuth.getInstance().signOut() }

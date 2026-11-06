@@ -23,11 +23,6 @@ import java.io.File
 import java.io.IOException
 import java.io.InputStream
 
-
-// Shows a picture from the app's assets folder (or a photo file on the phone).
-// While it loads, or if there is no picture, it shows the placeholder instead (for example an emoji).
-// fallbackPaths are tried in order when the first picture does not exist
-// (for example: a culture photo, then a photo of one of that culture's dishes).
 @Composable
 fun AssetImage(
     path: String,
@@ -62,31 +57,21 @@ fun AssetImage(
     }
 }
 
-
-// Turns a name into a file name, for example "Bunny Chow" becomes "bunny_chow".
 fun slugOf(text: String): String =
     text.lowercase().replace(Regex("[^a-z0-9]+"), "_").trim('_')
 
-
-// Finds the picture for a recipe: the user's photo, or assets/images/recipes/<recipe_name>.jpg
 fun Recipe.imagePath(): String = when {
     imageRes.startsWith("file:") -> imageRes
     imageRes.isNotBlank() && !imageRes.startsWith("http") -> "recipes/" + slugOf(imageRes)
     else -> "recipes/" + slugOf(title)
 }
 
-
-// assets/images/cultures/<culture_name>.jpg
 fun cultureImagePath(culture: String): String = "cultures/" + slugOf(culture)
-
 
 const val LOGO_IMAGE_PATH = "branding/logo"
 
-
 const val FEATURED_IMAGE_PATH = "branding/featured"
 
-// Loads pictures and keeps up to 40 in memory, so the same picture isn't loaded twice.
-// Pictures that don't exist are remembered too, so we don't keep looking for them.
 private object AssetImages {
     private val cache = LruCache<String, ImageBitmap>(40)
     private val missing = HashSet<String>()
@@ -114,7 +99,6 @@ private object AssetImages {
         return bitmap.asImageBitmap().also { cache.put(path, it) }
     }
 
-    // Big photos are made smaller while loading, so the app doesn't run out of memory.
     private fun decode(maxDimension: Int, open: () -> InputStream): Bitmap? = try {
         val bounds = BitmapFactory.Options().apply { inJustDecodeBounds = true }
         open().use { BitmapFactory.decodeStream(it, null, bounds) }

@@ -1,23 +1,13 @@
 package com.mzantsi.table.data
 
-// ---------------------------------------------------------------- Community Hub models
-//
-// The Community Hub lets users:
-//  - join communities (one per culture, for example "Xhosa Kitchen"),
-//  - follow the cooks who share recipes,
-//  - share their own attempt at a recipe ("I cooked this!"),
-//  - rate other people's attempts (1 to 5 stars), cheer them on and leave a short encouraging comment.
-
-// A community that users can join. Each one is about one culture's food.
 data class CommunityGroup(
     val id: String,
     val name: String,
     val culture: String,
     val description: String,
-    val baseMembers: Int // members that are already in the community (sample data)
+    val baseMembers: Int
 )
 
-// A cook that users can follow. Cooks are the people who shared recipes.
 data class Cook(
     val name: String,
     val culture: String,
@@ -25,33 +15,30 @@ data class Cook(
     val baseFollowers: Int
 )
 
-// A short encouraging message on an attempt, for example "Looks delicious, well done!".
 data class PostComment(
     val authorName: String,
     val text: String,
     val createdAtMillis: Long
 )
 
-// Someone's attempt at cooking a recipe, shared with a community.
 data class CommunityPost(
     val postId: String,
-    val authorKey: String,     // the Firebase uid, or the email in offline mode
+    val authorKey: String,
     val authorName: String,
     val recipeId: Int,
     val recipeTitle: String,
     val communityId: String,
     val caption: String,
-    val photoPath: String = "", // "file:..." for the user's own photo. Empty means the recipe's photo.
+    val photoPath: String = "",
     val createdAtMillis: Long,
-    val ratings: Map<String, Int> = emptyMap(), // who rated -> stars (1 to 5)
-    val cheers: Set<String> = emptySet(),       // who cheered
+    val ratings: Map<String, Int> = emptyMap(),
+    val cheers: Set<String> = emptySet(),
     val comments: List<PostComment> = emptyList(),
-    val isSample: Boolean = false               // sample posts that come with the app
+    val isSample: Boolean = false
 ) {
     val averageRating: Float get() = if (ratings.isEmpty()) 0f else ratings.values.average().toFloat()
 }
 
-// The sample communities, cooks and attempts that come with the app.
 object CommunityData {
 
     private val descriptions = mapOf(
@@ -91,7 +78,6 @@ object CommunityData {
 
     private const val HOUR = 60L * 60L * 1000L
 
-    // Sample attempts, so the feed is not empty the first time the app opens.
     fun samplePosts(now: Long = System.currentTimeMillis()): List<CommunityPost> = listOf(
         CommunityPost(
             postId = "sample-1", authorKey = "sample:lerato", authorName = "Lerato K.",
@@ -134,7 +120,6 @@ object CommunityData {
         )
     )
 
-    // Quick encouraging messages users can send with one tap.
     val encouragements = listOf(
         "Looks delicious, well done!",
         "Keep cooking - you've got this!",

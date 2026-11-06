@@ -24,8 +24,6 @@ import com.mzantsi.table.ui.theme.MzantsiGreen
 import com.mzantsi.table.ui.theme.MzantsiGreenDark
 import com.mzantsi.table.ui.theme.MzantsiRed
 
-// The Profile screen: account details, dietary preferences, language, notifications and Sign Out.
-// Every change here is saved straight away (to Firestore, or to the phone in offline mode).
 @Composable
 fun ProfileScreen(
     user: User?,
@@ -46,7 +44,6 @@ fun ProfileScreen(
     var editingName by remember { mutableStateOf(false) }
     var nameField by remember { mutableStateOf(user?.name.orEmpty()) }
 
-    // When the saved name changes, update the text box too (but not while the user is typing).
     LaunchedEffect(user?.name) {
         if (!editingName) nameField = user?.name.orEmpty()
     }
@@ -89,7 +86,6 @@ fun ProfileScreen(
 
         Column(Modifier.padding(16.dp)) {
 
-            // Account details. Only the name can be edited.
             if (editingName) {
                 OutlinedTextField(
                     value = nameField,
@@ -129,7 +125,6 @@ fun ProfileScreen(
             )
             ProfileRow("Recipes Added", (user?.recipesAdded ?: 0).toString())
 
-            // Password (only for email accounts; Google accounts are managed by Google)
             if (user != null && user.authProvider == AuthProvider.EMAIL) {
                 Spacer(Modifier.height(16.dp))
                 SectionTitle("Password")
@@ -145,7 +140,6 @@ fun ProfileScreen(
 
             Spacer(Modifier.height(24.dp))
 
-            // Dietary preferences
             SectionTitle("Dietary Preferences")
             Text(
                 "Select any that apply. They are saved to your profile.",
@@ -178,7 +172,6 @@ fun ProfileScreen(
 
             Spacer(Modifier.height(24.dp))
 
-            // Language
             SectionTitle("Language")
             Text(
                 "Choose your preferred app language.",
@@ -207,7 +200,6 @@ fun ProfileScreen(
 
             Spacer(Modifier.height(24.dp))
 
-            // Notifications
             SectionTitle("Notifications")
             Row(
                 Modifier.fillMaxWidth().padding(vertical = 8.dp),
@@ -217,7 +209,7 @@ fun ProfileScreen(
                 Column(Modifier.weight(1f)) {
                     Text("Enable notifications", style = MaterialTheme.typography.bodyMedium)
                     Text(
-                        "Get alerts for reviews, new recipes and updates.",
+                        "Pop-up alerts when someone rates, cheers or reviews your food, and when cooks you follow add recipes.",
                         style = MaterialTheme.typography.labelSmall,
                         color = Color.Gray
                     )
@@ -230,7 +222,6 @@ fun ProfileScreen(
 
             Spacer(Modifier.height(32.dp))
 
-            // Sign out
             OutlinedButton(
                 onClick = onSignOut,
                 shape = RoundedCornerShape(20.dp),
@@ -255,8 +246,6 @@ fun ProfileScreen(
     }
 }
 
-// The pop-up for changing the password. The new password is checked while the user types,
-// with the same rules as the Register screen.
 @Composable
 private fun ChangePasswordDialog(
     isBusy: Boolean,
@@ -332,7 +321,6 @@ private fun ChangePasswordDialog(
     )
 }
 
-// A small green heading for each part of the Profile screen.
 @Composable
 private fun SectionTitle(text: String) {
     Text(
@@ -343,7 +331,6 @@ private fun SectionTitle(text: String) {
     )
 }
 
-// One line of account details. If onEdit is given, an "Edit" button is shown.
 @Composable
 private fun ProfileRow(
     label: String,

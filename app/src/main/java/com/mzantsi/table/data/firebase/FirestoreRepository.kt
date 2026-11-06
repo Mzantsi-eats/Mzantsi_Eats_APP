@@ -7,9 +7,12 @@ import com.google.firebase.firestore.FieldValue
 import com.google.firebase.firestore.FirebaseFirestore
 import com.google.firebase.firestore.FirebaseFirestoreException
 import com.google.firebase.firestore.ListenerRegistration
+import com.google.firebase.firestore.Query
 import com.google.firebase.firestore.SetOptions
 import kotlinx.coroutines.tasks.await
 import com.mzantsi.table.data.AppLanguage
+import com.mzantsi.table.data.AppNotification
+import com.mzantsi.table.data.NotificationType
 import com.mzantsi.table.data.AuthProvider
 import com.mzantsi.table.data.CommunityPost
 import com.mzantsi.table.data.PostComment
@@ -18,7 +21,6 @@ import com.mzantsi.table.data.Recipe
 import com.mzantsi.table.data.Review
 import kotlin.random.Random
 
-// The user information we keep in users/{uid}.
 data class UserProfile(
     val name: String,
     val email: String,
@@ -29,7 +31,6 @@ data class UserProfile(
     val notificationsEnabled: Boolean,
     val savedRecipeIds: Set<Int>,
     val recipesAdded: Int,
-    // null when the document doesn't have the field yet (then we keep what is saved on the phone)
     val joinedCommunities: Set<String>? = null,
     val followingCooks: Set<String>? = null
 )
@@ -51,8 +52,6 @@ class FirestoreRepository(
     private fun reviewsOf(recipeId: Int) =
         db.collection(FirestorePaths.RECIPES).document(recipeId.toString()).collection(FirestorePaths.REVIEWS)
 
-    // Live listeners: they run again every time the data changes
-
     fun listenUser(
         uid: String,
         onChange: (UserProfile) -> Unit,
@@ -66,7 +65,6 @@ class FirestoreRepository(
             }
         }
 
-    // Sends every recipe in the "recipes" collection, oldest first.
     fun listenRecipes(
         onChange: (List<Recipe>) -> Unit,
         onError: (FirebaseFirestoreException) -> Unit
@@ -83,7 +81,6 @@ class FirestoreRepository(
             }
         }
 
-    // Sends the reviews of one recipe, newest first.
     fun listenReviews(
         recipeId: Int,
         onChange: (List<Review>) -> Unit,
@@ -97,13 +94,10 @@ class FirestoreRepository(
             }
         }
 
-    // Reads the user once (needs internet). Used when someone signs in with Google, to see if they are new.
     suspend fun getUserProfileOnce(uid: String): UserProfile? {
         val snap = userDoc(uid).get().await()
         return if (snap.exists()) snap.toUserProfile() else null
     }
-
-    // Writing user data
 
     fun createUserProfile(
         uid: String,
@@ -129,7 +123,6 @@ class FirestoreRepository(
             SetOptions.merge()
         )
 
-    // Changes only the fields we pass in. It also works if the document does not exist yet.
     fun patchUser(uid: String, fields: Map<String, Any>): Task<Void> =
         userDoc(uid).set(fields, SetOptions.merge())
 
@@ -139,7 +132,6 @@ class FirestoreRepository(
             mapOf(UserFields.SAVED to if (saved) FieldValue.arrayUnion(recipeId) else FieldValue.arrayRemove(recipeId))
         )
 
-    // DietaryPrefs is saved as one text value like "Halal,Vegan", so we write the whole list each time.
     fun setDietaryPrefs(uid: String, prefs: Set<String>): Task<Void> =
         patchUser(uid, mapOf(UserFields.DIETARY to prefs.sorted().joinToString(",")))
 
@@ -154,9 +146,6 @@ class FirestoreRepository(
             SetOptions.merge()
         )
 
-    // Writing recipes and reviews
-
-    // Saves the recipe and adds 1 to the user's RecipesAdded count. Both happen together or not at all.
     fun addRecipe(uid: String, recipe: Recipe): Task<Void> {
         val batch = db.batch()
         batch.set(
@@ -167,7 +156,6 @@ class FirestoreRepository(
         return batch.commit()
     }
 
-    // Saves a review under recipes/{recipeId}/reviews. The user's uid is saved so the rules can check it.
     fun addReview(uid: String, review: Review): Task<Void> =
         reviewsOf(review.recipeId).document().set(
             mapOf(
@@ -181,11 +169,8 @@ class FirestoreRepository(
             )
         )
 
-    // Community Hub
-
     private fun postDoc(postId: String) = db.collection(FirestorePaths.POSTS).document(postId)
 
-    // Sends every attempt shared in the Community Hub, newest first.
     fun listenPosts(
         onChange: (List<CommunityPost>) -> Unit,
         onError: (FirebaseFirestoreException) -> Unit
@@ -216,7 +201,6 @@ class FirestoreRepository(
             )
         )
 
-    // ratings is a map of uid -> stars, so each person has one rating that they can change.
     fun ratePost(postId: String, uid: String, stars: Int): Task<Void> =
         postDoc(postId).set(mapOf("ratings" to mapOf(uid to stars)), SetOptions.merge())
 
@@ -236,17 +220,64 @@ class FirestoreRepository(
             )
         )
 
+    private fun notificationsOf(uid: String) = userDoc(uid).collection(FirestorePaths.NOTIFICATIONS)
+
+    fun listenNotifications(
+        uid: String,
+        onChange: (List<AppNotification>) -> Unit,
+        onError: (FirebaseFirestoreException) -> Unit
+    ): ListenerRegistration =
+        notificationsOf(uid)
+            .orderBy("createdAtMillis", Query.Direction.DESCENDING)
+            .limit(50)
+            .addSnapshotListener { snap, error ->
+                if (error != null) {
+                    onError(error)
+                } else if (snap != null) {
+                    onChange(snap.documents.mapNotNull { it.toNotificationOrNull() })
+                }
+            }
+
+    fun sendNotification(toUid: String, fromUid: String, n: AppNotification): Task<Void> =
+        notificationsOf(toUid).document(n.id).set(
+            mapOf(
+                "id" to n.id,
+                "toUid" to toUid,
+                "fromUid" to fromUid,
+                "fromName" to n.fromName,
+                "type" to n.type.name,
+                "title" to n.title,
+                "body" to n.body,
+                "route" to n.route,
+                "createdAtMillis" to n.createdAtMillis,
+                "read" to false
+            )
+        )
+
+    fun markNotificationsRead(uid: String, ids: Collection<String>): Task<Void> {
+        val batch = db.batch()
+        ids.forEach { batch.update(notificationsOf(uid).document(it), "read", true) }
+        return batch.commit()
+    }
+
+    fun deleteNotifications(uid: String, ids: Collection<String>): Task<Void> {
+        val batch = db.batch()
+        ids.forEach { batch.delete(notificationsOf(uid).document(it)) }
+        return batch.commit()
+    }
+
+    fun addFcmToken(uid: String, token: String): Task<Void> =
+        patchUser(uid, mapOf(UserFields.FCM_TOKENS to FieldValue.arrayUnion(token)))
+
+    fun removeFcmToken(uid: String, token: String): Task<Void> =
+        patchUser(uid, mapOf(UserFields.FCM_TOKENS to FieldValue.arrayRemove(token)))
+
     companion object {
-        // Recipe ids are numbers because navigation uses them. A random number means two phones
-        // that are offline will not pick the same id. The built-in recipes use 1 to 15.
         fun newRecipeId(): Int = Random.nextInt(100_000, Int.MAX_VALUE)
 
-        // True when google-services.json was added and Firebase started. False means offline mode.
         fun isAvailable(): Boolean = runCatching { FirebaseApp.getInstance() }.isSuccess
     }
 }
-
-// Turning Firestore documents into our Kotlin classes
 
 private fun DocumentSnapshot.intList(field: String): List<Int> =
     (get(field) as? List<*>)?.mapNotNull { (it as? Number)?.toInt() } ?: emptyList()
@@ -318,7 +349,6 @@ private fun Recipe.toMap(authorUid: String): Map<String, Any> = mapOf(
     "createdAtMillis" to System.currentTimeMillis()
 )
 
-// If a document in the console is only half filled in, we skip it instead of crashing the app.
 private fun DocumentSnapshot.toRecipeOrNull(): Recipe? {
     val rid = getLong("recipeId")?.toInt() ?: id.toIntOrNull() ?: return null
     val name = getString("title") ?: return null
@@ -337,7 +367,8 @@ private fun DocumentSnapshot.toRecipeOrNull(): Recipe? {
         ratingAvg = (getDouble("ratingAvg") ?: 0.0).toFloat(),
         ingredients = stringList("ingredients"),
         method = stringList("method"),
-        authorName = getString("authorName").orEmpty()
+        authorName = getString("authorName").orEmpty(),
+        authorUid = getString("authorUid").orEmpty()
     )
 }
 
@@ -351,5 +382,19 @@ private fun DocumentSnapshot.toReviewOrNull(recipeId: Int): Review? {
         comment = getString("comment").orEmpty(),
         userName = getString("userName").orEmpty(),
         createdAtMillis = getLong("createdAtMillis") ?: 0L
+    )
+}
+
+private fun DocumentSnapshot.toNotificationOrNull(): AppNotification? {
+    val title = getString("title") ?: return null
+    return AppNotification(
+        id = id,
+        type = runCatching { NotificationType.valueOf(getString("type").orEmpty()) }.getOrDefault(NotificationType.POST_COMMENT),
+        title = title,
+        body = getString("body").orEmpty(),
+        fromName = getString("fromName").orEmpty(),
+        route = getString("route").orEmpty(),
+        createdAtMillis = getLong("createdAtMillis") ?: 0L,
+        read = getBoolean("read") ?: false
     )
 }

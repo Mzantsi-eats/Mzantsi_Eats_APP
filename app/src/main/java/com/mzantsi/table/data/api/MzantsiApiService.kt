@@ -1,7 +1,5 @@
 package com.mzantsi.table.data.api
 
-import com.mzantsi.table.data.Recipe
-import com.mzantsi.table.data.Review
 import retrofit2.http.Body
 import retrofit2.http.GET
 import retrofit2.http.POST
@@ -9,12 +7,8 @@ import retrofit2.http.PUT
 import retrofit2.http.Path
 import retrofit2.http.Query
 
-
-// The endpoints of our ASP.NET Core Web API, for Retrofit.
-// The app now uses Firebase instead, so this is kept for the API part of the POE.
 interface MzantsiApiService {
 
-    // Recipes
     @GET("api/recipes")
     suspend fun getRecipes(
         @Query("cuisine") cuisine: String? = null,
@@ -25,12 +19,14 @@ interface MzantsiApiService {
     suspend fun getRecipe(@Path("id") id: Int): RecipeDto
 
     @POST("api/recipes")
-    suspend fun createRecipe(@Body recipe: Recipe): RecipeDto
+    suspend fun createRecipe(@Body recipe: RecipeRequest): RecipeDto
+
+    @GET("api/recipes/sync")
+    suspend fun syncRecipes(@Query("since") since: String): List<RecipeDto>
 
     @POST("api/recipes/{id}/reviews")
-    suspend fun submitReview(@Path("id") id: Int, @Body review: Review): Review
+    suspend fun submitReview(@Path("id") id: Int, @Body review: ReviewRequest): ReviewDto
 
-    // Users
     @POST("api/users/register")
     suspend fun register(@Body request: RegisterRequest): UserDto
 

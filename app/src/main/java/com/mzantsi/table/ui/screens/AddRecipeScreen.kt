@@ -26,14 +26,11 @@ import com.mzantsi.table.ui.theme.MzantsiGreen
 import com.mzantsi.table.ui.theme.MzantsiRed
 import java.io.File
 
-// The nine provinces of South Africa, for the Province drop-down.
 private val provinces = listOf(
     "Eastern Cape", "Free State", "Gauteng", "KwaZulu-Natal", "Limpopo",
     "Mpumalanga", "North West", "Northern Cape", "Western Cape"
 )
 
-
-// The form for adding a new recipe. The new recipe is saved for everyone to see.
 @Composable
 fun AddRecipeScreen(
     nextRecipeId: Int,
@@ -59,7 +56,6 @@ fun AddRecipeScreen(
 
     val cultureOptions = remember { (MockData.cultures + listOf("Afrikaner", "Indian", "Other")).distinct() }
 
-    // Opens the phone's gallery. The picked photo is copied into the app's own folder so we can show it later.
     val photoPicker = rememberLauncherForActivityResult(ActivityResultContracts.GetContent()) { uri: Uri? ->
         if (uri != null) {
             val dest = File(context.filesDir, "recipe_${System.currentTimeMillis()}.jpg")
@@ -72,8 +68,6 @@ fun AddRecipeScreen(
         }
     }
 
-    // Checks that the important fields are filled in, then saves the recipe.
-    // Ingredients and method steps are typed one per line, so we split the text on new lines.
     fun save() {
         val ingredients = ingredientsText.split("\n").map { it.trim() }.filter { it.isNotBlank() }
         val steps = methodText.split("\n").map { it.trim() }.filter { it.isNotBlank() }
@@ -122,7 +116,6 @@ fun AddRecipeScreen(
         }
         Spacer(Modifier.height(12.dp))
 
-        // Photo of the dish
         Box(
             Modifier
                 .fillMaxWidth()

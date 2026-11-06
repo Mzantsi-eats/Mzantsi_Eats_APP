@@ -5,13 +5,36 @@ import com.mzantsi.table.data.Difficulty
 import com.mzantsi.table.data.Recipe
 import com.mzantsi.table.data.User
 
-// What we send to the API.
 data class RegisterRequest(val name: String, val email: String, val password: String)
 data class LoginRequest(val email: String, val password: String)
 data class SettingsRequest(val dietaryPrefs: String, val languagePref: String)
 
+data class RecipeRequest(
+    val title: String,
+    val culture: String,
+    val province: String,
+    val description: String,
+    val imageUrl: String,
+    val prepTimeMinutes: Int,
+    val servings: Int,
+    val difficulty: Int,
+    val ingredients: List<String>,
+    val steps: List<String>,
+    val authorName: String
+)
 
-// What the API sends back. Every field can be missing, so we give safe defaults when converting.
+data class ReviewRequest(
+    val userId: Int,
+    val rating: Int,
+    val comment: String
+)
+
+data class ReviewDto(
+    val reviewId: Int? = null,
+    val recipeId: Int? = null,
+    val rating: Int? = null
+)
+
 data class UserDto(
     val userId: Int? = null,
     val name: String? = null,
@@ -38,6 +61,8 @@ data class RecipeDto(
     val province: String? = null,
     val description: String? = null,
     val imageRes: String? = null,
+    val imageUrl: String? = null,
+    val steps: List<String>? = null,
     val prepTimeMinutes: Int? = null,
     val cookTimeMinutes: Int? = null,
     val servings: Int? = null,
@@ -56,15 +81,16 @@ data class RecipeDto(
             culture = culture ?: "Other",
             province = province.orEmpty(),
             description = description.orEmpty(),
-            imageRes = imageRes.orEmpty(),
+            imageRes = (imageRes ?: imageUrl).orEmpty(),
             prepTimeMinutes = prepTimeMinutes ?: 0,
             cookTimeMinutes = cookTimeMinutes ?: 0,
             servings = servings ?: 1,
-            difficulty = runCatching { Difficulty.valueOf(difficulty.orEmpty().uppercase()) }
-                .getOrDefault(Difficulty.MEDIUM),
+            difficulty = difficulty?.trim()?.toIntOrNull()?.let { Difficulty.values().getOrNull(it) }
+                ?: runCatching { Difficulty.valueOf(difficulty.orEmpty().trim().uppercase()) }
+                    .getOrDefault(Difficulty.MEDIUM),
             ratingAvg = ratingAvg ?: 0f,
             ingredients = ingredients.orEmpty(),
-            method = method.orEmpty(),
+            method = (method ?: steps).orEmpty(),
             authorName = authorName.orEmpty()
         )
     }

@@ -10,8 +10,6 @@ import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.setValue
 
-// Tells the screens if the phone has internet right now, so we can show an
-// "You're offline" banner and point the user to their downloaded recipes.
 object NetworkMonitor {
 
     var isOnline by mutableStateOf(true)

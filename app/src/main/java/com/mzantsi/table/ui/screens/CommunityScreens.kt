@@ -47,7 +47,6 @@ import com.mzantsi.table.ui.theme.MzantsiRed
 import java.io.File
 import java.util.Locale
 
-// Everything the Community screens need to show.
 data class CommunityState(
     val recipes: List<Recipe>,
     val groups: List<CommunityGroup>,
@@ -59,7 +58,6 @@ data class CommunityState(
     val myName: String
 )
 
-// What happens when the user taps something on the Community screens.
 data class CommunityActions(
     val onToggleJoin: (String) -> Unit,
     val onToggleFollow: (String) -> Unit,
@@ -77,10 +75,6 @@ private fun CommunityState.membersOf(g: CommunityGroup) = g.baseMembers + if (g.
 private fun CommunityState.followersOf(c: Cook) = c.baseFollowers + if (c.name in following) 1 else 0
 private fun CommunityState.group(id: String) = groups.firstOrNull { it.id == id }
 
-
-// ---------------------------------------------------------------- Community Hub (the main screen)
-
-// The Community Hub: a feed of attempts, the communities to join and the cooks to follow.
 @Composable
 fun CommunityHubScreen(
     state: CommunityState,
@@ -186,9 +180,6 @@ private fun FeedTab(state: CommunityState, actions: CommunityActions, onShareCli
     }
 }
 
-
-// ---------------------------------------------------------------- one community
-
 @Composable
 fun CommunityDetailScreen(
     communityId: String,
@@ -284,9 +275,6 @@ fun CommunityDetailScreen(
     }
 }
 
-
-// ---------------------------------------------------------------- one cook
-
 @Composable
 fun CookProfileScreen(
     cookName: String,
@@ -347,11 +335,6 @@ fun CookProfileScreen(
     }
 }
 
-
-// ---------------------------------------------------------------- cards and rows
-
-// The cook card from the prototype's Home "Community" section: a dish photo, the cook's name,
-// their culture in the culture's colour and how many recipes they shared.
 @Composable
 fun CommunityCookCard(cook: Cook, recipes: List<Recipe>, modifier: Modifier = Modifier, onClick: () -> Unit) {
     val theirRecipes = recipes.filter { it.authorName.equals(cook.name, ignoreCase = true) }
@@ -440,7 +423,6 @@ private fun CookRow(cook: Cook, state: CommunityState, actions: CommunityActions
     }
 }
 
-// One shared attempt: who cooked what, the photo, the caption, star rating, cheers and encouraging comments.
 @Composable
 private fun PostCard(post: CommunityPost, state: CommunityState, actions: CommunityActions) {
     val group = state.group(post.communityId)
@@ -488,7 +470,6 @@ private fun PostCard(post: CommunityPost, state: CommunityState, actions: Commun
         Column(Modifier.padding(12.dp)) {
             if (post.caption.isNotBlank()) Text(post.caption, style = MaterialTheme.typography.bodyMedium)
 
-            // Rating: the average, and the user's own stars (tap to rate someone else's attempt).
             Spacer(Modifier.height(8.dp))
             Row(verticalAlignment = Alignment.CenterVertically) {
                 Icon(Icons.Filled.Star, contentDescription = null, tint = MzantsiGold, modifier = Modifier.size(16.dp))
@@ -511,7 +492,6 @@ private fun PostCard(post: CommunityPost, state: CommunityState, actions: Commun
                 }
             }
 
-            // Cheer and encourage
             Spacer(Modifier.height(6.dp))
             Row(verticalAlignment = Alignment.CenterVertically) {
                 val cheerColor = if (cheered) MzantsiRed else Color.Gray
@@ -554,10 +534,6 @@ private fun PostCard(post: CommunityPost, state: CommunityState, actions: Commun
     }
 }
 
-
-// ---------------------------------------------------------------- dialogs
-
-// "Share your attempt": choose the recipe you cooked, the community, write a caption and add a photo.
 @Composable
 private fun ShareAttemptDialog(
     state: CommunityState,
@@ -665,7 +641,6 @@ private fun ShareAttemptDialog(
     )
 }
 
-// A quick way to motivate someone: tap a ready-made message or write your own.
 @Composable
 private fun EncourageDialog(authorName: String, onDismiss: () -> Unit, onSend: (String) -> Unit) {
     var text by remember { mutableStateOf("") }
@@ -693,9 +668,6 @@ private fun EncourageDialog(authorName: String, onDismiss: () -> Unit, onSend: (
         dismissButton = { TextButton(onClick = onDismiss) { Text("Cancel") } }
     )
 }
-
-
-// ---------------------------------------------------------------- small pieces
 
 @Composable
 private fun CommunityHeader(title: String, subtitle: String, onBack: () -> Unit) {

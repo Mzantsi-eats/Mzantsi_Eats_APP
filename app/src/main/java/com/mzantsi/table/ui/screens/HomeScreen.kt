@@ -32,7 +32,6 @@ import com.mzantsi.table.ui.components.imagePath
 import com.mzantsi.table.ui.theme.MzantsiGreen
 import com.mzantsi.table.ui.theme.MzantsiGreenDark
 
-// The first screen after sign in: search bar, featured banner, popular recipes and cultures.
 @Composable
 fun HomeScreen(
     language: AppLanguage,
@@ -42,12 +41,12 @@ fun HomeScreen(
     onCultureClick: (String) -> Unit = {},
     cooks: List<Cook> = emptyList(),
     onCommunityClick: () -> Unit = {},
-    onCookClick: (String) -> Unit = {}
+    onCookClick: (String) -> Unit = {},
+    unreadNotifications: Int = 0,
+    onNotificationsClick: () -> Unit = {}
 ) {
     val cultures = (MockData.cultures + recipes.map { it.culture }).distinct()
 
-    // What the user typed in the search bar. A recipe matches if its title, culture,
-    // province or any ingredient contains the search words (capital letters don't matter).
     var query by remember { mutableStateOf("") }
     val search = query.trim()
     val searchResults = if (search.isEmpty()) emptyList() else recipes.filter { r ->
@@ -64,7 +63,15 @@ fun HomeScreen(
                 .background(MzantsiGreenDark)
                 .padding(16.dp)
         ) {
-            Text("The Mzantsi Table", color = Color.White, style = MaterialTheme.typography.headlineMedium)
+            Row(Modifier.fillMaxWidth(), verticalAlignment = Alignment.CenterVertically) {
+                Text(
+                    "The Mzantsi Table",
+                    color = Color.White,
+                    style = MaterialTheme.typography.headlineMedium,
+                    modifier = Modifier.weight(1f)
+                )
+                NotificationBell(unreadCount = unreadNotifications, onClick = onNotificationsClick)
+            }
             Spacer(Modifier.height(8.dp))
             OutlinedTextField(
                 value = query,
@@ -87,7 +94,6 @@ fun HomeScreen(
             )
         }
 
-        // While the user is searching, show the results instead of the normal home page.
         if (search.isNotEmpty()) {
             Column(Modifier.padding(16.dp)) {
                 Text(
@@ -134,7 +140,6 @@ fun HomeScreen(
 
             SectionHeader(Strings.of("popular_right_now", language), Strings.of("discover_more", language)) { onExploreClick() }
             LazyRow(horizontalArrangement = Arrangement.spacedBy(12.dp)) {
-                // Highest rated recipes first
                 items(recipes.sortedByDescending { it.ratingAvg }) { recipe -> RecipeCard(recipe) { onRecipeClick(recipe) } }
             }
 
@@ -152,7 +157,6 @@ fun HomeScreen(
                 }
             }
 
-            // Community: the cooks who share recipes (from the prototype). "See all" opens the Community Hub.
             Spacer(Modifier.height(20.dp))
             SectionHeader("Community", "See all") { onCommunityClick() }
             LazyRow(horizontalArrangement = Arrangement.spacedBy(12.dp)) {
@@ -183,7 +187,6 @@ private fun SectionHeader(title: String, actionLabel: String, onSeeAll: () -> Un
     Spacer(Modifier.height(8.dp))
 }
 
-// A small recipe card with a picture, culture, title, rating and total time. Used on many screens.
 @Composable
 fun RecipeCard(recipe: Recipe, onClick: () -> Unit) {
     Column(

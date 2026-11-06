@@ -9,13 +9,15 @@ package com.mzantsi.table.data.firebase
  *   recipes/{recipeId}                 recipes added by users
  *   recipes/{recipeId}/reviews/{id}    reviews (stars + comment) for a recipe
  *   community_posts/{postId}           attempts shared in the Community Hub (with ratings, cheers, comments)
+ *   users/{uid}/notifications/{id}     the user's notifications (real-time alerts and push notifications)
  */
 object FirestorePaths {
     const val USERS = "users"
     const val RECIPES = "recipes"
     const val COMPLETED = "completed"
     const val REVIEWS = "reviews"
-    const val POSTS = "community_posts"          // community_posts/{postId}  attempts shared in the Community Hub
+    const val POSTS = "community_posts"
+    const val NOTIFICATIONS = "notifications"
 }
 
 /**
@@ -27,13 +29,14 @@ object UserFields {
     const val USER_ID = "UserId"
     const val NAME = "Name"
     const val EMAIL = "Email"
-    const val LANGUAGE = "LanguagePref"          // "en", "zu" or "st"
-    const val DIETARY = "DietaryPrefs"           // "Vegan,Halal"
+    const val LANGUAGE = "LanguagePref"
+    const val DIETARY = "DietaryPrefs"
     const val RECIPES_ADDED = "RecipesAdded"
-    const val AUTH_PROVIDER = "AuthProvider"     // "EMAIL" or "GOOGLE"
+    const val AUTH_PROVIDER = "AuthProvider"
     const val PHOTO_URL = "PhotoUrl"
     const val NOTIFICATIONS = "NotificationsEnabled"
-    const val SAVED = "SavedRecipeIds"           // a list of numbers
-    const val JOINED = "JoinedCommunities"       // a list of community ids, for example ["xhosa", "braai"]
-    const val FOLLOWING = "FollowingCooks"       // a list of cook names
+    const val SAVED = "SavedRecipeIds"
+    const val JOINED = "JoinedCommunities"
+    const val FOLLOWING = "FollowingCooks"
+    const val FCM_TOKENS = "FcmTokens"
 }

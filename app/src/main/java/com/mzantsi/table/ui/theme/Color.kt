@@ -2,7 +2,7 @@ package com.mzantsi.table.ui.theme
 
 import androidx.compose.ui.graphics.Color
 
-// The colours used across the app.
+
 val MzantsiGreen = Color(0xFF1F6B3B)
 val MzantsiGreenDark = Color(0xFF123A20)
 val MzantsiOrange = Color(0xFFE8862E)

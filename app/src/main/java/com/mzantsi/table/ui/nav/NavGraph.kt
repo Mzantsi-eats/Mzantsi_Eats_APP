@@ -43,15 +43,22 @@ import com.mzantsi.table.ui.screens.*
 import kotlinx.coroutines.launch
 import com.mzantsi.table.viewmodel.AppViewModel
 
-// The screens that show the bottom navigation bar.
 private val bottomNavScreens = listOf(Screen.Home, Screen.Explore, Screen.AddRecipe, Screen.Saved, Screen.Profile)
 
-// Sets up every screen and how the user moves between them.
-// All screens get their data from the same AppViewModel.
 @Composable
-fun MzantsiNavGraph() {
+fun MzantsiNavGraph(
+    openRoute: String? = null,
+    onRouteOpened: () -> Unit = {}
+) {
     val navController = rememberNavController()
     val appViewModel: AppViewModel = viewModel()
+
+    LaunchedEffect(openRoute) {
+        if (!openRoute.isNullOrBlank()) {
+            navController.navigate(openRoute)
+            onRouteOpened()
+        }
+    }
 
     val backStackEntry by navController.currentBackStackEntryAsState()
     val currentRoute = backStackEntry?.destination?.route
@@ -61,7 +68,6 @@ fun MzantsiNavGraph() {
     val scope = rememberCoroutineScope()
     val snackbarHostState = remember { SnackbarHostState() }
 
-    // Show save/load problems (for example the Firestore rules blocking a write) as a message at the bottom.
     LaunchedEffect(appViewModel.lastError) {
         appViewModel.lastError?.let {
             snackbarHostState.showSnackbar(it)
@@ -69,12 +75,10 @@ fun MzantsiNavGraph() {
         }
     }
 
-    // If the user is still signed in from last time, open Home instead of the Launch screen.
     val startRoute = remember {
         if (appViewModel.currentUser != null) Screen.Home.route else Screen.Launch.route
     }
 
-    // When register, login or Google sign-in works (currentUser is no longer null), go to Home.
     LaunchedEffect(appViewModel.currentUser?.email) {
         val route = navController.currentBackStackEntry?.destination?.route
         if (appViewModel.currentUser != null &&
@@ -125,7 +129,6 @@ fun MzantsiNavGraph() {
             }
         }
     ) { padding ->
-      // Everything the Community screens show, and what happens when the user taps something there.
       val communityState = CommunityState(
           recipes = appViewModel.recipes,
           groups = CommunityData.groups,
@@ -148,18 +151,28 @@ fun MzantsiNavGraph() {
           onCookClick = { navController.navigate(Screen.CookProfile.of(it)) }
       )
       Column(Modifier.padding(padding)) {
-        // Offline banner: downloaded recipes still work without internet.
-        if (!appViewModel.isOnline && appViewModel.currentUser != null) {
-            Text(
-                text = "You're offline. Your downloaded recipes are still available - tap to open them.",
-                color = Color.White,
-                style = MaterialTheme.typography.labelMedium,
-                modifier = Modifier
-                    .fillMaxWidth()
-                    .background(Color(0xFF5A5A5A))
-                    .clickable { navController.navigateSingleTop(Screen.Saved.route) }
-                    .padding(horizontal = 16.dp, vertical = 8.dp)
-            )
+        if (appViewModel.currentUser != null) {
+            val pending = appViewModel.totalPending
+            val bannerText = when {
+                !appViewModel.isOnline && pending > 0 ->
+                    "You're offline. $pending change${if (pending == 1) "" else "s"} will sync when you're back online. Tap to open your downloaded recipes."
+                !appViewModel.isOnline ->
+                    "You're offline. Your downloaded recipes are still available - tap to open them."
+                pending > 0 -> "Syncing $pending change${if (pending == 1) "" else "s"}..."
+                else -> null
+            }
+            if (bannerText != null) {
+                Text(
+                    text = bannerText,
+                    color = Color.White,
+                    style = MaterialTheme.typography.labelMedium,
+                    modifier = Modifier
+                        .fillMaxWidth()
+                        .background(if (appViewModel.isOnline) Color(0xFF2E7D32) else Color(0xFF5A5A5A))
+                        .clickable(enabled = !appViewModel.isOnline) { navController.navigateSingleTop(Screen.Saved.route) }
+                        .padding(horizontal = 16.dp, vertical = 8.dp)
+                )
+            }
         }
         NavHost(
             navController = navController,
@@ -283,7 +296,6 @@ fun MzantsiNavGraph() {
             ) { backStackEntry ->
                 val id = backStackEntry.arguments?.getInt("recipeId")
                 val recipe = id?.let { appViewModel.recipeById(it) }
-                // Load the reviews of this recipe when the screen opens.
                 LaunchedEffect(id) {
                     if (id != null) appViewModel.loadReviews(id)
                 }
@@ -343,8 +355,8 @@ fun MzantsiNavGraph() {
                     onChangePassword = appViewModel::changePassword,
                     isBusy = appViewModel.isLoading,
                     onSignOut = {
-                        scope.launch { GoogleSignInManager.signOut(context) } // signs out of Google
-                        appViewModel.signOut()                                // clears the user and their data from the app
+                        scope.launch { GoogleSignInManager.signOut(context) }
+                        appViewModel.signOut()
                         navController.navigate(Screen.Launch.route) {
                             popUpTo(0)
                         }
@@ -356,7 +368,6 @@ fun MzantsiNavGraph() {
     }
 }
 
-// Used by the bottom bar: opens a tab without stacking many copies of the same screen.
 private fun NavHostController.navigateSingleTop(route: String) {
     navigate(route) {
         popUpTo(graph.findStartDestination().id) { saveState = true }

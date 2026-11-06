@@ -5,12 +5,10 @@ import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 import java.util.concurrent.TimeUnit
 
-// Creates the Retrofit client that talks to our API.
 object RetrofitClient {
 
-    private const val BASE_URL = "http://10.0.2.2:5080/" // 10.0.2.2 is your computer when you use the emulator. On a real phone, use your computer's IP address.
+    private const val BASE_URL = "http://10.0.2.2:5080/"
 
-    // Short timeouts, so the app doesn't wait long when the API is not running.
     private val httpClient = OkHttpClient.Builder()
         .connectTimeout(4, TimeUnit.SECONDS)
         .readTimeout(6, TimeUnit.SECONDS)

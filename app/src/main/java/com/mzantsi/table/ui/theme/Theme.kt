@@ -8,7 +8,7 @@ import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.sp
 
-// The app colours (defined in Color.kt) and text sizes.
+
 private val MzantsiColors = lightColorScheme(
     primary = MzantsiGreen,
     onPrimary = MzantsiCream,
@@ -32,8 +32,6 @@ private val MzantsiTypography = Typography(
 
 @Composable
 fun MzantsiTableTheme(content: @Composable () -> Unit) {
-    // We always use the light colours from our POE design (green stands for fertility and nature).
-    // A dark theme can be added later using isSystemInDarkTheme().
     MaterialTheme(
         colorScheme = MzantsiColors,
         typography = MzantsiTypography,

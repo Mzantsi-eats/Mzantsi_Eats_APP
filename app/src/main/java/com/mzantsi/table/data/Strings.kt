@@ -1,8 +1,5 @@
 package com.mzantsi.table.data
 
-
-// The words on screen in English, isiZulu and Sesotho.
-// Strings.of("key", language) gives the text in the chosen language, or English if a translation is missing.
 object Strings {
 
     private val table: Map<String, Map<AppLanguage, String>> = mapOf(

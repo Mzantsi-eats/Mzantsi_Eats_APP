@@ -18,8 +18,6 @@ import androidx.compose.ui.unit.dp
 import com.mzantsi.table.data.Recipe
 import com.mzantsi.table.ui.theme.MzantsiGreenDark
 
-// The colour and cover photo of each culture, matching the prototype design
-// (Xhosa red, Zulu green, Cape Malay gold, Sesotho earth brown, and so on).
 object CultureStyle {
 
     private val colors = mapOf(
@@ -35,7 +33,6 @@ object CultureStyle {
         "indian" to Color(0xFFC2410C)
     )
 
-    // A dish photo that represents each culture. Used when there is no photo in assets/images/cultures/.
     private val coverDish = mapOf(
         "xhosa" to "umngqusho",
         "zulu" to "bunny_chow",
@@ -51,8 +48,6 @@ object CultureStyle {
 
     fun color(culture: String): Color = colors[slugOf(culture)] ?: MzantsiGreenDark
 
-    // The pictures to try, in order: a culture photo (if the team adds one), the culture's
-    // cover dish, the first recipe of that culture, and finally the featured banner photo.
     fun coverPaths(culture: String, recipes: List<Recipe>): List<String> {
         val slug = slugOf(culture)
         return listOfNotNull(
@@ -64,7 +59,6 @@ object CultureStyle {
     }
 }
 
-// A thin stripe in the colours of the South African flag, used on the culture cards.
 @Composable
 fun FlagStripe(modifier: Modifier = Modifier) {
     Row(modifier.height(3.dp)) {
@@ -74,8 +68,6 @@ fun FlagStripe(modifier: Modifier = Modifier) {
     }
 }
 
-// A picture card for one culture: the photo fills the card and fades into the culture's colour.
-// Used on Explore (big cards) and on Home (small cards).
 @Composable
 fun CultureCard(
     culture: String,

@@ -34,8 +34,6 @@ import com.mzantsi.table.ui.theme.MzantsiGreen
 import com.mzantsi.table.ui.theme.MzantsiRed
 import kotlinx.coroutines.launch
 
-
-// The Register and Login screen. The two tabs at the top switch between the two forms.
 @Composable
 fun AuthScreen(
     language: AppLanguage,
@@ -58,12 +56,11 @@ fun AuthScreen(
     var email by remember { mutableStateOf("") }
     var password by remember { mutableStateOf("") }
     var confirmPassword by remember { mutableStateOf("") }
-    var attempted by remember { mutableStateOf(false) } // show every error after the user taps the button once
+    var attempted by remember { mutableStateOf(false) }
     var showDemoChooser by remember { mutableStateOf(false) }
     var googleBusy by remember { mutableStateOf(false) }
     var successMessage by remember { mutableStateOf<String?>(null) }
 
-    // After registering, the user must sign in: switch to the Login tab with their email filled in.
     LaunchedEffect(registeredEmail) {
         if (registeredEmail != null) {
             isRegisterTab = false
@@ -80,8 +77,6 @@ fun AuthScreen(
     val emailError = if (attempted || (email.contains('@') && email.substringAfter('@').contains('.')))
         AuthValidation.emailError(email) else null
 
-    // Register: the password is checked live while the user types, and tells them what is still missing.
-    // Login: we only check it after they tap Login.
     val passwordError = if (isRegisterTab) {
         if (attempted || password.isNotEmpty()) AuthValidation.newPasswordError(password) else null
     } else {
@@ -94,7 +89,6 @@ fun AuthScreen(
 
     val busy = isLoading || googleBusy
 
-    // Checks the form, then asks the ViewModel to register or log in.
     fun submit() {
         attempted = true
         successMessage = null
@@ -110,7 +104,6 @@ fun AuthScreen(
         if (isRegisterTab) onRegister(fullName.trim(), email.trim(), password) else onLogin(email.trim(), password)
     }
 
-    // Real Google sign-in if it is set up, otherwise the demo account chooser.
     fun startGoogle() {
         onClearError()
         if (GoogleSignInManager.isConfigured(context)) {
@@ -276,7 +269,6 @@ fun AuthScreen(
     }
 }
 
-// A text box used for name, email and password, with an error message underneath.
 @Composable
 private fun AuthField(
     value: String,
@@ -297,7 +289,6 @@ private fun AuthField(
     )
 }
 
-// A green box that tells the user their account was created and they can now sign in.
 @Composable
 private fun SuccessBanner(message: String) {
     Box(
@@ -311,7 +302,6 @@ private fun SuccessBanner(message: String) {
     }
 }
 
-// A red box that shows the error message from Firebase or offline login.
 @Composable
 private fun ErrorBanner(message: String) {
     Box(
@@ -325,7 +315,6 @@ private fun ErrorBanner(message: String) {
     }
 }
 
-// One of the two tabs (Register / Login) at the top of the screen.
 @Composable
 private fun SegmentedTab(label: String, selected: Boolean, modifier: Modifier = Modifier, onClick: () -> Unit) {
     val colors = if (selected) ButtonDefaults.buttonColors(containerColor = MzantsiGreen)
@@ -338,9 +327,6 @@ private fun SegmentedTab(label: String, selected: Boolean, modifier: Modifier = 
     }
 }
 
-
-// A pretend Google account chooser for when real Google sign-in is not set up.
-// It lets us test the Google sign-in flow (and its rules) without Firebase.
 @Composable
 private fun DemoGoogleChooserDialog(
     onDismiss: () -> Unit,
