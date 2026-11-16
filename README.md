@@ -36,6 +36,7 @@ This API is backed by **Firebase Authentication** and **Cloud Firestore**, servi
 
    #3 Signed APK
    app-release.apk
+   sha256:241db73adfe31de57268a02aea2dc57ccf661ee43f503273b3a5559553e448ff
 ---
 
 ## 👥 Collaborators
