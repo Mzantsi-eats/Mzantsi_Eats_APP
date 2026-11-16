@@ -34,7 +34,8 @@ This API is backed by **Firebase Authentication** and **Cloud Firestore**, servi
 > **Note:** The API has been separated into its own dedicated repository for better version control and deployment. 
 > 👉 **[Link to API Repository](https://github.com/orgs/Mzantsi-eats/repositories)**
 
-   #3 Signed APK app-release.apk
+   #3 Signed APK 
+   app-release.apk
   
 ---
 
