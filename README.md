@@ -32,7 +32,7 @@ An ASP.NET Core Web API (.NET 8) implementing the layered architecture described
 This API is backed by **Firebase Authentication** and **Cloud Firestore**, serving as a secure, centralized data layer for the Android application.
 
 > **Note:** The API has been separated into its own dedicated repository for better version control and deployment. 
-> 👉 **[Link to API Repository](https://github.com/Mzantsi-eats/api-repository-)**
+> 👉 **[Link to API Repository](https://github.com/orgs/Mzantsi-eats/repositories)**
 
 ---
 
